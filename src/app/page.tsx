@@ -226,7 +226,7 @@ export default function Home() {
             <div className={styles.aboutGrid}>
               <div className={styles.aboutVisual}>
                 <Image
-                  src="/figma_assets/new_about_image.png"
+                  src="/figma_assets/new_about_image_v2.jpg"
                   alt="Engineer working with High Mast Light"
                   fill
                   sizes="(max-width: 1024px) 100vw, 890px"

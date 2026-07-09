@@ -213,7 +213,7 @@ export default function Footer({ hideEnquiry = false }: FooterProps) {
                   rel="noopener noreferrer"
                   className={styles.addressLink}
                 >
-                  L-01 Radha Palace, Gurudwara Road, Sadar bazaar Haryana, India - 122001
+                  L-03 Radha Palace, Gurudwara Road, Sadar bazaar Haryana, India - 122001
                 </a>
               </li>
             </ul>

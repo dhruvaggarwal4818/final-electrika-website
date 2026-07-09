@@ -94,8 +94,7 @@ export default function Home() {
           {/* Aesthetic Theme Toggle (Moon symbol) */}
           <button 
             onClick={toggleDarkMode}
-            className="absolute bg-white border-[#e8ecf0] border-[0.8px] border-solid drop-shadow-[0px_8px_12px_rgba(0,0,0,0.11)] rounded-[50px] w-[46px] h-[46px] flex items-center justify-center cursor-pointer transition-transform hover:scale-105 active:scale-95"
-            style={{ top: "80px", right: "40px", zIndex: 100 }}
+            className={styles.themeToggle}
             aria-label="Toggle Theme"
           >
             <span className="text-[20px] font-bold">{darkMode ? "☀️" : "🌙"}</span>
@@ -227,7 +226,7 @@ export default function Home() {
             <div className={styles.aboutGrid}>
               <div className={styles.aboutVisual}>
                 <Image
-                  src="/figma_assets/new_about_image.jpg"
+                  src="/figma_assets/new_about_image.png"
                   alt="Engineer working with High Mast Light"
                   fill
                   sizes="(max-width: 1024px) 100vw, 890px"

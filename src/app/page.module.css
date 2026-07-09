@@ -82,6 +82,32 @@
   background-color: transparent;
 }
 
+.themeToggle {
+  position: absolute;
+  top: 80px;
+  right: 40px;
+  z-index: 100;
+  background-color: var(--color-bg-card);
+  border: 0.8px solid var(--color-border);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.11);
+  border-radius: 50px;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.themeToggle:hover {
+  transform: scale(1.05);
+}
+
+.themeToggle:active {
+  transform: scale(0.95);
+}
+
 .heroInner {
   position: relative;
   width: 100%;
@@ -126,6 +152,10 @@
   border: 0.8px solid rgba(26, 159, 216, 0.3);
   border-radius: var(--radius-badge);
   margin-bottom: 24px;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .badgeDot {
@@ -1101,17 +1131,40 @@
 
 /* Media Queries */
 @media (max-width: 1024px) {
-  .heroGrid {
-    grid-template-columns: 1fr;
+  .heroInner {
+    min-height: auto;
+    margin: 0 16px;
+  }
+
+  .heroContainer {
+    flex-direction: column;
+    padding: 60px 24px 40px;
     gap: 32px;
   }
 
+  .heroContent {
+    max-width: 100%;
+    align-items: flex-start;
+  }
+
   .heroVisual {
+    width: 100%;
     justify-content: center;
   }
 
   .imageCard {
-    height: 400px;
+    height: 360px;
+    max-width: 100%;
+  }
+
+  .themeToggle {
+    top: 20px;
+    right: 20px;
+  }
+
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .featuresGrid {
@@ -1157,8 +1210,33 @@
     font-size: 28px;
   }
 
+  .heroInner {
+    margin: 0 12px;
+  }
+
+  .heroContainer {
+    padding: 40px 16px 32px;
+    gap: 24px;
+  }
+
   .heroTitle {
-    font-size: 38px;
+    font-size: 36px;
+  }
+
+  .heroSubtitle {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+
+  .imageCard {
+    height: 280px;
+  }
+
+  .themeToggle {
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
   }
 
   .projectsGrid {
@@ -1168,7 +1246,7 @@
 
 @media (max-width: 480px) {
   .heroTitle {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .statsGrid {

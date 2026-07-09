@@ -8,7 +8,8 @@
 .ctaSection {
   position: relative;
   width: 100%;
-  min-height: 268px; /* Based on 76.93% offset inside 1157px, height ~ 268px */
+  min-height: 268px;
+  /* Based on 76.93% offset inside 1157px, height ~ 268px */
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -165,7 +166,8 @@
 
 .formContainer {
   width: 100%;
-  max-width: 560px; /* Base width on Homepage, highly focused */
+  max-width: 560px;
+  /* Base width on Homepage, highly focused */
   background-color: var(--color-bg-page);
   border: 0.8px solid var(--color-border);
   border-radius: var(--radius-card);
@@ -516,7 +518,8 @@
 
 .copyright {
   font-size: 11px;
-  color: #374151; /* Dark gray for footer copyright, standard readability */
+  color: #374151;
+  /* Dark gray for footer copyright, standard readability */
 }
 
 .badges {
@@ -553,7 +556,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 32px;
   }
-  
+
   .ctaContent {
     flex-direction: column;
     align-items: flex-start;
@@ -565,7 +568,7 @@
     grid-template-columns: 1fr;
     gap: 24px;
   }
-  
+
   .formRow {
     flex-direction: column;
     gap: 16px;

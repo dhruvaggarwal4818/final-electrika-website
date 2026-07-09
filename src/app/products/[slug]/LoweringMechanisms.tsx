@@ -31,13 +31,20 @@ export default function LoweringMechanismsPage() {
     { title: "Reduced Maintenance Cost", desc: "Eliminates the recurring cost of specialised high-access equipment or contractors for every maintenance cycle — pays for itself over the life of the installation.", icon: "📉" }
   ];
 
+  const LocationPin = (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+      <circle cx="12" cy="10" r="3"></circle>
+    </svg>
+  );
+
   const useCases = [
-    { title: "Highway Interchanges", desc: "Tall masts at bypasses, junctions, and toll plazas", icon: "🛣️" },
-    { title: "Toll Plazas", desc: "High-illumination covering frequent entry lanes", icon: "🎟️" },
-    { title: "Container Yards & Ports", desc: "Heavy-duty floodlighting for 24/7 continuous operations", icon: "⚓" },
-    { title: "Stadiums & Sports Grounds", desc: "Large scale floodlighting with multiple luminaires per mast", icon: "🏟️" },
-    { title: "Railway Yards", desc: "Marshalling yard lighting with standard overhead access", icon: "🚂" },
-    { title: "Industrial Complexes", desc: "Refineries and petrochemical plant lighting", icon: "🏭" }
+    { title: "Highway Interchanges", desc: "Tall masts where ground-level access dramatically cuts maintenance cost", icon: LocationPin },
+    { title: "Toll Plazas", desc: "High-mast lighting requiring frequent lamp checks", icon: LocationPin },
+    { title: "Container Yards & Ports", desc: "Heavy-use installations needing fast turnaround maintenance", icon: LocationPin },
+    { title: "Stadiums & Sports Grounds", desc: "Large-area floodlighting with multiple luminaires per mast", icon: LocationPin },
+    { title: "Railway Yards", desc: "Marshalling yard lighting with restricted overhead access", icon: LocationPin },
+    { title: "Industrial Complexes", desc: "Factory yard and large open-area lighting", icon: LocationPin }
   ];
 
   return (
@@ -180,12 +187,12 @@ export default function LoweringMechanismsPage() {
         </section>
 
         {/* 4. Use Cases Section */}
-        <section className={styles.mandatedSection}>
+        <section className={styles.useCasesSection} style={{ textAlign: "center" }}>
           <div className={styles.container}>
-            <div className={styles.mandatedHeader}>
-              <span className={styles.mandatedEyebrow}>Use Cases</span>
-              <h2 className={styles.mandatedTitle}>Where This Product Is Used</h2>
-              <p className={styles.mandatedSubtitle}>
+            <div style={{ marginBottom: "40px", display: "flex", flexDirection: "column", alignItems: "center" }}>
+              <span className={styles.sectionEyebrow} style={{ color: "#f97316", textTransform: "uppercase", fontSize: "11px", letterSpacing: "2.5px", fontWeight: "bold" }}>Use Cases</span>
+              <h2 className={styles.sectionTitle} style={{ color: "#ffffff", fontSize: "28px", marginTop: "8px", marginBottom: "16px" }}>Where This Product Is Used</h2>
+              <p className={styles.sectionIntro} style={{ color: "#888888", fontSize: "15px", maxWidth: "528px", margin: "0 auto" }}>
                 Trusted across critical infrastructure and industrial projects throughout India.
               </p>
             </div>
@@ -194,7 +201,7 @@ export default function LoweringMechanismsPage() {
               {useCases.map((use, index) => (
                 <div key={index} className={styles.appCard}>
                   <div className={styles.appIconWrapper}>
-                    <span className={styles.appIcon}>{use.icon}</span>
+                    <span style={{ color: "#f97316", display: "flex" }}>{use.icon}</span>
                   </div>
                   <h4 className={styles.appTitle}>{use.title}</h4>
                   <p className={styles.appDesc}>{use.desc}</p>

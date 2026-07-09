@@ -1,0 +1,199 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 66px;
+  background-image: var(--grad-nav-bg);
+  border-bottom: 0.8px solid var(--color-border);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1840px;
+  margin: 0 auto;
+  padding: 0 var(--gutter-home);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.logoImage {
+  object-fit: contain;
+  max-width: 202px;
+  height: auto;
+}
+
+/* Nav styles */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.navLink {
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  font-size: 15px;
+  color: rgba(240, 242, 245, 0.8);
+  transition: color 0.2s ease;
+  position: relative;
+  padding: 6px 0;
+}
+
+.navLink:hover {
+  color: var(--color-text-white);
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-orange-home);
+  transition: width 0.2s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+/* Header actions (WhatsApp & Call) */
+.actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.actionBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  padding: 0 16px;
+  border-radius: var(--radius-input);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+}
+
+.actionBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.12);
+}
+
+.actionBtn:active {
+  transform: translateY(0);
+}
+
+.btnWa {
+  background-image: url('/figma_assets/2c24fd3972f711ad062793eb1ca150d39a8a2fb9.png');
+  background-size: cover;
+  background-position: center;
+  color: var(--color-text-white);
+}
+
+.btnCall {
+  background-image: url('/figma_assets/9006944c45b17529d257eac2341281e088ff195f.png');
+  background-size: cover;
+  background-position: center;
+  color: var(--color-text-white);
+}
+
+/* Hamburger menu for responsive mobile layouts */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+  z-index: 1010;
+  background: none;
+  border: none;
+}
+
+.bar {
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-text-white);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    position: fixed;
+    top: 66px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-image: var(--grad-nav-bg);
+    overflow: hidden;
+    transition: height 0.3s ease;
+    z-index: 999;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .navOpen {
+    height: calc(100vh - 66px);
+  }
+
+  .navList {
+    flex-direction: column;
+    width: 100%;
+    padding: 40px var(--gutter-home);
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .navLink {
+    font-size: 20px;
+  }
+
+  .actions {
+    display: none; /* Hide quick desktop actions on small tablet/mobiles; they will be in the menu or footer */
+  }
+
+  /* Hamburger open states */
+  .barOpen1 {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .barOpen2 {
+    opacity: 0;
+  }
+  .barOpen3 {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 20px;
+  }
+}

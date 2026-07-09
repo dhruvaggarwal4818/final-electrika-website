@@ -1,0 +1,843 @@
+.pageWrapper {
+  width: 100%;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  position: relative;
+  font-family: var(--font-poppins), sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  flex: 1 0 auto;
+}
+
+/* 1. Warning Strip */
+.warningStrip {
+  background-color: rgba(249, 115, 22, 0.05);
+  background-image: url('/figma_assets_highbay/3322076405062ff047b436c59a5fef2cef2a48e1.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 74px;
+  border-top: 1.6px solid #f97316;
+  border-bottom: 1.6px solid #f97316;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.warningStripInner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.warningIcon {
+  width: 34px;
+  height: 36px;
+  background-color: rgba(249, 115, 22, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.warningIcon img {
+  width: 18px;
+  height: 18px;
+}
+
+.warningText {
+  color: #ffd1a4;
+  font-size: 13px;
+}
+
+.warningText span {
+  color: white;
+  font-weight: 700;
+}
+
+/* 2. Hero Section */
+.heroSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 40px 0;
+}
+
+.heroContainer {
+  background-color: #101b29;
+  border: 5px solid #fffefe;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1920px;
+  min-height: 723px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 160px;
+}
+
+.heroContent {
+  width: 570px;
+}
+
+.heroBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  background-color: rgba(249, 115, 22, 0.15);
+  border: 0.8px solid rgba(249, 115, 22, 0.3);
+  border-radius: 20px;
+  color: #f97316;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+}
+
+.heroTitle {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.15;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.heroTitle span {
+  color: #f97316;
+}
+
+.heroDesc {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #aab0c0;
+  margin-bottom: 40px;
+}
+
+.heroMeta {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.metaVal {
+  font-weight: 700;
+  font-size: 20px;
+  color: #f97316;
+  margin-bottom: 4px;
+}
+
+.metaLabel {
+  font-weight: 400;
+  font-size: 11px;
+  color: #888;
+  letter-spacing: 0.5px;
+}
+
+.heroActions {
+  display: flex;
+  gap: 12px;
+}
+
+.btnPrimary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f97316;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0 28px;
+  height: 42px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.btnSecondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 0.8px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0 28px;
+  height: 42px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.heroVisual {
+  width: 570px;
+  height: 570px;
+  position: relative;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.heroImage {
+  object-fit: cover;
+}
+
+.tagPremium {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background-color: #f97316;
+  color: white;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.tagZone {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background-color: rgba(220, 38, 38, 0.9);
+  color: white;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+/* 3. Common Container & Sections */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.sectionEyebrow {
+  font-weight: 700;
+  font-size: 24px;
+  color: #0d0d1a;
+  display: block;
+  margin-bottom: 24px;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.sectionEyebrow::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #f97316;
+}
+
+.sectionIntro {
+  font-weight: 400;
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 808px;
+  line-height: 1.6;
+}
+
+/* 4. Features Section */
+.featuresSection {
+  background-color: #f5f7fa;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.featureCard {
+  background-color: white;
+  border: 0.8px solid #e8eaf0;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.featureIcon {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(249, 115, 22, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  font-size: 16px;
+  color: #f97316;
+  font-weight: 700;
+}
+
+.featureTitle {
+  font-weight: 600;
+  font-size: 15px;
+  color: #0d0d1a;
+  margin-bottom: 12px;
+}
+
+.featureDesc {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #666;
+  margin: 0;
+}
+
+/* 5. Zone Section */
+.zonesSection {
+  background-color: #fafafa;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 312px;
+  border-radius: 16px;
+}
+
+.zonesContainer {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.zonesSection .sectionIntro {
+  max-width: 1208px;
+  font-size: 14px;
+  color: #666;
+}
+
+.zonesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.zoneCard {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.zoneCard.zone1 {
+  background-color: rgba(220, 38, 38, 0.06);
+  border: 0.8px solid rgba(220, 38, 38, 0.2);
+}
+
+.zoneCard.zone2 {
+  background-color: rgba(249, 115, 22, 0.06);
+  border: 0.8px solid rgba(249, 115, 22, 0.25);
+}
+
+.zoneCard.zone21 {
+  background-color: rgba(234, 179, 8, 0.06);
+  border: 0.8px solid rgba(234, 179, 8, 0.25);
+}
+
+.zoneCard.zone22 {
+  background-color: rgba(34, 197, 94, 0.06);
+  border: 0.8px solid rgba(34, 197, 94, 0.2);
+}
+
+.zoneDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.zoneCard.zone1 .zoneDot {
+  background-color: #dc2626;
+}
+
+.zoneCard.zone2 .zoneDot {
+  background-color: #f97316;
+}
+
+.zoneCard.zone21 .zoneDot {
+  background-color: #eab308;
+}
+
+.zoneCard.zone22 .zoneDot {
+  background-color: #22c55e;
+}
+
+.zoneTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0d0d1a;
+  margin-bottom: 4px;
+}
+
+.zoneSubtitle {
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.zoneCard.zone1 .zoneSubtitle {
+  color: #dc2626;
+}
+
+.zoneCard.zone2 .zoneSubtitle {
+  color: #f97316;
+}
+
+.zoneCard.zone21 .zoneSubtitle {
+  color: #ca8a04;
+}
+
+.zoneCard.zone22 .zoneSubtitle {
+  color: #22c55e;
+}
+
+.zoneDesc {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.zoneCompat {
+  font-size: 16px;
+  color: #1a1a2e;
+  font-weight: 400;
+}
+
+/* 6. Design Advantages (Split) */
+.advantagesSection {
+  background-color: #f5f7fa;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.advantagesGrid {
+  display: flex;
+  gap: 40px;
+}
+
+.advantagesMain {
+  flex: 1;
+  background-color: white;
+  border: 0.8px solid #e8eaf0;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.advHeading {
+  font-weight: 700;
+  font-size: 18px;
+  color: #0d0d1a;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.advText {
+  font-weight: 400;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.65;
+}
+
+.advantagesSidebar {
+  width: 464px;
+  background-color: #0d0d1a;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.sbHeading {
+  font-weight: 700;
+  font-size: 18.72px;
+  color: #f97316;
+  margin-bottom: 16px;
+}
+
+.sbIntro {
+  font-weight: 400;
+  font-size: 13px;
+  color: #aab0c0;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.sbList {
+  display: flex;
+  flex-direction: column;
+}
+
+.sbListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 0.8px solid rgba(255, 255, 255, 0.08);
+}
+
+.sbListItem:last-child {
+  border-bottom: none;
+}
+
+.sbDot {
+  width: 6px;
+  height: 6px;
+  background-color: #f97316;
+  border-radius: 50%;
+}
+
+.sbText {
+  font-size: 13px;
+  color: white;
+  font-weight: 400;
+}
+
+/* 7. Specs Section */
+.specsSection {
+  background-color: #f5f7fa;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.specsWrapper {
+  background-color: white;
+  border: 0.8px solid #e8eaf0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.specsHeader {
+  background-color: #0d0d1a;
+  padding: 16px 24px;
+}
+
+.specsHeaderTitle {
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+}
+
+.specsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.specsTable th {
+  background-color: #f8f9fb;
+  border-bottom: 0.8px solid #e8eaf0;
+  padding: 12px 20px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 12px;
+  color: #555;
+  letter-spacing: 0.5px;
+}
+
+.specsTable td {
+  padding: 12px 20px;
+  border-bottom: 0.8px solid #f0f2f5;
+  font-size: 14px;
+}
+
+.specsTable tr:nth-child(even) td {
+  background-color: #fafbfd;
+}
+
+.specLabel {
+  font-weight: 400;
+  color: #333;
+  width: 40%;
+}
+
+.specValue {
+  font-weight: 600;
+  color: #0d0d1a;
+}
+
+.specValueHighlight {
+  font-weight: 700;
+  color: #0d0d1a;
+}
+
+.useCasesSection {
+  background-color: #0d0d1a;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: -1px;
+}
+
+.useCasesSection .container {
+  max-width: 1360px;
+  /* Gives enough room for the 6 cards + gap */
+}
+
+.useCasesSection .sectionTitle {
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.useCasesSection .sectionEyebrow {
+  text-align: center;
+  color: #f97316;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.useCasesSection .sectionEyebrow::after {
+  display: none;
+}
+
+.useCasesSection .sectionIntro {
+  text-align: center;
+  margin: 0 auto 40px auto;
+  color: #888;
+}
+
+.useCasesGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.useCaseCard {
+  background-color: #161630;
+  border: 0.8px solid rgba(249, 115, 22, 0.1);
+  border-radius: 10px;
+  padding: 24px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 180px;
+}
+
+.useCaseIcon {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(249, 115, 22, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  font-size: 22px;
+}
+
+.useCaseTitle {
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.useCaseDesc {
+  font-weight: 400;
+  font-size: 11px;
+  color: #888;
+  line-height: 1.5;
+}
+
+/* 8. Gallery Section */
+.gallerySection {
+  background-color: white;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  border-top: 0.8px solid #e7edf3;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.galleryItemCard {
+  border: 0.8px solid #0f0f0f;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 278px;
+  position: relative;
+  background-color: #fafafa;
+}
+
+.galleryImageWrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.galleryImage {
+  object-fit: cover;
+}
+
+/* 9. Compare Section */
+.compareSection {
+  background-color: #f0f2f8;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.compareTableWrapper {
+  background-color: white;
+  border: 0.8px solid #e8eaf0;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 24px;
+}
+
+.compareTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.compareTable th {
+  padding: 16px 18px;
+  text-align: left;
+  color: white;
+  background-color: #0d0d1a;
+  border-left: 0.8px solid rgba(255, 255, 255, 0.08);
+}
+
+.compareTable th:first-child {
+  border-left: none;
+}
+
+.compareTable th p {
+  margin: 0;
+}
+
+.compareTable th .thTitle {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.compareTable th .thSub {
+  font-size: 10px;
+  color: #f97316;
+  margin-top: 4px;
+}
+
+.compareTable td {
+  padding: 13px 18px;
+  font-size: 13px;
+  color: #333;
+  border-bottom: 0.8px solid #f0f2f5;
+  border-left: 0.8px solid #f0f2f5;
+}
+
+.compareTable tr:nth-child(even) td {
+  background-color: #fafbfd;
+}
+
+.compareTable tr td:first-child {
+  font-weight: 600;
+  color: #0d0d1a;
+  background-color: #f8f9fb;
+  border-left: none;
+}
+
+/* 10. Variants Section */
+.variantsSection {
+  background-color: white;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.variantsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.variantCard {
+  background-color: white;
+  border: 0.8px solid #e8eaf0;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.variantImageWrapper {
+  position: relative;
+  height: 180px;
+  background-color: #fafbfd;
+  border-bottom: 0.8px solid #f0f2f5;
+}
+
+.variantContent {
+  padding: 16px 16px 20px;
+}
+
+.variantTitle {
+  font-weight: 700;
+  font-size: 13px;
+  color: #0d0d1a;
+  margin-bottom: 6px;
+}
+
+.variantDesc {
+  font-size: 12px;
+  color: #888;
+  line-height: 1.5;
+}
+
+/* Global Technical Description Hover Effect */
+.specsTable tr {
+  transition: all 0.2s ease;
+}
+.specsTable tr:hover td,
+.specsTable tr:hover .specLabel,
+.specsTable tr:hover .specValue,
+.specsTable tr:hover .specValueHighlight {
+  color: #f97316 !important;
+}

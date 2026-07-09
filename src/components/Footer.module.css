@@ -1,0 +1,592 @@
+/* 1. CTA Banner Section styles */
+.footerWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ctaSection {
+  position: relative;
+  width: 100%;
+  min-height: 268px; /* Based on 76.93% offset inside 1157px, height ~ 268px */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.ctaBgImageContainer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.ctaBgImage {
+  object-fit: cover;
+}
+
+.ctaContent {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1840px;
+  margin: 0 auto;
+  padding: 40px var(--gutter-home);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.ctaText {
+  max-width: 600px;
+}
+
+.ctaTitle {
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.15;
+  color: var(--color-text-white);
+  margin-bottom: 12px;
+}
+
+.lightText {
+  font-weight: 400;
+}
+
+.gradientText {
+  background: var(--grad-orange-red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.ctaSubtitle {
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--color-text-white-muted);
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.ctaBtnPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 185px;
+  height: 57px;
+  border-radius: var(--radius-button);
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--color-text-white);
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.11);
+}
+
+.ctaBtnSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 185px;
+  height: 57px;
+  border-radius: var(--radius-button);
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  font-size: 13px;
+  color: #f0f2f5;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.09);
+  border: 0.8px solid rgba(255, 255, 255, 0.18);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.ctaBtnPrimary:hover,
+.ctaBtnSecondary:hover {
+  transform: translateY(-2px);
+}
+
+.ctaBtnSecondary:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* 2. Enquiry Form Section styles */
+.enquirySection {
+  background-color: var(--color-bg-card);
+  border-top: 0.8px solid var(--color-border);
+  padding: 64px var(--gutter-home);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.enquiryHeader {
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+.enquiryEyebrow {
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-orange-home);
+  margin-bottom: 12px;
+}
+
+.enquiryTitle {
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  color: var(--color-title);
+  margin-bottom: 16px;
+}
+
+.enquirySubtitle {
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--color-text-muted-light);
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 560px; /* Base width on Homepage, highly focused */
+  background-color: var(--color-bg-page);
+  border: 0.8px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 36px;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.11);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formRow {
+  display: flex;
+  gap: 12px;
+}
+
+.inputGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.inputField,
+.textareaField {
+  width: 100%;
+  background-color: var(--color-bg-card);
+  border: 0.8px solid var(--color-border);
+  border-radius: var(--radius-input);
+  padding: 13px 16px;
+  font-size: 13px;
+  color: var(--color-text-dark);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inputField::placeholder,
+.textareaField::placeholder {
+  color: var(--color-text-muted-light);
+}
+
+.inputField:focus,
+.textareaField:focus {
+  border-color: var(--color-blue-icon);
+  box-shadow: 0 0 0 2px rgba(18, 167, 223, 0.15);
+}
+
+.textareaField {
+  resize: vertical;
+}
+
+/* Custom Select Dropdown styles */
+.customSelectContainer {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.customSelectHeader {
+  width: 100%;
+  background-color: var(--color-bg-card);
+  border: 0.8px solid var(--color-border);
+  border-radius: var(--radius-input);
+  padding: 13px 16px;
+  font-size: 13px;
+  color: var(--color-text-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.customSelectHeaderActive {
+  border-color: var(--color-blue-icon);
+  box-shadow: 0 0 0 2px rgba(18, 167, 223, 0.15);
+}
+
+.customSelectArrow {
+  font-size: 9px;
+  color: var(--color-text-muted-light);
+  transition: transform 0.2s ease;
+}
+
+.customSelectArrowOpen {
+  transform: rotate(180deg);
+}
+
+.customSelectOptions {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 100%;
+  max-height: 240px;
+  overflow-y: auto;
+  background-color: var(--color-bg-card);
+  border: 0.8px solid var(--color-border);
+  border-radius: var(--radius-input);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+  z-index: 50;
+  opacity: 0;
+  transform: scaleY(0.95);
+  transform-origin: top;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.customSelectOptionsOpen {
+  opacity: 1;
+  transform: scaleY(1);
+  pointer-events: auto;
+}
+
+.customSelectOption {
+  padding: 11px 16px;
+  font-size: 13px;
+  color: var(--color-text-dark);
+  transition: background-color 0.15s ease, color 0.15s ease;
+  user-select: none;
+  text-align: left;
+}
+
+.customSelectOption:hover {
+  background-color: #f1f5f9;
+  color: var(--color-blue-icon);
+}
+
+.customSelectOptionSelected {
+  background-color: rgba(26, 159, 216, 0.08);
+  color: var(--color-blue-icon);
+  font-weight: 600;
+}
+
+.submitBtn {
+  width: 100%;
+  height: 48px;
+  border-radius: var(--radius-button);
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text-white);
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.11);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.submitBtn:hover {
+  transform: translateY(-1px);
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Success Message Styles */
+.successMessage {
+  text-align: center;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.successIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #22c55e;
+  color: var(--color-text-white);
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.successMessage h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-title);
+}
+
+.successMessage p {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.submitAgainBtn {
+  background-color: var(--color-orange-home);
+  color: var(--color-text-white);
+  padding: 10px 20px;
+  border-radius: var(--radius-button-product);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submitAgainBtn:hover {
+  background-color: #d17a2b;
+}
+
+/* 3. Core Footer styles */
+.coreFooter {
+  background-color: var(--color-footer-bg);
+  padding: 64px var(--gutter-home) 24px;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.footerGrid {
+  max-width: 1840px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2.2fr 1fr 1fr 1.8fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.footerIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footerLogoLink {
+  display: inline-block;
+  height: 48px;
+  margin-left: -8px;
+}
+
+.footerLogo {
+  object-fit: contain;
+}
+
+.footerDesc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(240, 242, 245, 0.7);
+  max-width: 500px;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.socialBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 0.8px solid rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+  font-size: 15px;
+  color: rgba(240, 242, 245, 0.8);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.socialBtn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.columnTitle {
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-orange-home);
+  margin-bottom: 24px;
+}
+
+.columnLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.columnLink {
+  font-size: 14px;
+  color: rgba(240, 242, 245, 0.75);
+  transition: color 0.2s ease;
+  display: inline-block;
+}
+
+.columnLink:hover {
+  color: var(--color-text-white);
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactInfoLine {
+  font-size: 14px;
+  color: rgba(240, 242, 245, 0.75);
+  word-break: break-word;
+}
+
+.addressLine {
+  font-size: 14px;
+  color: rgba(240, 242, 245, 0.75);
+  line-height: 1.5;
+}
+
+.addressLink {
+  text-decoration: underline;
+  text-underline-position: from-font;
+  transition: color 0.2s ease;
+}
+
+.addressLink:hover {
+  color: var(--color-text-white);
+}
+
+/* Footer Bottom styles */
+.footerBottom {
+  max-width: 1840px;
+  margin: 0 auto;
+  border-top: 0.8px solid #111822;
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.copyright {
+  font-size: 11px;
+  color: #374151; /* Dark gray for footer copyright, standard readability */
+}
+
+.badges {
+  display: flex;
+  gap: 10px;
+}
+
+.badgeGst,
+.badgeMakeInIndia {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 26px;
+  padding: 0 12px;
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 0.8px solid #1a2535;
+  border-radius: 5px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.badgeGst {
+  color: #1a9fd8;
+}
+
+.badgeMakeInIndia {
+  color: var(--color-orange-home);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .footerGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  
+  .ctaContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .footerGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .formRow {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .ctaTitle {
+    font-size: 28px;
+  }
+
+  .ctaButtons {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .ctaBtnPrimary,
+  .ctaBtnSecondary {
+    width: 100%;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

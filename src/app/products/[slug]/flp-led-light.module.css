@@ -1,0 +1,569 @@
+.pageWrapper {
+  width: 100%;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  position: relative;
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.mainContent {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 1. Hero Section */
+.heroSection {
+  width: 100%;
+  background-color: #101a28;
+  min-height: 581px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.warningStrip {
+  background-color: rgba(249, 115, 22, 0.05);
+  background-image: url('/figma_assets_flp/d47f70cc8098df5fcd033de346813400685d6d91.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 71px;
+  border-top: 1.6px solid #f97316;
+  border-bottom: 1.6px solid #f97316;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.warningStripInner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.warningIcon {
+  width: 36px;
+  height: 36px;
+  background-color: rgba(249, 115, 22, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f97316;
+  font-size: 18px;
+}
+
+.warningText {
+  color: #fff8f0;
+  font-size: 14px;
+}
+
+.warningText span {
+  color: #f97316;
+  font-weight: 600;
+}
+
+.heroContainer {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.heroContent {
+  width: 570px;
+}
+
+.heroBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  background-color: rgba(249, 115, 22, 0.15);
+  border: 0.8px solid rgba(249, 115, 22, 0.3);
+  border-radius: 20px;
+  color: #f97316;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  margin-bottom: 24px;
+}
+
+.heroTitle {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.15;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.heroTitle span {
+  color: #f97316;
+}
+
+.heroDesc {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #aab0c0;
+  margin-bottom: 40px;
+}
+
+.heroMeta {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.metaVal {
+  font-weight: 700;
+  font-size: 20px;
+  color: #f97316;
+  margin-bottom: 4px;
+}
+
+.metaLabel {
+  font-weight: 400;
+  font-size: 11px;
+  color: #888;
+  letter-spacing: 0.5px;
+}
+
+.heroActions {
+  display: flex;
+  gap: 12px;
+}
+
+.btnPrimary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f97316;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0 28px;
+  height: 42px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.btnSecondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 0.8px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0 28px;
+  height: 42px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.heroVisual {
+  width: 570px;
+  height: 427px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 0.8px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.heroImage {
+  object-fit: cover;
+}
+
+.tagInStock {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background-color: #f97316;
+  color: white;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.tagZone {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background-color: rgba(220, 38, 38, 0.9);
+  color: white;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+/* 2. Understanding Section (Split) */
+.understandingSection {
+  background-color: white;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.sectionEyebrow {
+  font-weight: 700;
+  font-size: 11px;
+  color: #f97316;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.sectionTitle {
+  font-weight: 700;
+  font-size: 28px;
+  color: #0d0d1a;
+  margin-bottom: 24px;
+}
+
+.sectionIntro {
+  font-weight: 400;
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 628px;
+  line-height: 1.6;
+}
+
+.splitLayout {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.splitVisual {
+  flex: 1;
+  height: 417px;
+  position: relative;
+  border: 0.8px solid #e8eaf0;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f0f2f5;
+}
+
+.splitText {
+  flex: 1;
+}
+
+.splitText h3 {
+  font-size: 20px;
+  color: #0d0d1a;
+  margin-bottom: 16px;
+}
+
+.splitText p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.bulletsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.bulletItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #444;
+  padding-bottom: 12px;
+  border-bottom: 0.8px solid #f0f2f5;
+}
+
+.bulletDot {
+  width: 6px;
+  height: 6px;
+  background-color: #f97316;
+  border-radius: 50%;
+}
+
+/* 3. Zone Classification Section */
+.zonesSection {
+  background-color: #f0f2f8;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.zonesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.zoneCard {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.zoneCard.zone1 { background-color: rgba(220, 38, 38, 0.06); border: 0.8px solid rgba(220, 38, 38, 0.2); }
+.zoneCard.zone2 { background-color: rgba(249, 115, 22, 0.06); border: 0.8px solid rgba(249, 115, 22, 0.25); }
+.zoneCard.zone21 { background-color: rgba(234, 179, 8, 0.06); border: 0.8px solid rgba(234, 179, 8, 0.25); }
+.zoneCard.zone22 { background-color: rgba(34, 197, 94, 0.06); border: 0.8px solid rgba(34, 197, 94, 0.2); }
+
+.zoneDot { width: 12px; height: 12px; border-radius: 50%; margin-bottom: 12px; }
+.zoneCard.zone1 .zoneDot { background-color: #dc2626; }
+.zoneCard.zone2 .zoneDot { background-color: #f97316; }
+.zoneCard.zone21 .zoneDot { background-color: #eab308; }
+.zoneCard.zone22 .zoneDot { background-color: #22c55e; }
+
+.zoneTitle { font-size: 14px; font-weight: 700; color: #0d0d1a; margin-bottom: 4px; }
+.zoneSubtitle { font-size: 11px; font-weight: 600; margin-bottom: 12px; text-transform: uppercase; }
+.zoneCard.zone1 .zoneSubtitle { color: #dc2626; }
+.zoneCard.zone2 .zoneSubtitle { color: #f97316; }
+.zoneCard.zone21 .zoneSubtitle { color: #ca8a04; }
+.zoneCard.zone22 .zoneSubtitle { color: #16a34a; }
+
+.zoneDesc { font-size: 12px; color: #555; line-height: 1.5; margin-bottom: 24px; flex-grow: 1; }
+
+.zoneCompat {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.zoneCard.zone1 .zoneCompat { background-color: rgba(220, 38, 38, 0.1); color: #dc2626; }
+.zoneCard.zone2 .zoneCompat { background-color: rgba(249, 115, 22, 0.1); color: #f97316; }
+.zoneCard.zone21 .zoneCompat { background-color: rgba(234, 179, 8, 0.1); color: #ca8a04; }
+.zoneCard.zone22 .zoneCompat { background-color: rgba(34, 197, 94, 0.1); color: #16a34a; }
+
+/* 4. Key Features Section */
+.featuresSection {
+  background-color: white;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.featureCard {
+  background-color: white;
+  border: 0.8px solid #e8eaf0;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.featureIcon {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(249, 115, 22, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  font-size: 22px;
+}
+
+.featureTitle {
+  font-weight: 600;
+  font-size: 15px;
+  color: #0d0d1a;
+  margin-bottom: 12px;
+}
+
+.featureDesc {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #666;
+  margin: 0;
+}
+
+/* 5. Specifications Section */
+.specsSection {
+  background-color: #f0f2f8;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.specsWrapper {
+  background-color: white;
+  border: 0.8px solid #e8eaf0;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.specsHeader {
+  background-color: #0d0d1a;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.specsHeaderTitle {
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+}
+
+.specsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.specsTable th {
+  background-color: #f8f9fb;
+  border-bottom: 0.8px solid #e8eaf0;
+  padding: 12px 20px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 12px;
+  color: #555;
+  letter-spacing: 0.5px;
+}
+
+.specsTable td {
+  padding: 12px 20px;
+  border-bottom: 0.8px solid #f0f2f5;
+  font-size: 14px;
+}
+
+.specsTable tr:nth-child(even) td {
+  background-color: #fafbfd;
+}
+
+.specLabel {
+  font-weight: 400;
+  color: #333;
+  width: 30%;
+}
+
+.specValue {
+  font-weight: 600;
+  color: #0d0d1a;
+}
+
+/* 6. Use Cases Section */
+.useCasesSection {
+  background-color: #0d0d1a;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.useCasesSection .sectionTitle {
+  color: white;
+  text-align: center;
+}
+
+.useCasesSection .sectionEyebrow {
+  text-align: center;
+  color: #f97316;
+  display: block;
+}
+
+.useCasesSection .sectionIntro {
+  text-align: center;
+  margin: 0 auto 40px auto;
+  color: #888888;
+}
+
+.useCasesGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+.useCaseCard {
+  background-color: #161630;
+  border: 0.8px solid rgba(249, 115, 22, 0.1);
+  border-radius: 10px;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.useCaseIcon {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(249, 115, 22, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  font-size: 22px;
+}
+
+.useCaseTitle {
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.useCaseDesc {
+  font-weight: 400;
+  font-size: 11px;
+  color: #888;
+  line-height: 1.5;
+}
+
+
+/* Global Technical Description Hover Effect */
+.specsTable tr {
+  transition: all 0.2s ease;
+}
+.specsTable tr:hover td,
+.specsTable tr:hover .specLabel,
+.specsTable tr:hover .specValue,
+.specsTable tr:hover .specValueHighlight {
+  color: #f97316 !important;
+}

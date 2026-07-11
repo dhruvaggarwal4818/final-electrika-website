@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import styles from "./about.module.css";
 import ClientPills from "@/components/ClientPills";
+import Counter from "@/components/Counter";
 
 export const metadata = {
   title: "About Us | Electrika INC",
@@ -202,19 +203,39 @@ export default function AboutUsPage() {
           <Image src="/figma_assets_155/af45adde8bf20243cd5f2bda3619b5ab8531ce9c.png" alt="Stats background" fill className={styles.statsBg} />
           <div className={styles.statsGrid}>
             <div className={styles.statItem}>
-              <div><span className={styles.statNumber}>25</span><span className={styles.statPlus}>+</span></div>
+              <div>
+                <span className={styles.statNumber}>
+                  <Counter target={25} />
+                </span>
+                <span className={styles.statPlus}>+</span>
+              </div>
               <span className={styles.statLabel}>Years in Industry</span>
             </div>
             <div className={styles.statItem}>
-              <div><span className={styles.statNumber}>500</span><span className={styles.statPlus}>+</span></div>
+              <div>
+                <span className={styles.statNumber}>
+                  <Counter target={1000} />
+                </span>
+                <span className={styles.statPlus}>+</span>
+              </div>
               <span className={styles.statLabel}>Projects Delivered</span>
             </div>
             <div className={styles.statItem}>
-              <div><span className={styles.statNumber}>15</span><span className={styles.statPlus}>+</span></div>
+              <div>
+                <span className={styles.statNumber}>
+                  <Counter target={15} />
+                </span>
+                <span className={styles.statPlus}>+</span>
+              </div>
               <span className={styles.statLabel}>Premium Brands</span>
             </div>
             <div className={styles.statItem}>
-              <div><span className={styles.statNumber}>98</span><span className={styles.statPlus}>%</span></div>
+              <div>
+                <span className={styles.statNumber}>
+                  <Counter target={98} />
+                </span>
+                <span className={styles.statPlus}>%</span>
+              </div>
               <span className={styles.statLabel}>Client Satisfaction</span>
             </div>
           </div>

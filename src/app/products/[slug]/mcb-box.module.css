@@ -420,21 +420,27 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
   .featuresGrid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .appsGrid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 600px) {
-  .featuresGrid, .featuresGridBottom {
+
+  .featuresGrid,
+  .featuresGridBottom {
     grid-template-columns: 1fr;
   }
+
   .appsGrid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .metaGrid {
     flex-wrap: wrap;
   }
@@ -445,6 +451,7 @@
 .specsTable tr {
   transition: all 0.2s ease;
 }
+
 .specsTable tr:hover td,
 .specsTable tr:hover .specLabel,
 .specsTable tr:hover .specValue,

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Link as TransitionLink } from 'next-view-transitions';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Counter from "@/components/Counter";
 import styles from "./page.module.css";
 
 // Brand logos carried
@@ -130,7 +131,7 @@ export default function Home() {
                     <div className={styles.avatar} style={{ backgroundColor: "#374151" }}>PM</div>
                   </div>
                   <p className={styles.trustText}>
-                    <span className={styles.trustTextStrong}>500+ Projects</span> delivered across India
+                    <span className={styles.trustTextStrong}>1000+ Projects</span> delivered across India
                   </p>
                 </div>
               </div>
@@ -441,19 +442,27 @@ export default function Home() {
           <div className={styles.container}>
             <div className={styles.statsGrid}>
               <div className={styles.statCard}>
-                <span className={styles.statValue}>25+</span>
+                <span className={styles.statValue}>
+                  <Counter target={25} suffix="+" />
+                </span>
                 <span className={styles.statLabel}>Years in Industry</span>
               </div>
               <div className={styles.statCard}>
-                <span className={styles.statValue}>500+</span>
+                <span className={styles.statValue}>
+                  <Counter target={1000} suffix="+" />
+                </span>
                 <span className={styles.statLabel}>Projects Delivered</span>
               </div>
               <div className={styles.statCard}>
-                <span className={styles.statValue}>15+</span>
+                <span className={styles.statValue}>
+                  <Counter target={15} suffix="+" />
+                </span>
                 <span className={styles.statLabel}>Premium Brands</span>
               </div>
               <div className={styles.statCard}>
-                <span className={styles.statValue}>98%</span>
+                <span className={styles.statValue}>
+                  <Counter target={98} suffix="%" />
+                </span>
                 <span className={styles.statLabel}>Client Satisfaction</span>
               </div>
             </div>

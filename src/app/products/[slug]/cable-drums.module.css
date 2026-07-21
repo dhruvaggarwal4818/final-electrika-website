@@ -64,123 +64,184 @@
   font-weight: 700;
 }
 
-/* 2. Hero Section */
+/* 2. Hero Section - Overlay Layout */
 .heroSection {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 0 0 40px 0;
+  padding: 32px 20px;
 }
 
-.heroContainer {
-  background-color: #101b29;
-  border: 5px solid #fffefe;
-  border-radius: 20px;
+.heroBannerCard {
+  position: relative;
   width: 100%;
   max-width: 1920px;
-  min-height: 723px;
+  height: 550px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 160px;
+  padding: 40px 48px;
+  background-color: #0d1621;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
 }
 
-.heroContent {
-  width: 570px;
+@media (max-width: 992px) {
+  .heroBannerCard {
+    padding: 36px 32px;
+    min-height: auto;
+  }
+  .heroMainHeadline {
+    font-size: 32px;
+  }
 }
 
-.heroBadge {
+@media (max-width: 640px) {
+  .heroBannerCard {
+    padding: 28px 20px;
+  }
+  .heroMainHeadline {
+    font-size: 26px;
+  }
+  .heroSpecsCounterGrid {
+    gap: 20px;
+  }
+}
+
+.heroBgImage {
+  object-fit: cover;
+  object-position: center right;
+}
+
+.heroDarkOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(13, 22, 33, 0.96) 0%, rgba(13, 22, 33, 0.82) 55%, rgba(13, 22, 33, 0.4) 100%);
+  z-index: 1;
+}
+
+.heroContentOverlay {
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
+  width: 100%;
+}
+
+.heroCategoryBadge {
   display: inline-flex;
   align-items: center;
-  padding: 4px 12px;
-  background-color: rgba(249, 115, 22, 0.15);
-  border: 0.8px solid rgba(249, 115, 22, 0.3);
+  padding: 5px 14px;
+  background-color: rgba(255, 107, 0, 0.15);
+  border: 0.8px solid rgba(255, 107, 0, 0.4);
   border-radius: 20px;
-  color: #f97316;
+  color: #ff6b00;
   font-weight: 700;
   font-size: 11px;
   letter-spacing: 1.5px;
-  margin-bottom: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
-.heroTitle {
-  font-weight: 700;
-  font-size: 38px;
+.heroMainHeadline {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 800;
+  font-size: 40px;
   line-height: 1.15;
-  color: white;
-  margin-bottom: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
-.heroTitle span {
-  color: #f97316;
+.heroHighlightSpecs {
+  color: #ff6b00;
+  display: block;
 }
 
-.heroDesc {
+.heroBodyDescription {
+  font-family: var(--font-poppins), sans-serif;
   font-weight: 400;
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 1.65;
   color: #aab0c0;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
-.heroMeta {
+.heroSpecsCounterGrid {
   display: flex;
-  gap: 24px;
-  margin-bottom: 40px;
-  text-align: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
 }
 
-.metaItem {
+.specCounterItem {
   display: flex;
   flex-direction: column;
 }
 
-.metaVal {
+.specValueOrange {
+  font-family: var(--font-poppins), sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  color: #f97316;
-  margin-bottom: 4px;
+  font-size: 22px;
+  color: #ff6b00;
+  line-height: 1.2;
 }
 
-.metaLabel {
-  font-weight: 400;
+.specSubtextMuted {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 600;
   font-size: 11px;
-  color: #888;
-  letter-spacing: 0.5px;
+  color: #888888;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-top: 4px;
 }
 
-.heroActions {
+.heroCtaGroup {
   display: flex;
-  gap: 12px;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
-.btnPrimary {
-  display: flex;
+.primaryCtaBtn {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #f97316;
-  color: white;
+  background-color: #ff6b00;
+  color: #ffffff;
+  font-family: var(--font-poppins), sans-serif;
   font-weight: 700;
   font-size: 14px;
-  padding: 0 28px;
-  height: 42px;
+  padding: 14px 28px;
   border-radius: 8px;
   text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.btnSecondary {
-  display: flex;
+.primaryCtaBtn:hover {
+  background-color: #e05e00;
+  transform: translateY(-2px);
+}
+
+.secondaryCtaBtn {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: transparent;
-  border: 0.8px solid rgba(255, 255, 255, 0.2);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 0.8px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  font-family: var(--font-poppins), sans-serif;
   font-weight: 600;
   font-size: 14px;
-  padding: 0 28px;
-  height: 42px;
+  padding: 14px 28px;
   border-radius: 8px;
   text-decoration: none;
+  backdrop-filter: blur(8px);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.secondaryCtaBtn:hover {
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .heroVisual {

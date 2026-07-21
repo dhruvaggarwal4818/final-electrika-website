@@ -39,28 +39,68 @@ export default function CableDrumsPage() {
       <Header />
       <main className={styles.mainContent}>
 
-        {/* HERO SECTION */}
-        <section className={styles.heroSection} style={{ padding: '0 10px', marginTop: '10px' }}>
-          <div className={styles.heroContainer} style={{ position: 'relative', overflow: 'hidden', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'flex-start', paddingLeft: '80px', gap: 0 }}>
+        {/* MODERN INDUSTRIAL B2B HERO SECTION WITH OVERLAY LAYOUT */}
+        <section className={styles.heroSection}>
+          <div className={styles.heroBannerCard}>
+            {/* Background Image: Full-width dark contextual product photograph (Uploaded Picture) */}
             <Image
-              src="/figma_assets_93_1452/44a31d01d09fba0bcf8c665802ee490745213221.png"
-              alt="Synthetic cable drums background"
+              src="/figma_assets/uploaded_schill_cable_drum.jpg"
+              alt="Synthetic Rubber Cable Drum Contextual Product View"
               fill
-              className={styles.heroBgImg}
-              style={{ objectFit: "cover", opacity: 0.3 }}
+              className={styles.heroBgImage}
               priority
             />
-            <div className={styles.heroContent} style={{ position: 'relative', zIndex: 2, maxWidth: '800px', width: '100%' }}>
-              <span className={styles.heroBadge}>
-                Industrial Grade
+
+            {/* Heavy dark translucent overlay for high-contrast readable text */}
+            <div className={styles.heroDarkOverlay} />
+
+            {/* Content Container: Left-aligned occupying ~50-60% width */}
+            <div className={styles.heroContentOverlay}>
+              {/* Category Pill Badge */}
+              <span className={styles.heroCategoryBadge}>
+                PCE CONNECTORS &amp; SCHILL
               </span>
-              <h1 className={styles.heroTitle}>
-                Synthetic Rubber Cable Drum <br />
-                <span className={styles.orangeText}>Customizable</span>
+
+              {/* Main Headline */}
+              <h1 className={styles.heroMainHeadline}>
+                Synthetic Rubber Cable Drum
+                <span className={styles.heroHighlightSpecs}>IP44 / IP65</span>
               </h1>
-              <p className={styles.heroDesc} style={{ color: "#aab0c0", fontSize: '15px' }}>
-                Schill drum body with Hensel-grade weatherproof sockets, PCE industrial connectors (blue 230V / red 415V), and Siemens MCB protection — built for construction sites, events, and industrial installations.
+
+              {/* Body Description */}
+              <p className={styles.heroBodyDescription}>
+                Heavy-duty synthetic rubber cable drum set built to IEC 60309 / EN 60309 standards. Schill drum body with Hensel-grade weatherproof sockets, PCE industrial connectors (blue 230V / red 415V), and Siemens MCB protection on construction sites, factory floors, and heavy machinery connections.
               </p>
+
+              {/* Key Specs Grid / Counter Row */}
+              <div className={styles.heroSpecsCounterGrid}>
+                <div className={styles.specCounterItem}>
+                  <span className={styles.specValueOrange}>235–450mm</span>
+                  <span className={styles.specSubtextMuted}>DIAMETER</span>
+                </div>
+                <div className={styles.specCounterItem}>
+                  <span className={styles.specValueOrange}>IP44/65</span>
+                  <span className={styles.specSubtextMuted}>PROTECTION</span>
+                </div>
+                <div className={styles.specCounterItem}>
+                  <span className={styles.specValueOrange}>230V/415V</span>
+                  <span className={styles.specSubtextMuted}>VOLTAGE</span>
+                </div>
+                <div className={styles.specCounterItem}>
+                  <span className={styles.specValueOrange}>24hr</span>
+                  <span className={styles.specSubtextMuted}>QUOTE TAT</span>
+                </div>
+              </div>
+
+              {/* Call to Action (CTA) Group */}
+              <div className={styles.heroCtaGroup}>
+                <a href="#enquiry-form" className={styles.primaryCtaBtn}>
+                  Request Quotation →
+                </a>
+                <a href="#specs" className={styles.secondaryCtaBtn}>
+                  View Specifications
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -75,18 +115,21 @@ export default function CableDrumsPage() {
             </p>
             
             <div style={{ display: "flex", gap: "30px", marginTop: "40px", flexWrap: "wrap" }}>
-              {/* Left Images */}
-              <div style={{ flex: "1 1 500px", display: "flex", flexDirection: "column", gap: "20px" }}>
-                <div style={{ display: "flex", borderRadius: "20px", overflow: "hidden", border: "1px solid #e2e8f0", height: "321px", backgroundColor: "#fff" }}>
-                  <div style={{ flex: 1, position: "relative", borderRight: "1px solid #e2e8f0" }}>
-                    <Image src="/figma_assets_93_1452/0c2342ac833b46667c430abf317962e9f617cd31.png" alt="Cable Drum Front" fill style={{ objectFit: "cover", transform: "rotate(90deg)" }} />
+              {/* Left Showcase Gallery */}
+              <div style={{ flex: "1 1 540px", display: "flex", flexDirection: "column", gap: "20px" }}>
+                {/* Top 2 side-by-side images */}
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px" }}>
+                  <div style={{ borderRadius: "16px", overflow: "hidden", border: "1px solid #e2e8f0", height: "300px", position: "relative", backgroundColor: "#fff", boxShadow: "0 4px 12px rgba(0,0,0,0.05)" }}>
+                    <Image src="/figma_assets/c149188bc8a9f110341ddcccc98255acaaa5832b.png" alt="Cable Drum Front Sockets View" fill style={{ objectFit: "cover", transform: "rotate(90deg) scale(1.35)" }} priority />
                   </div>
-                  <div style={{ flex: 1, position: "relative" }}>
-                    <Image src="/figma_assets_93_1452/c149188bc8a9f110341ddcccc98255acaaa5832b.png" alt="Cable Drum Sockets" fill style={{ objectFit: "cover", transform: "rotate(90deg)" }} />
+                  <div style={{ borderRadius: "16px", overflow: "hidden", border: "1px solid #e2e8f0", height: "300px", position: "relative", backgroundColor: "#fff", boxShadow: "0 4px 12px rgba(0,0,0,0.05)" }}>
+                    <Image src="/figma_assets/0c2342ac833b46667c430abf317962e9f617cd31.png" alt="Schill Drum Body Rear View" fill style={{ objectFit: "cover", transform: "rotate(90deg) scale(1.35)" }} priority />
                   </div>
                 </div>
-                <div style={{ borderRadius: "20px", overflow: "hidden", border: "1px solid #e2e8f0", height: "276px", position: "relative", backgroundColor: "#fff" }}>
-                  <Image src="/figma_assets_93_1452/679a4f313d85e30c2b479fa0c862ec51332820f5.png" alt="Rear view" fill style={{ objectFit: "cover" }} />
+
+                {/* Bottom Full Assembly image */}
+                <div style={{ borderRadius: "16px", overflow: "hidden", border: "1px solid #e2e8f0", height: "260px", position: "relative", backgroundColor: "#fff", boxShadow: "0 4px 12px rgba(0,0,0,0.05)" }}>
+                  <Image src="/figma_assets/3bc4ed39a926a1d7f55a786338aa7f132f060f02.png" alt="Full Cable Drum Assembly" fill style={{ objectFit: "cover" }} />
                 </div>
               </div>
               
@@ -112,8 +155,24 @@ export default function CableDrumsPage() {
                   <h4 style={{ fontSize: "16px", fontWeight: "bold", marginBottom: "10px" }}>Custom Configuration Available</h4>
                   <p style={{ color: "#aab0c0", fontSize: "13px", marginBottom: "25px" }}>Choose your drum size, number of sockets (230V / 415V), PCE rating (16A / 32A), cable length, and MCB rating. We build to your spec.</p>
                   <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-                    <button style={{ background: "#f97316", color: "#fff", border: "none", borderRadius: "8px", padding: "14px", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}>📋 Request Custom Quote</button>
-                    <button style={{ background: "transparent", border: "1px solid rgba(0,180,216,0.4)", color: "#00b4d8", borderRadius: "8px", padding: "14px", fontWeight: "600", fontSize: "14px", cursor: "pointer" }}>💬 WhatsApp for Spec Sheet</button>
+                    <a href="#enquiry-form" style={{ background: "#f97316", color: "#fff", border: "none", borderRadius: "8px", padding: "14px", fontWeight: "bold", fontSize: "14px", cursor: "pointer", textAlign: "center", textDecoration: "none" }}>📋 Request Custom Quote</a>
+                    <a 
+                      href="https://wa.me/919971499542" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      style={{ background: "transparent", border: "1px solid rgba(0,180,216,0.4)", color: "#00b4d8", borderRadius: "8px", padding: "14px", fontWeight: "600", fontSize: "14px", cursor: "pointer", textAlign: "center", textDecoration: "none", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px" }}
+                    >
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.99c-.002 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                      </svg>
+                      WhatsApp for Spec Sheet
+                    </a>
                   </div>
                 </div>
               </div>

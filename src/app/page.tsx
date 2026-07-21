@@ -29,9 +29,9 @@ import { PRODUCT_CATEGORIES } from "@/data/productsData";
 
 // Project Gallery
 const PROJECTS = [
-  { name: "Switchgear & Connectors", src: "/figma_assets/projects_switchgear.jpg" },
-  { name: "Warehouse Lighting", src: "/figma_assets/projects_warehouse.jpg" },
   { name: "Industrial Installation", src: "/figma_assets/projects_industrial.jpg" },
+  { name: "Warehouse Lighting", src: "/figma_assets/projects_warehouse.jpg" },
+  { name: "Switchgear & Connectors", src: "/figma_assets/projects_switchgear.jpg" },
 ];
 
 // Client Logos (Trusted By)

@@ -125,8 +125,15 @@ export const PRODUCT_CATEGORIES: Category[] = [
       {
         name: "Synthetic Cable Drum Systems",
         desc: "heavy duty cable drum made of synthetic rubber for heavy machine handling",
-        src: "/figma_assets/b436b4c926d11fa9ad8f685b3e1f08f4d126e263.png",
+        src: "/figma_assets/3bc4ed39a926a1d7f55a786338aa7f132f060f02.png",
         slug: "synthetic-cable-drum",
+      },
+      {
+        name: "IP-66 Synthetic polymer Glands",
+        desc: "Weatherproof IP66 polymer cable entry and sealing solution.",
+        src: "/figma_assets/c2531b9662f707b200abd78e6426e462109f207d.png",
+        badge: "IP66",
+        slug: "ip66-polymer-glands",
       },
     ],
   },

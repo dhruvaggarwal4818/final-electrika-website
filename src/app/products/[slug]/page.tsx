@@ -25,6 +25,7 @@ import HenselBoxesPage from "./HenselBoxes";
 import PbsControlBoxPage from "./PbsControlBox";
 import FlpJunctionBox from "./FlpJunctionBox";
 import LedHighBay from "./LedHighBay";
+import PolymerGlandsPage from "./PolymerGlands";
 
 export async function generateStaticParams() {
   return [
@@ -48,7 +49,8 @@ export async function generateStaticParams() {
     { slug: "pbs-control-box" },
     { slug: "hensel-boxes" },
     { slug: "flp-junction-box" },
-    { slug: "flood-light" }
+    { slug: "flood-light" },
+    { slug: "ip66-polymer-glands" }
   ];
 }
 
@@ -141,6 +143,10 @@ export default async function ProductDetailPage({ params }: PageProps) {
 
   if (slug === "flp-junction-box") {
     return <FlpJunctionBox />;
+  }
+
+  if (slug === "ip66-polymer-glands") {
+    return <PolymerGlandsPage />;
   }
 
   // Fallback for other products

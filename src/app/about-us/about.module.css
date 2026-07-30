@@ -111,7 +111,7 @@
 
 .storyGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: var(--about-story-grid-cols);
   gap: 52px;
   max-width: 1920px;
   margin: 0 auto;
@@ -242,7 +242,7 @@
 
 .pillarsGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: var(--about-pillars-grid-cols);
   gap: 20px;
   margin-top: 40px;
 }
@@ -326,7 +326,8 @@
 
 .milestonesGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: var(--about-milestones-grid-cols);
+  gap: var(--about-milestones-grid-gap);
   position: relative;
   margin-top: 44px;
 }
@@ -338,6 +339,8 @@
   height: 2px;
   width: calc(100% - 436px);
   z-index: 0;
+  background-color: var(--color-border);
+  display: var(--about-milestones-line-display);
 }
 
 .msItem {
@@ -476,7 +479,7 @@
 
 .partnersGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: var(--about-partners-grid-cols);
   gap: 14px;
 }
 
@@ -542,7 +545,7 @@
 /* 7. Commitment */
 .commitGrid {
   display: grid;
-  grid-template-columns: 807px 1fr;
+  grid-template-columns: var(--about-commit-grid-cols);
   gap: 48px;
   align-items: flex-start;
 }
@@ -632,19 +635,4 @@
   color: rgba(240, 242, 245, 0.75);
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .storyGrid, .commitGrid {
-    grid-template-columns: 1fr;
-  }
-  .pillarsGrid, .partnersGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .milestonesGrid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-  .milestonesLine {
-    display: none;
-  }
-}
+

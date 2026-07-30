@@ -1,0 +1,185 @@
+/* ==========================================
+   Centralized Responsive Layout Stylesheet
+   ==========================================
+   This file stores all screen layout adjustments for Tablet (max-width: 1024px) 
+   and Android/Mobile (max-width: 480px) devices.
+   Update these values here to adjust layouts across pages. */
+
+:root {
+  /* ========================================
+     DESKTOP DEFAULT LAYOUT VALUES
+     ======================================== */
+
+  /* --- Header --- */
+  --header-container-padding: 0 var(--gutter-home);
+  
+  /* --- Home Page (Hero) --- */
+  --hero-inner-margin: 0 var(--gutter-home);
+  --hero-inner-min-height: 606px;
+  --hero-container-flex-direction: row;
+  --hero-container-padding: 40px 60px;
+  --hero-container-gap: 40px;
+  --hero-content-max-width: 600px;
+  --hero-content-align: flex-start;
+  --hero-visual-width: auto;
+  --hero-visual-justify: flex-end;
+  --image-card-height: 500px;
+  --image-card-max-width: 956px;
+
+  /* --- Footer --- */
+  --footer-grid-columns: 2.2fr 1fr 1fr 1.8fr;
+  --footer-grid-gap: 48px;
+  --footer-cta-content-direction: row;
+  --footer-cta-content-align: center;
+  --footer-form-row-direction: row;
+  --footer-form-row-gap: 12px;
+  --footer-cta-title-size: 38px;
+  --footer-cta-buttons-width: auto;
+  --footer-cta-buttons-direction: row;
+  --footer-cta-btn-width: 185px;
+  --footer-bottom-direction: row;
+  --footer-bottom-align: center;
+
+  /* --- About Us Page --- */
+  --about-story-grid-cols: 1fr 1fr;
+  --about-commit-grid-cols: 807px 1fr;
+  --about-pillars-grid-cols: repeat(3, 1fr);
+  --about-partners-grid-cols: repeat(4, 1fr);
+  --about-milestones-grid-cols: repeat(4, 1fr);
+  --about-milestones-grid-gap: 0px;
+  --about-milestones-line-display: block;
+
+  /* --- Product Detail Pages --- */
+  --product-hero-grid-cols: 1.1fr 0.9fr;
+  --product-hero-grid-gap: 64px;
+  --product-showcase-grid-cols: 1fr 1fr;
+  --product-customization-grid-cols: 1fr 1fr;
+  --product-tech-grid-cols: repeat(4, 1fr);
+  --product-image-box-height: 480px;
+  --product-sizes-grid-cols: repeat(4, 1fr);
+  --product-gallery-grid-cols: repeat(4, 1fr);
+  --product-variants-grid-cols: repeat(4, 1fr);
+  --product-features-grid-cols: repeat(3, 1fr);
+  --product-use-cases-grid-cols: repeat(6, 1fr);
+  --feature-card-padding: 40px;
+}
+
+/* ==========================================
+   Tablet Breakpoint (max-width: 1024px)
+   ========================================== */
+@media (max-width: 1024px) {
+  :root {
+    /* --- Home Page (Hero) --- */
+    --hero-inner-margin: 0 16px;
+    --hero-inner-min-height: auto;
+    --hero-container-flex-direction: column;
+    --hero-container-padding: 60px 24px 40px;
+    --hero-container-gap: 32px;
+    --hero-content-max-width: 100%;
+    --hero-visual-width: 100%;
+    --hero-visual-justify: center;
+    --image-card-height: 360px;
+    --image-card-max-width: 100%;
+
+    /* --- Footer --- */
+    --footer-grid-columns: 1fr 1fr;
+    --footer-grid-gap: 32px;
+    --footer-cta-content-direction: column;
+    --footer-cta-content-align: flex-start;
+
+    /* --- About Us Page --- */
+    --about-story-grid-cols: 1fr;
+    --about-commit-grid-cols: 1fr;
+    --about-pillars-grid-cols: repeat(2, 1fr);
+    --about-partners-grid-cols: repeat(2, 1fr);
+    --about-milestones-grid-cols: 1fr;
+    --about-milestones-grid-gap: 32px;
+    --about-milestones-line-display: none;
+
+    /* --- Product Detail Pages --- */
+    --product-hero-grid-cols: 1fr;
+    --product-hero-grid-gap: 40px;
+    --product-showcase-grid-cols: 1fr;
+    --product-customization-grid-cols: 1fr;
+    --product-tech-grid-cols: 1fr;
+    --product-image-box-height: 320px;
+    --product-variants-grid-cols: repeat(2, 1fr);
+    --product-gallery-grid-cols: repeat(2, 1fr);
+    --product-sizes-grid-cols: repeat(2, 1fr);
+    --product-title-text-size: 32px;
+    --product-features-grid-cols: repeat(2, 1fr);
+    --product-use-cases-grid-cols: repeat(3, 1fr);
+    --feature-card-padding: 32px;
+  }
+}
+
+/* ==========================================
+   Android / Mobile Breakpoint (max-width: 600px / 480px)
+   ========================================== */
+@media (max-width: 600px) {
+  :root {
+    /* --- Footer --- */
+    --footer-grid-columns: 1fr;
+    --footer-grid-gap: 24px;
+    --footer-form-row-direction: column;
+    --footer-form-row-gap: 16px;
+    --footer-cta-title-size: 28px;
+    --footer-cta-buttons-width: 100%;
+    --footer-cta-buttons-direction: column;
+    --footer-cta-btn-width: 100%;
+    --footer-bottom-direction: column;
+    --footer-bottom-align: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    /* --- Header --- */
+    --header-container-padding: 0 20px;
+
+    /* --- Hero --- */
+    --image-card-height: 280px;
+
+    /* --- About Us Page --- */
+    --about-pillars-grid-cols: 1fr;
+    --about-partners-grid-cols: 1fr;
+
+    /* --- Product Detail Pages --- */
+    --product-gallery-grid-cols: 1fr;
+    --product-sizes-grid-cols: 1fr;
+    --product-variants-grid-cols: 1fr;
+    --product-features-grid-cols: repeat(2, 1fr);
+    --product-use-cases-grid-cols: repeat(2, 1fr);
+    --feature-card-padding: 20px;
+  }
+}
+
+/* ==========================================
+   Global Helper Selector Overrides
+   ========================================== */
+@media (max-width: 1024px) {
+  [class*="featuresGrid"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  [class*="featuresGrid"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  [class*="useCasesGrid"], [class*="appsGrid"] {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  [class*="useCasesGrid"], [class*="appsGrid"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  [class*="featuresGrid"] {
+    grid-template-columns: 1fr !important;
+  }
+}

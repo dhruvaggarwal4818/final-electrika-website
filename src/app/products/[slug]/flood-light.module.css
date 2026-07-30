@@ -284,6 +284,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .featureCard:hover {
   transform: translateY(-4px);
   border-color: #f97316;
@@ -725,9 +726,87 @@
 .specsTable tr {
   transition: all 0.2s ease;
 }
+
 .specsTable tr:hover td,
 .specsTable tr:hover .specLabel,
 .specsTable tr:hover .specValue,
 .specsTable tr:hover .specValueHighlight {
   color: #f97316 !important;
+}
+
+/* Responsive Override Block for Lighting Pages */
+@media (max-width: 1024px) {
+  .heroContainer {
+    flex-direction: column !important;
+    gap: 40px !important;
+    padding: 60px 24px !important;
+    min-height: auto !important;
+  }
+  .heroContent {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .heroVisual {
+    width: 100% !important;
+    max-width: 500px !important;
+    height: 400px !important;
+  }
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .zonesGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .useCasesGrid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .variantsGrid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroContainer {
+    gap: 32px !important;
+    padding: 40px 16px !important;
+  }
+  .heroVisual {
+    height: 300px !important;
+  }
+  .featuresGrid {
+    grid-template-columns: 1fr !important;
+  }
+  .zonesGrid {
+    grid-template-columns: 1fr !important;
+  }
+  .useCasesGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .galleryGrid {
+    grid-template-columns: 1fr !important;
+  }
+  .variantsGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .heroMeta {
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+  }
+  .heroActions {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .btnPrimary, .btnSecondary {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .variantsGrid {
+    grid-template-columns: 1fr !important;
+  }
 }

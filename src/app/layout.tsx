@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 };
 
 import { ViewTransitions } from 'next-view-transitions';
+import ErrorSilencer from "@/components/ErrorSilencer";
 
 export default function RootLayout({
   children,
@@ -20,6 +21,7 @@ export default function RootLayout({
     <ViewTransitions>
       <html lang="en">
         <body>
+          <ErrorSilencer />
           {children}
         </body>
       </html>

@@ -39,67 +39,39 @@ export default function CableDrumsPage() {
       <Header />
       <main className={styles.mainContent}>
 
-        {/* MODERN INDUSTRIAL B2B HERO SECTION WITH OVERLAY LAYOUT */}
+        {/* 1. Hero Section */}
         <section className={styles.heroSection}>
-          <div className={styles.heroBannerCard}>
-            {/* Background Image: Full-width dark contextual product photograph (Uploaded Picture) */}
-            <Image
-              src="/figma_assets/uploaded_schill_cable_drum.jpg"
-              alt="Synthetic Rubber Cable Drum Contextual Product View"
-              fill
-              className={styles.heroBgImage}
-              priority
-            />
+          <div className={styles.container}>
+            <div className={styles.heroGrid}>
+              <div className={styles.heroContent}>
+                <span className={styles.heroBadge}>Premium Product</span>
+                <h1 className={styles.heroTitle}>
+                  Synthetic Rubber <br />
+                  <span className={styles.orangeText}>Cable Drum</span>
+                </h1>
+                <p className={styles.heroDesc}>
+                  Heavy-duty cable drum made in Germany by Schill — synthetic rubber body, Hensel-fitted sockets, PCE industrial connectors, and Siemens MCB protection. Fully customizable to your site requirements.
+                </p>
 
-            {/* Heavy dark translucent overlay for high-contrast readable text */}
-            <div className={styles.heroDarkOverlay} />
-
-            {/* Content Container: Left-aligned occupying ~50-60% width */}
-            <div className={styles.heroContentOverlay}>
-              {/* Category Pill Badge */}
-              <span className={styles.heroCategoryBadge}>
-                PCE CONNECTORS &amp; SCHILL
-              </span>
-
-              {/* Main Headline */}
-              <h1 className={styles.heroMainHeadline}>
-                Synthetic Rubber Cable Drum
-                <span className={styles.heroHighlightSpecs}>IP44 / IP65</span>
-              </h1>
-
-              {/* Body Description */}
-              <p className={styles.heroBodyDescription}>
-                Heavy-duty synthetic rubber cable drum set built to IEC 60309 / EN 60309 standards. Schill drum body with Hensel-grade weatherproof sockets, PCE industrial connectors (blue 230V / red 415V), and Siemens MCB protection on construction sites, factory floors, and heavy machinery connections.
-              </p>
-
-              {/* Key Specs Grid / Counter Row */}
-              <div className={styles.heroSpecsCounterGrid}>
-                <div className={styles.specCounterItem}>
-                  <span className={styles.specValueOrange}>235–450mm</span>
-                  <span className={styles.specSubtextMuted}>DIAMETER</span>
-                </div>
-                <div className={styles.specCounterItem}>
-                  <span className={styles.specValueOrange}>IP44/65</span>
-                  <span className={styles.specSubtextMuted}>PROTECTION</span>
-                </div>
-                <div className={styles.specCounterItem}>
-                  <span className={styles.specValueOrange}>230V/415V</span>
-                  <span className={styles.specSubtextMuted}>VOLTAGE</span>
-                </div>
-                <div className={styles.specCounterItem}>
-                  <span className={styles.specValueOrange}>24hr</span>
-                  <span className={styles.specSubtextMuted}>QUOTE TAT</span>
+                <div className={styles.heroTagsRow}>
+                  {["Schill Germany", "Hensel Sockets", "PCE Connectors", "Fully Customizable", "4 Sizes Available"].map((tag, idx) => (
+                    <span key={idx} className={styles.heroTagChip}>{tag}</span>
+                  ))}
                 </div>
               </div>
 
-              {/* Call to Action (CTA) Group */}
-              <div className={styles.heroCtaGroup}>
-                <a href="#enquiry-form" className={styles.primaryCtaBtn}>
-                  Request Quotation →
-                </a>
-                <a href="#specs" className={styles.secondaryCtaBtn}>
-                  View Specifications
-                </a>
+              <div className={styles.heroVisual}>
+                <div className={styles.heroImageWrapper}>
+                  <Image
+                    src="/figma_assets/uploaded_schill_cable_drum.jpg"
+                    alt="Synthetic Rubber Cable Drum"
+                    fill
+                    className={styles.heroImage}
+                    style={{ viewTransitionName: 'product-image-synthetic-cable-drum' }}
+                    priority
+                  />
+                  <div className={styles.tagPremium}>In Stock</div>
+                </div>
               </div>
             </div>
           </div>
@@ -114,53 +86,53 @@ export default function CableDrumsPage() {
               Actual product photos from our stock. Available in 4 diameter sizes with custom socket & connector configurations.
             </p>
             
-            <div style={{ display: "flex", gap: "30px", marginTop: "40px", flexWrap: "wrap" }}>
+            <div className={styles.showcaseGrid}>
               {/* Left Showcase Gallery */}
-              <div style={{ flex: "1 1 540px", display: "flex", flexDirection: "column", gap: "20px" }}>
+              <div className={styles.showcaseGalleryCol}>
                 {/* Top 2 side-by-side images */}
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px" }}>
-                  <div style={{ borderRadius: "16px", overflow: "hidden", border: "1px solid #e2e8f0", height: "300px", position: "relative", backgroundColor: "#fff", boxShadow: "0 4px 12px rgba(0,0,0,0.05)" }}>
+                <div className={styles.galleryThumbRow}>
+                  <div className={styles.galleryCard}>
                     <Image src="/figma_assets/c149188bc8a9f110341ddcccc98255acaaa5832b.png" alt="Cable Drum Front Sockets View" fill style={{ objectFit: "cover", transform: "rotate(90deg) scale(1.35)" }} priority />
                   </div>
-                  <div style={{ borderRadius: "16px", overflow: "hidden", border: "1px solid #e2e8f0", height: "300px", position: "relative", backgroundColor: "#fff", boxShadow: "0 4px 12px rgba(0,0,0,0.05)" }}>
+                  <div className={styles.galleryCard}>
                     <Image src="/figma_assets/0c2342ac833b46667c430abf317962e9f617cd31.png" alt="Schill Drum Body Rear View" fill style={{ objectFit: "cover", transform: "rotate(90deg) scale(1.35)" }} priority />
                   </div>
                 </div>
 
                 {/* Bottom Full Assembly image */}
-                <div style={{ borderRadius: "16px", overflow: "hidden", border: "1px solid #e2e8f0", height: "260px", position: "relative", backgroundColor: "#fff", boxShadow: "0 4px 12px rgba(0,0,0,0.05)" }}>
+                <div className={styles.galleryCardLarge}>
                   <Image src="/figma_assets/3bc4ed39a926a1d7f55a786338aa7f132f060f02.png" alt="Full Cable Drum Assembly" fill style={{ objectFit: "cover" }} />
                 </div>
               </div>
               
               {/* Right Info Box */}
-              <div style={{ flex: "1 1 500px", display: "flex", flexDirection: "column", gap: "20px" }}>
-                <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: "20px", padding: "40px", display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
-                  <span style={{ display: "inline-block", background: "rgba(0,180,216,0.1)", border: "1px solid rgba(0,180,216,0.25)", color: "#00b4d8", fontSize: "12px", fontWeight: "bold", padding: "6px 14px", borderRadius: "20px", textTransform: "uppercase", letterSpacing: "1.5px", marginBottom: "20px", alignSelf: 'flex-start' }}>🇩🇪 Made in Germany</span>
-                  <h3 style={{ fontSize: "28px", color: "#0d1b2a", marginBottom: "15px", fontWeight: 'bold' }}>Synthetic Rubber Cable Drum<br/>(Customizable)</h3>
-                  <p style={{ color: "#8fa3b1", fontSize: "14px", lineHeight: "1.7", marginBottom: "30px" }}>
+              <div className={styles.showcaseInfoCol}>
+                <div className={styles.infoCard}>
+                  <span className={styles.infoBadge}>🇩🇪 Made in Germany</span>
+                  <h3 className={styles.infoTitle}>Synthetic Rubber Cable Drum<br/>(Customizable)</h3>
+                  <p className={styles.infoDesc}>
                     Schill drum body with Hensel-grade weatherproof sockets, PCE industrial connectors (blue 230V / red 415V), and Siemens MCB protection — built for construction sites, events, and industrial installations.
                   </p>
                   
-                  <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
+                  <div className={styles.infoTagsRow}>
                     {["235 – 450mm Dia", "IP44 / IP65", "Hensel Sockets", "PCE Connectors", "Siemens MCB", "Synthetic Rubber"].map((tag, idx) => (
-                      <span key={idx} style={{ background: "#f5f7fa", border: "1px solid #e2e8f0", borderRadius: "8px", padding: "8px 14px", fontSize: "13px", fontWeight: "600", color: "#0d1b2a", display: "flex", alignItems: "center", gap: "8px" }}>
-                        <span style={{ width: 8, height: 8, borderRadius: "50%", background: idx % 2 === 0 ? "#00b4d8" : "#f97316" }}></span> {tag}
+                      <span key={idx} className={styles.infoTagChip}>
+                        <span className={styles.infoTagDot} style={{ background: idx % 2 === 0 ? "#00b4d8" : "#f97316" }}></span> {tag}
                       </span>
                     ))}
                   </div>
                 </div>
 
-                <div style={{ background: "#101a2c", borderRadius: "20px", padding: "30px", color: "#fff", display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                  <h4 style={{ fontSize: "16px", fontWeight: "bold", marginBottom: "10px" }}>Custom Configuration Available</h4>
-                  <p style={{ color: "#aab0c0", fontSize: "13px", marginBottom: "25px" }}>Choose your drum size, number of sockets (230V / 415V), PCE rating (16A / 32A), cable length, and MCB rating. We build to your spec.</p>
-                  <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-                    <a href="#enquiry-form" style={{ background: "#f97316", color: "#fff", border: "none", borderRadius: "8px", padding: "14px", fontWeight: "bold", fontSize: "14px", cursor: "pointer", textAlign: "center", textDecoration: "none" }}>📋 Request Custom Quote</a>
+                <div className={styles.customConfigBox}>
+                  <h4 className={styles.customConfigTitle}>Custom Configuration Available</h4>
+                  <p className={styles.customConfigDesc}>Choose your drum size, number of sockets (230V / 415V), PCE rating (16A / 32A), cable length, and MCB rating. We build to your spec.</p>
+                  <div className={styles.customConfigActions}>
+                    <a href="#enquiry-form" className={styles.quoteBtn}>📋 Request Custom Quote</a>
                     <a 
                       href="https://wa.me/919971499542" 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      style={{ background: "transparent", border: "1px solid rgba(0,180,216,0.4)", color: "#00b4d8", borderRadius: "8px", padding: "14px", fontWeight: "600", fontSize: "14px", cursor: "pointer", textAlign: "center", textDecoration: "none", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px" }}
+                      className={styles.whatsappBtn}
                     >
                       <svg
                         width="16"
@@ -228,18 +200,18 @@ export default function CableDrumsPage() {
             <h2 className={styles.sectionTitle} style={{ fontSize: '40px', color: '#101820', marginBottom: '24px' }}>Build Your Configuration</h2>
             <p className={styles.sectionIntro} style={{ color: '#888' }}>Every drum is assembled to order — pick your exact combination below.</p>
 
-            <div style={{ background: "#fff", border: "1px solid #e2e8f0", borderRadius: "20px", padding: "40px", marginTop: "40px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))", gap: "40px" }}>
+            <div className={styles.customizationGrid}>
               {customizations.map((cat, i) => (
-                <div key={i}>
-                  <h3 style={{ fontSize: "20px", fontWeight: "bold", color: "#101820", marginBottom: "24px" }}>{cat.cat}</h3>
+                <div key={i} className={styles.customizationCol}>
+                  <h3 className={styles.customizationColTitle}>{cat.cat}</h3>
                   {cat.opts.map((opt, j) => (
-                    <div key={j} style={{ display: "flex", gap: "16px", paddingBottom: "16px", marginBottom: "16px", borderBottom: j === cat.opts.length - 1 ? "none" : "1px solid #f0f4f8" }}>
-                      <div style={{ background: "#f5f7fa", width: "40px", height: "40px", borderRadius: "10px", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "20px", flexShrink: 0 }}>
+                    <div key={j} className={styles.customizationOption}>
+                      <div className={styles.customizationIconWrap}>
                         {opt.icon}
                       </div>
-                      <div>
-                        <h4 style={{ fontSize: "14px", fontWeight: "bold", color: "#101820", marginBottom: "6px" }}>{opt.title}</h4>
-                        <p style={{ fontSize: "13px", color: "#888", lineHeight: "1.6" }}>{opt.desc}</p>
+                      <div className={styles.customizationTextWrap}>
+                        <h4 className={styles.customizationTextTitle}>{opt.title}</h4>
+                        <p className={styles.customizationTextDesc}>{opt.desc}</p>
                       </div>
                     </div>
                   ))}

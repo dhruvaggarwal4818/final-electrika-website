@@ -25,8 +25,8 @@
 
 .heroGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: var(--product-hero-grid-cols, 1fr 1fr);
+  gap: var(--product-hero-grid-gap, 60px);
   align-items: center;
 }
 
@@ -236,7 +236,7 @@
 
 .featuresGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: var(--product-features-grid-cols, repeat(4, 1fr));
   gap: 20px;
 }
 
@@ -252,7 +252,7 @@
   background-color: #ffffff;
   border: 0.8px solid #e8eaf0;
   border-radius: 12px;
-  padding: 24px;
+  padding: var(--feature-card-padding, 24px);
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -376,7 +376,7 @@
 
 .appsGrid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: var(--product-use-cases-grid-cols, repeat(6, 1fr));
   gap: 16px;
   margin-top: 40px;
 }
@@ -557,4 +557,12 @@
 .specsTable tr:hover .specValue,
 .specsTable tr:hover .specValueHighlight {
   color: #f97316 !important;
+}
+
+.accentLine {
+  width: 36px;
+  height: 4px;
+  background: var(--color-orange-home);
+  border-radius: 2px;
+  margin-bottom: 24px;
 }

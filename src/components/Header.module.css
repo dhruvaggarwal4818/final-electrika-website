@@ -16,7 +16,7 @@
   width: 100%;
   max-width: 1840px;
   margin: 0 auto;
-  padding: 0 var(--gutter-home);
+  padding: var(--header-container-padding);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -192,8 +192,3 @@
   }
 }
 
-@media (max-width: 480px) {
-  .container {
-    padding: 0 20px;
-  }
-}

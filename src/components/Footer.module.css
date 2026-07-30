@@ -34,9 +34,10 @@
   padding: 40px var(--gutter-home);
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   gap: 24px;
+  flex-direction: var(--footer-cta-content-direction);
+  align-items: var(--footer-cta-content-align);
 }
 
 .ctaText {
@@ -46,7 +47,7 @@
 .ctaTitle {
   font-family: var(--font-poppins);
   font-weight: 700;
-  font-size: 38px;
+  font-size: var(--footer-cta-title-size);
   line-height: 1.15;
   color: var(--color-text-white);
   margin-bottom: 12px;
@@ -75,13 +76,15 @@
   display: flex;
   gap: 16px;
   align-items: center;
+  width: var(--footer-cta-buttons-width);
+  flex-direction: var(--footer-cta-buttons-direction);
 }
 
 .ctaBtnPrimary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 185px;
+  width: var(--footer-cta-btn-width);
   height: 57px;
   border-radius: var(--radius-button);
   font-family: var(--font-poppins);
@@ -99,7 +102,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 185px;
+  width: var(--footer-cta-btn-width);
   height: 57px;
   border-radius: var(--radius-button);
   font-family: var(--font-poppins);
@@ -183,7 +186,8 @@
 
 .formRow {
   display: flex;
-  gap: 12px;
+  flex-direction: var(--footer-form-row-direction);
+  gap: var(--footer-form-row-gap);
 }
 
 .inputGroup {
@@ -390,8 +394,8 @@
   max-width: 1840px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2.2fr 1fr 1fr 1.8fr;
-  gap: 48px;
+  grid-template-columns: var(--footer-grid-columns);
+  gap: var(--footer-grid-gap);
   margin-bottom: 48px;
 }
 
@@ -511,9 +515,10 @@
   padding-top: 24px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   gap: 16px;
+  flex-direction: var(--footer-bottom-direction);
+  align-items: var(--footer-bottom-align);
 }
 
 .copyright {
@@ -548,48 +553,4 @@
 
 .badgeMakeInIndia {
   color: var(--color-orange-home);
-}
-
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-  .footerGrid {
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-  }
-
-  .ctaContent {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-@media (max-width: 600px) {
-  .footerGrid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .formRow {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .ctaTitle {
-    font-size: 28px;
-  }
-
-  .ctaButtons {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .ctaBtnPrimary,
-  .ctaBtnSecondary {
-    width: 100%;
-  }
-
-  .footerBottom {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 }

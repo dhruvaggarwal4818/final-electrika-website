@@ -281,6 +281,7 @@
   font-size: 20px;
   color: #0d0d1a;
   margin-bottom: 16px;
+  font-weight: 700;
 }
 
 .splitText p {
@@ -312,7 +313,60 @@
   height: 6px;
   background-color: #f97316;
   border-radius: 50%;
+  flex-shrink: 0;
 }
+
+/* Tablet styles: Keep split structure but stack if too narrow */
+@media (max-width: 768px) {
+  .splitLayout {
+    gap: 24px;
+  }
+  .splitVisual {
+    height: 320px;
+  }
+}
+
+/* Android / Mobile layout styles ONLY */
+@media (max-width: 600px) {
+  .splitLayout {
+    flex-direction: column !important;
+    gap: 32px !important;
+    align-items: stretch !important;
+  }
+  .splitVisual {
+    flex: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 280px !important;
+    order: 1 !important; /* Stack image directly after intro paragraph */
+  }
+  .splitText {
+    width: 100% !important;
+    order: 2 !important; /* Stack details card below image */
+    background: #ffffff !important;
+    border: 1px solid #e8eaf0 !important;
+    border-radius: 20px !important;
+    padding: 30px 24px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02) !important;
+  }
+  .splitText h3 {
+    font-size: 20px !important;
+    margin-bottom: 12px !important;
+  }
+  .bulletsList {
+    display: grid !important;
+    grid-template-columns: 1fr !important; /* 1 column stack for mobile bullet items */
+    gap: 12px !important;
+    margin-top: 20px !important;
+    border-top: 1px solid #f0f4f8 !important;
+    padding-top: 16px !important;
+  }
+  .bulletItem {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+  }
+}
+
 
 /* 3. Zone Classification Section */
 .zonesSection {
@@ -572,4 +626,81 @@
 .specsTable tr:hover .specValue,
 .specsTable tr:hover .specValueHighlight {
   color: #f97316 !important;
+}
+
+/* Responsive Override Block for Lighting Pages */
+@media (max-width: 1024px) {
+  .heroContainer {
+    flex-direction: column !important;
+    gap: 40px !important;
+    padding: 60px 24px !important;
+    min-height: auto !important;
+  }
+  .heroContent {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .heroVisual {
+    width: 100% !important;
+    max-width: 500px !important;
+    height: 400px !important;
+  }
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .zonesGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .useCasesGrid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .variantsGrid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroContainer {
+    gap: 32px !important;
+    padding: 40px 16px !important;
+  }
+  .heroVisual {
+    height: 300px !important;
+  }
+  .featuresGrid {
+    grid-template-columns: 1fr !important;
+  }
+  .zonesGrid {
+    grid-template-columns: 1fr !important;
+  }
+  .useCasesGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .galleryGrid {
+    grid-template-columns: 1fr !important;
+  }
+  .variantsGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .heroMeta {
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+  }
+  .heroActions {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .btnPrimary, .btnSecondary {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .variantsGrid {
+    grid-template-columns: 1fr !important;
+  }
 }

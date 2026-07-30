@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Image from "next/image";
 import Header from "@/components/Header";
@@ -6,132 +5,142 @@ import Footer from "@/components/Footer";
 import styles from "./pce-plug-socket.module.css";
 
 export default function PcePlugSocketPage() {
+  const specParams = [
+    { name: "Brand / Origin", val: "PCE Elektro GmbH, Austria", highlight: false },
+    { name: "Standards", val: "IEC 60309, EN 60309", highlight: false },
+    { name: "Current Ratings", val: "16A, 32A, 63A, 125A", highlight: false },
+    { name: "Voltage Ratings", val: "110V, 230V, 400V, 500V", highlight: true },
+    { name: "Poles", val: "2P+E, 3P+E, 3P+N+E", highlight: false },
+    { name: "Frequency", val: "50 Hz / 60 Hz", highlight: false },
+    { name: "IP Ratings", val: "IP44, IP54, IP67 (model specific)", highlight: false },
+    { name: "Housing", val: "Reinforced thermoplastic (PA66)", highlight: true },
+    { name: "Operating Temp.", val: "-25°C to +40°C", highlight: false },
+    { name: "Colour Coding", val: "IEC 60309 compliant (blue/red/yellow/black)", highlight: false },
+    { name: "Interlocked Version", val: "Available (MAINS before switching)", highlight: false },
+    { name: "Certifications", val: "CE, VDE, ÖVE, SABS", highlight: false },
+  ];
+
   const features = [
     {
-      icon: "🇦🇹",
       title: "PCE Austria — Authorised",
       desc: "Authorised distributor of PCE Elektro GmbH Austria. Genuine products with manufacturer documentation and warranty.",
+      icon: "🇦🇹",
     },
     {
-      icon: "💧",
       title: "IP44 to IP67 Rating",
       desc: "Wide range of protection classes — from splash-proof industrial plugs to fully submersible underwater connectors.",
+      icon: "💧",
     },
     {
-      icon: "⚡",
       title: "16A to 125A Range",
       desc: "Full current range covering light-duty portable tools through to heavy industrial three-phase machinery connections.",
+      icon: "⚡",
     },
     {
-      icon: "🚧",
       title: "Construction Site Ready",
       desc: "Robust thermoplastic housing rated for impact, UV, and chemical resistance. Designed to survive site conditions.",
+      icon: "🚧",
     },
     {
-      icon: "🔒",
       title: "Interlocked Versions",
       desc: "Interlock switch models prevent live insertion and withdrawal — mandatory in many safety-regulated environments.",
+      icon: "🔒",
     },
     {
-      icon: "🔌",
       title: "Panel-Mount & Surface",
       desc: "Complete ecosystem: plugs, sockets, couplers, extension reels, distribution boards, and panel-mount versions.",
+      icon: "🔌",
     },
   ];
 
-  const specRows = [
-    { param: "Brand / Origin", val: "PCE Elektro GmbH, Austria", alt: false },
-    { param: "Standards", val: "IEC 60309, EN 60309", alt: true },
-    { param: "Current Ratings", val: "16A, 32A, 63A, 125A", alt: false },
-    { param: "Voltage Ratings", val: "110V, 230V, 400V, 500V", alt: true },
-    { param: "Poles", val: "2P+E, 3P+E, 3P+N+E", alt: false },
-    { param: "Frequency", val: "50 Hz / 60 Hz", alt: true },
-    { param: "IP Ratings", val: "IP44, IP54, IP67 (model specific)", alt: false },
-    { param: "Housing", val: "Reinforced thermoplastic (PA66)", alt: true },
-    { param: "Operating Temp.", val: "-25°C to +40°C", alt: false },
-    { param: "Colour Coding", val: "IEC 60309 compliant (blue/red/yellow/black)", alt: true },
-    { param: "Interlocked Version", val: "Available (MAINS before switching)", alt: false },
-    { param: "Certifications", val: "CE, VDE, ÖVE, SABS", alt: true },
-  ];
+  const LocationPin = (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+      <circle cx="12" cy="10" r="3"></circle>
+    </svg>
+  );
 
   const useCases = [
-    { icon: "🏗️", title: "Construction Sites", desc: "Temporary power distribution, site offices, tower cranes" },
-    { icon: "🏭", title: "Manufacturing Plants", desc: "Machine tool connections, welding equipment, compressors" },
-    { icon: "🎭", title: "Event & Stage", desc: "Temporary power for concerts, exhibitions, outdoor events" },
-    { icon: "🚢", title: "Marine & Offshore", desc: "Shore power connections, vessel electrical systems" },
-    { icon: "⛏️", title: "Mining & Quarrying", desc: "Heavy duty connections for underground and surface machinery" },
-    { icon: "💻", title: "Data Centres", desc: "UPS output connections, redundant power switching" },
+    { title: "Construction Sites", desc: "Temporary power distribution, site offices, tower cranes", icon: LocationPin },
+    { title: "Manufacturing Plants", desc: "Machine tool connections, welding equipment, compressors", icon: LocationPin },
+    { title: "Event & Stage", desc: "Temporary power for concerts, exhibitions, outdoor events", icon: LocationPin },
+    { title: "Marine & Offshore", desc: "Shore power connections, vessel electrical systems", icon: LocationPin },
+    { title: "Mining & Quarrying", desc: "Heavy duty connections for underground and surface machinery", icon: LocationPin },
+    { title: "Data Centres", desc: "UPS output connections, redundant power switching", icon: LocationPin },
   ];
 
   return (
     <div className={styles.pageWrapper}>
       <Header />
+
       <main className={styles.mainContent}>
-
-        {/* HERO SECTION */}
+        {/* 1. Hero Section */}
         <section className={styles.heroSection}>
-          <div className={styles.heroContainer}>
-            <div className={styles.heroContent}>
-              <span className={styles.heroBadge}>
-                PCE Connectors
-              </span>
-              <h1 className={styles.heroTitle}>
-                Industrial Plugs & <br />
-                <span className={styles.orangeText}>Connectors</span>
-              </h1>
-              <p className={styles.heroDesc}>
-                Austrian-engineered PCE industrial connectors — CEE plugs, sockets, couplers, and distribution boxes for construction sites, factories, and marine environments. Authorised distributor.
-              </p>
+          <div className={styles.container}>
+            <div className={styles.heroGrid}>
+              <div className={styles.heroContent}>
+                <span className={styles.heroBadge}>PCE Connectors</span>
+                <h1 className={styles.heroTitle}>
+                  Industrial Plugs & <br />
+                  <span className={styles.orangeText}>Connectors</span>
+                </h1>
+                <p className={styles.heroDesc}>
+                  Austrian-engineered PCE industrial connectors — CEE plugs, sockets, couplers, and distribution boxes for construction sites, factories, and marine environments. Authorised distributor.
+                </p>
 
-              <div className={styles.heroMeta}>
-                <div className={styles.metaItem}>
-                  <span className={styles.metaVal}>IP44–IP67</span>
-                  <span className={styles.metaLabel}>Protection</span>
+                <div className={styles.metaGrid}>
+                  <div className={styles.metaItem}>
+                    <span className={styles.metaVal}>IP44–IP67</span>
+                    <span className={styles.metaLabel}>Protection</span>
+                  </div>
+                  <div className={styles.metaItem}>
+                    <span className={styles.metaVal}>16A–125A</span>
+                    <span className={styles.metaLabel}>Current Range</span>
+                  </div>
+                  <div className={styles.metaItem}>
+                    <span className={styles.metaVal}>MULTIPLE</span>
+                    <span className={styles.metaLabel}>Brand</span>
+                  </div>
+                  <div className={styles.metaItem}>
+                    <span className={styles.metaVal}>24hr</span>
+                    <span className={styles.metaLabel}>Quote TAT</span>
+                  </div>
                 </div>
-                <div className={styles.metaItem}>
-                  <span className={styles.metaVal}>16A–125A</span>
-                  <span className={styles.metaLabel}>Current Range</span>
-                </div>
-                <div className={styles.metaItem}>
-                  <span className={styles.metaVal}>MULTIPLE</span>
-                  <span className={styles.metaLabel}>Brand</span>
-                </div>
-                <div className={styles.metaItem}>
-                  <span className={styles.metaVal}>24hr</span>
-                  <span className={styles.metaLabel}>Quote TAT</span>
+
+                <div className={styles.heroActions}>
+                  <a href="#enquiry-form" className={styles.btnPrimary}>
+                    Request Quotation →
+                  </a>
+                  <a href="#specifications" className={styles.btnSecondary}>
+                    View Specifications
+                  </a>
                 </div>
               </div>
 
-              <div className={styles.heroActions}>
-                <a href="#enquiry-form" className={styles.btnPrimary}>
-                  Request Quotation →
-                </a>
-                <a href="#specifications" className={styles.btnSecondary}>
-                  View Specifications
-                </a>
+              <div className={styles.heroVisual}>
+                <div className={styles.heroImageWrapper}>
+                  <Image
+                    src="/figma_assets_pce_plug_socket/custom_hero_image.jpg"
+                    alt="Industrial Plugs & Connectors"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 570px"
+                    className={styles.heroImage}
+                    style={{ viewTransitionName: 'product-image-pce-plug-socket' }}
+                    priority
+                  />
+                  <div className={styles.tagPremium}>In Stock</div>
+                </div>
               </div>
-            </div>
-
-            <div className={styles.heroVisual}>
-              <Image
-                src="/figma_assets_pce_plug_socket/custom_hero_image.jpg"
-                alt="Industrial Plugs & Connectors"
-                fill
-                sizes="(max-width: 1024px) 100vw, 570px"
-                className={styles.heroImage}
-                style={{ objectFit: "cover" }}
-                priority
-              />
-              <div className={styles.tagPremium}>In Stock</div>
             </div>
           </div>
         </section>
 
-        {/* FEATURES GRID SECTION */}
+        {/* 2. Key Features Section */}
         <section className={styles.featuresSection}>
           <div className={styles.container}>
             <span className={styles.sectionEyebrow}>Key Features</span>
-            <h2 className={styles.sectionTitle} style={{ fontSize: '40px', color: '#101820', marginBottom: '24px' }}>Why Choose Electrika Inc.</h2>
+            <h2 className={styles.sectionTitle}>Why Choose Electrika Inc.</h2>
+            <div className={styles.accentLine}></div>
             <p className={styles.sectionIntro}>
               Quality-assured products backed by technical expertise and pan-India logistics.
             </p>
@@ -150,26 +159,33 @@ export default function PcePlugSocketPage() {
           </div>
         </section>
 
-        {/* SPECIFICATIONS TABLE */}
+        {/* 3. Technical Specifications Table */}
         <section id="specifications" className={styles.specsSection}>
           <div className={styles.container}>
-            <div className={styles.specsWrapper}>
+            <span className={styles.sectionEyebrow}>Technical Data</span>
+            <h2 className={styles.sectionTitle}>Product Specifications</h2>
+            <div className={styles.accentLine}></div>
+            <p className={styles.sectionIntro}>
+              Full technical data. Manufacturer datasheets and test certificates available on request after enquiry.
+            </p>
+
+            <div className={styles.specsTableWrapper}>
               <div className={styles.specsHeader}>
-                <span className={styles.specsHeaderTitle}>Technical Specification Sheet</span>
+                <h3>Technical Specification Sheet</h3>
               </div>
               <table className={styles.specsTable}>
                 <thead>
                   <tr>
-                    <th>Specification Parameter</th>
-                    <th>Standard Rating Details</th>
+                    <th>Parameter</th>
+                    <th>Specification</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {specRows.map((spec, idx) => (
-                    <tr key={idx}>
-                      <td className={styles.specLabel}>{spec.param}</td>
-                      <td className={`${styles.specValue} ${spec.alt ? styles.specValueHighlight : ''}`}>
-                        {spec.val}
+                  {specParams.map((param, index) => (
+                    <tr key={index} className={index % 2 === 1 ? styles.altRow : ""}>
+                      <td className={styles.paramName}>{param.name}</td>
+                      <td className={param.highlight ? styles.paramValHighlight : styles.paramVal}>
+                        {param.val}
                       </td>
                     </tr>
                   ))}
@@ -179,23 +195,23 @@ export default function PcePlugSocketPage() {
           </div>
         </section>
 
-        {/* USE CASES SECTION */}
-        <section className={styles.useCasesSection}>
+        {/* 4. Use Cases Section */}
+        <section className={styles.appsSection}>
           <div className={styles.container}>
-            <span className={styles.sectionEyebrow} style={{ color: '#f97316' }}>Use Cases</span>
-            <h2 className={styles.sectionTitle} style={{ color: 'white', marginBottom: '16px' }}>Where Our Products Are Deployed</h2>
-            <p className={styles.sectionIntro} style={{ color: '#888', marginBottom: '40px' }}>
-              Trusted across critical infrastructure and commercial projects throughout India.
+            <div className={styles.sectionEyebrow}>Use Cases</div>
+            <h2 className={styles.sectionTitle}>Where This Product Is Used</h2>
+            <p className={styles.sectionDesc}>
+              Trusted across critical infrastructure and industrial projects throughout India.
             </p>
 
-            <div className={styles.useCasesGrid}>
+            <div className={styles.appsGrid}>
               {useCases.map((use, index) => (
-                <div key={index} className={styles.useCaseCard}>
-                  <div className={styles.useCaseIcon}>
-                    <span>{use.icon}</span>
+                <div key={index} className={styles.appCard}>
+                  <div className={styles.appIconWrapper}>
+                    <span className={styles.appIcon}>{use.icon}</span>
                   </div>
-                  <h3 className={styles.useCaseTitle}>{use.title}</h3>
-                  <p className={styles.useCaseDesc}>{use.desc}</p>
+                  <h4 className={styles.appTitle}>{use.title}</h4>
+                  <p className={styles.appDesc}>{use.desc}</p>
                 </div>
               ))}
             </div>

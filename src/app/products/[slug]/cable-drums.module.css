@@ -64,193 +64,96 @@
   font-weight: 700;
 }
 
-/* 2. Hero Section - Overlay Layout */
+/* 2. Hero Section - Full-Bleed Grid Layout */
 .heroSection {
+  background-color: #0c1524;
+  padding: 76px 0;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 32px 20px;
 }
 
-.heroBannerCard {
-  position: relative;
-  width: 100%;
-  max-width: 1920px;
-  height: 550px;
-  margin: 0 auto;
-  border-radius: 16px;
-  overflow: hidden;
-  display: flex;
+.heroGrid {
+  display: grid;
+  grid-template-columns: var(--product-hero-grid-cols, 1.15fr 0.85fr);
+  gap: var(--product-hero-grid-gap, 60px);
   align-items: center;
-  padding: 40px 48px;
-  background-color: #0d1621;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
 }
 
-@media (max-width: 992px) {
-  .heroBannerCard {
-    padding: 36px 32px;
-    min-height: auto;
-  }
-  .heroMainHeadline {
-    font-size: 32px;
-  }
-}
-
-@media (max-width: 640px) {
-  .heroBannerCard {
-    padding: 28px 20px;
-  }
-  .heroMainHeadline {
-    font-size: 26px;
-  }
-  .heroSpecsCounterGrid {
-    gap: 20px;
-  }
-}
-
-.heroBgImage {
-  object-fit: cover;
-  object-position: center right;
-}
-
-.heroDarkOverlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, rgba(13, 22, 33, 0.96) 0%, rgba(13, 22, 33, 0.82) 55%, rgba(13, 22, 33, 0.4) 100%);
-  z-index: 1;
-}
-
-.heroContentOverlay {
-  position: relative;
-  z-index: 2;
-  max-width: 620px;
-  width: 100%;
-}
-
-.heroCategoryBadge {
-  display: inline-flex;
-  align-items: center;
-  padding: 5px 14px;
-  background-color: rgba(255, 107, 0, 0.15);
-  border: 0.8px solid rgba(255, 107, 0, 0.4);
-  border-radius: 20px;
-  color: #ff6b00;
-  font-weight: 700;
-  font-size: 11px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.heroMainHeadline {
-  font-family: var(--font-poppins), sans-serif;
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 1.15;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-.heroHighlightSpecs {
-  color: #ff6b00;
-  display: block;
-}
-
-.heroBodyDescription {
-  font-family: var(--font-poppins), sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.65;
-  color: #aab0c0;
-  margin-bottom: 32px;
-}
-
-.heroSpecsCounterGrid {
-  display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
-  margin-bottom: 36px;
-}
-
-.specCounterItem {
+.heroContent {
   display: flex;
   flex-direction: column;
 }
 
-.specValueOrange {
-  font-family: var(--font-poppins), sans-serif;
+.heroBadge {
+  display: inline-block;
+  background-color: rgba(249, 115, 22, 0.15);
+  border: 0.8px solid rgba(249, 115, 22, 0.3);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-family: var(--font-poppins);
   font-weight: 700;
-  font-size: 22px;
-  color: #ff6b00;
-  line-height: 1.2;
-}
-
-.specSubtextMuted {
-  font-family: var(--font-poppins), sans-serif;
-  font-weight: 600;
   font-size: 11px;
-  color: #888888;
-  letter-spacing: 0.8px;
+  color: #f97316;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  margin-top: 4px;
+  margin-bottom: 16px;
+  width: fit-content;
 }
 
-.heroCtaGroup {
+.heroTitle {
+  font-family: var(--font-poppins);
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 1.15;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.orangeText {
+  color: #f97316;
+}
+
+.heroDesc {
+  font-family: var(--font-poppins);
+  font-size: 15px;
+  line-height: 1.7;
+  color: #aab0c0;
+  margin-bottom: 36px;
+  max-width: 578px;
+}
+
+.heroTagsRow {
   display: flex;
-  gap: 16px;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
-.primaryCtaBtn {
+.heroTagChip {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  background-color: #ff6b00;
-  color: #ffffff;
-  font-family: var(--font-poppins), sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  padding: 14px 28px;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-.primaryCtaBtn:hover {
-  background-color: #e05e00;
-  transform: translateY(-2px);
-}
-
-.secondaryCtaBtn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  padding: 6px 14px;
   background-color: rgba(255, 255, 255, 0.05);
-  border: 0.8px solid rgba(255, 255, 255, 0.25);
+  border: 0.8px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
   color: #ffffff;
-  font-family: var(--font-poppins), sans-serif;
+  font-family: var(--font-poppins);
+  font-size: 11px;
   font-weight: 600;
-  font-size: 14px;
-  padding: 14px 28px;
-  border-radius: 8px;
-  text-decoration: none;
-  backdrop-filter: blur(8px);
-  transition: border-color 0.2s ease, background-color 0.2s ease;
-}
-
-.secondaryCtaBtn:hover {
-  border-color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .heroVisual {
-  width: 570px;
-  height: 570px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImageWrapper {
   position: relative;
-  background-color: white;
-  border: 5px solid white;
-  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 0.8px solid rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
   overflow: hidden;
 }
 
@@ -263,20 +166,6 @@
   top: 14px;
   left: 14px;
   background-color: #f97316;
-  color: white;
-  font-weight: 700;
-  font-size: 11px;
-  letter-spacing: 0.5px;
-  padding: 4px 10px;
-  border-radius: 4px;
-  z-index: 10;
-}
-
-.tagZone {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  background-color: rgba(220, 38, 38, 0.9);
   color: white;
   font-weight: 700;
   font-size: 11px;
@@ -333,7 +222,7 @@
 
 .featuresGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: var(--product-features-grid-cols, repeat(3, 1fr));
   gap: 24px;
 }
 
@@ -341,7 +230,7 @@
   background-color: white;
   border: 0.8px solid #e8eaf0;
   border-radius: 12px;
-  padding: 24px;
+  padding: var(--feature-card-padding, 24px);
   display: flex;
   flex-direction: column;
 }
@@ -703,7 +592,7 @@
 
 .useCasesGrid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: var(--product-use-cases-grid-cols, repeat(6, 1fr));
   gap: 16px;
   max-width: 1360px;
   margin: 0 auto;
@@ -907,4 +796,289 @@
 .specsTable tr:hover .specValue,
 .specsTable tr:hover .specValueHighlight {
   color: #f97316 !important;
+}
+
+/* Showcase Grid & Columns */
+.showcaseGrid {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.showcaseGalleryCol {
+  flex: 1 1 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.galleryThumbRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.galleryCard {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  height: 300px;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.galleryCardLarge {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  height: 260px;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.showcaseInfoCol {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoCard {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.infoBadge {
+  display: inline-block;
+  background: rgba(0,180,216,0.1);
+  border: 1px solid rgba(0,180,216,0.25);
+  color: #00b4d8;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 14px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+.infoTitle {
+  font-size: 28px;
+  color: #0d1b2a;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.infoDesc {
+  color: #8fa3b1;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.infoTagsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.infoTagChip {
+  background: #f5f7fa;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0d1b2a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.infoTagDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.customConfigBox {
+  background: #101a2c;
+  border-radius: 20px;
+  padding: 30px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.customConfigTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.customConfigDesc {
+  color: #aab0c0;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.customConfigActions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quoteBtn {
+  background: #f97316;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.quoteBtn:hover {
+  background-color: #e05e00;
+  transform: translateY(-2px);
+}
+
+.whatsappBtn {
+  background: transparent;
+  border: 1px solid rgba(0,180,216,0.4);
+  color: #00b4d8;
+  border-radius: 8px;
+  padding: 14px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.whatsappBtn:hover {
+  border-color: rgba(0,180,216,0.8);
+  background-color: rgba(0,180,216,0.05);
+}
+
+.accentLine {
+  width: 36px;
+  height: 4px;
+  background: var(--color-orange-home);
+  border-radius: 2px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 1024px) {
+  .showcaseGrid {
+    flex-direction: column;
+  }
+  .showcaseGalleryCol, .showcaseInfoCol {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .galleryThumbRow {
+    grid-template-columns: 1fr;
+  }
+  .galleryCard {
+    height: 240px;
+  }
+}
+
+/* Customization Section Classes */
+.customizationGrid {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 40px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: var(--product-customization-grid-cols, 1fr 1fr);
+  gap: 40px;
+}
+
+.customizationCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.customizationColTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #101820;
+  margin-bottom: 24px;
+}
+
+.customizationOption {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #f0f4f8;
+}
+
+.customizationOption:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.customizationIconWrap {
+  background: #f5f7fa;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.customizationTextWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.customizationTextTitle {
+  font-size: 14px;
+  font-weight: bold;
+  color: #101820;
+  margin-bottom: 6px;
+}
+
+.customizationTextDesc {
+  font-size: 13px;
+  color: #888;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .customizationGrid {
+    padding: 24px;
+    gap: 30px;
+  }
 }

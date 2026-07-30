@@ -284,6 +284,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .featureCard:hover {
   transform: translateY(-4px);
   border-color: #f97316;
@@ -358,26 +359,91 @@
   flex-direction: column;
 }
 
-.zoneCard.zone1 { background-color: rgba(220, 38, 38, 0.06); border: 0.8px solid rgba(220, 38, 38, 0.2); }
-.zoneCard.zone2 { background-color: rgba(249, 115, 22, 0.06); border: 0.8px solid rgba(249, 115, 22, 0.25); }
-.zoneCard.zone21 { background-color: rgba(234, 179, 8, 0.06); border: 0.8px solid rgba(234, 179, 8, 0.25); }
-.zoneCard.zone22 { background-color: rgba(34, 197, 94, 0.06); border: 0.8px solid rgba(34, 197, 94, 0.2); }
+.zoneCard.zone1 {
+  background-color: rgba(220, 38, 38, 0.06);
+  border: 0.8px solid rgba(220, 38, 38, 0.2);
+}
 
-.zoneDot { width: 12px; height: 12px; border-radius: 50%; margin-bottom: 12px; }
-.zoneCard.zone1 .zoneDot { background-color: #dc2626; }
-.zoneCard.zone2 .zoneDot { background-color: #f97316; }
-.zoneCard.zone21 .zoneDot { background-color: #eab308; }
-.zoneCard.zone22 .zoneDot { background-color: #22c55e; }
+.zoneCard.zone2 {
+  background-color: rgba(249, 115, 22, 0.06);
+  border: 0.8px solid rgba(249, 115, 22, 0.25);
+}
 
-.zoneTitle { font-size: 14px; font-weight: 700; color: #0d0d1a; margin-bottom: 4px; }
-.zoneSubtitle { font-size: 11px; font-weight: 600; margin-bottom: 12px; }
-.zoneCard.zone1 .zoneSubtitle { color: #dc2626; }
-.zoneCard.zone2 .zoneSubtitle { color: #f97316; }
-.zoneCard.zone21 .zoneSubtitle { color: #ca8a04; }
-.zoneCard.zone22 .zoneSubtitle { color: #22c55e; }
+.zoneCard.zone21 {
+  background-color: rgba(234, 179, 8, 0.06);
+  border: 0.8px solid rgba(234, 179, 8, 0.25);
+}
 
-.zoneDesc { font-size: 13px; color: #555; line-height: 1.5; margin-bottom: 24px; flex-grow: 1; }
-.zoneCompat { font-size: 16px; color: #1a1a2e; font-weight: 400; }
+.zoneCard.zone22 {
+  background-color: rgba(34, 197, 94, 0.06);
+  border: 0.8px solid rgba(34, 197, 94, 0.2);
+}
+
+.zoneDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.zoneCard.zone1 .zoneDot {
+  background-color: #dc2626;
+}
+
+.zoneCard.zone2 .zoneDot {
+  background-color: #f97316;
+}
+
+.zoneCard.zone21 .zoneDot {
+  background-color: #eab308;
+}
+
+.zoneCard.zone22 .zoneDot {
+  background-color: #22c55e;
+}
+
+.zoneTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0d0d1a;
+  margin-bottom: 4px;
+}
+
+.zoneSubtitle {
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.zoneCard.zone1 .zoneSubtitle {
+  color: #dc2626;
+}
+
+.zoneCard.zone2 .zoneSubtitle {
+  color: #f97316;
+}
+
+.zoneCard.zone21 .zoneSubtitle {
+  color: #ca8a04;
+}
+
+.zoneCard.zone22 .zoneSubtitle {
+  color: #22c55e;
+}
+
+.zoneDesc {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.zoneCompat {
+  font-size: 16px;
+  color: #1a1a2e;
+  font-weight: 400;
+}
 
 /* 6. Design Advantages (Split) */
 .advantagesSection {
@@ -545,7 +611,8 @@
 }
 
 .useCasesSection .container {
-  max-width: 1360px; /* Gives enough room for the 6 cards + gap */
+  max-width: 1360px;
+  /* Gives enough room for the 6 cards + gap */
 }
 
 .useCasesSection .sectionTitle {
@@ -625,9 +692,87 @@
 .specsTable tr {
   transition: all 0.2s ease;
 }
+
 .specsTable tr:hover td,
 .specsTable tr:hover .specLabel,
 .specsTable tr:hover .specValue,
 .specsTable tr:hover .specValueHighlight {
   color: #f97316 !important;
+}
+
+/* Responsive Override Block for Lighting Pages */
+@media (max-width: 1024px) {
+  .heroContainer {
+    flex-direction: column !important;
+    gap: 40px !important;
+    padding: 60px 24px !important;
+    min-height: auto !important;
+  }
+  .heroContent {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .heroVisual {
+    width: 100% !important;
+    max-width: 500px !important;
+    height: 400px !important;
+  }
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .zonesGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .useCasesGrid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .variantsGrid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroContainer {
+    gap: 32px !important;
+    padding: 40px 16px !important;
+  }
+  .heroVisual {
+    height: 300px !important;
+  }
+  .featuresGrid {
+    grid-template-columns: 1fr !important;
+  }
+  .zonesGrid {
+    grid-template-columns: 1fr !important;
+  }
+  .useCasesGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .galleryGrid {
+    grid-template-columns: 1fr !important;
+  }
+  .variantsGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .heroMeta {
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+  }
+  .heroActions {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .btnPrimary, .btnSecondary {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .variantsGrid {
+    grid-template-columns: 1fr !important;
+  }
 }

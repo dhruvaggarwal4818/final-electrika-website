@@ -112,11 +112,11 @@
   position: relative;
   width: 100%;
   max-width: 1840px;
-  min-height: 606px;
+  min-height: var(--hero-inner-min-height);
   background-color: #0d1117;
   border-radius: 20px;
   overflow: hidden;
-  margin: 0 var(--gutter-home);
+  margin: var(--hero-inner-margin);
   display: flex;
   align-items: center;
 }
@@ -127,18 +127,19 @@
   position: relative;
   z-index: 3;
   width: 100%;
-  padding: 40px 60px;
+  padding: var(--hero-container-padding);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  flex-direction: var(--hero-container-flex-direction);
+  gap: var(--hero-container-gap);
 }
 
 .heroContent {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  max-width: 600px;
+  align-items: var(--hero-content-align);
+  max-width: var(--hero-content-max-width);
 }
 
 
@@ -301,15 +302,16 @@
 
 .heroVisual {
   display: flex;
-  justify-content: flex-end;
+  justify-content: var(--hero-visual-justify);
+  width: var(--hero-visual-width);
   flex: 1;
 }
 
 .imageCard {
   position: relative;
   width: 100%;
-  max-width: 956px;
-  height: 500px;
+  max-width: var(--image-card-max-width);
+  height: var(--image-card-height);
   border-radius: 25px;
   border: 3px solid var(--color-text-white);
   overflow: hidden;
@@ -393,6 +395,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+  align-items: stretch;
 }
 
 .featureCard {
@@ -404,6 +407,9 @@
   overflow: hidden;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.04);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .featureCard::before {
@@ -1131,31 +1137,7 @@
 
 /* Media Queries */
 @media (max-width: 1024px) {
-  .heroInner {
-    min-height: auto;
-    margin: 0 16px;
-  }
 
-  .heroContainer {
-    flex-direction: column;
-    padding: 60px 24px 40px;
-    gap: 32px;
-  }
-
-  .heroContent {
-    max-width: 100%;
-    align-items: flex-start;
-  }
-
-  .heroVisual {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .imageCard {
-    height: 360px;
-    max-width: 100%;
-  }
 
   .themeToggle {
     top: 20px;
@@ -1241,6 +1223,11 @@
 
   .projectsGrid {
     grid-template-columns: 1fr;
+  }
+
+  .aboutVisual {
+    height: auto !important;
+    aspect-ratio: 4 / 3 !important;
   }
 }
 

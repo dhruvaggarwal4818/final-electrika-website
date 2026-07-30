@@ -30,8 +30,9 @@
 .heroContainer {
   width: 100%;
   max-width: 1280px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: var(--product-hero-grid-cols, 1fr 1fr);
+  gap: var(--product-hero-grid-gap, 60px);
   align-items: center;
   padding: 0 40px;
 }
@@ -227,9 +228,10 @@
 
 .featuresGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: var(--product-features-grid-cols, repeat(4, 1fr));
   gap: 20px;
 }
+
 
 .featureCard {
   background-color: white;
@@ -294,11 +296,15 @@
   border-radius: 10px;
   padding: 24px;
   position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
 }
 
-.sizeCard.popular {
-  background-color: rgba(249, 115, 22, 0.03);
+.sizeCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
   border-color: #f97316;
+  background-color: rgba(249, 115, 22, 0.03);
 }
 
 .sizeBadge {
@@ -312,9 +318,10 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 24px;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.sizeCard.popular .sizeBadge {
+.sizeCard:hover .sizeBadge {
   background-color: rgba(249, 115, 22, 0.12);
   color: #f97316;
 }
@@ -439,7 +446,7 @@
 
 .useCasesGrid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: var(--product-use-cases-grid-cols, repeat(6, 1fr));
   gap: 16px;
 }
 
@@ -490,4 +497,72 @@
 .specsTable tr:hover .specValue,
 .specsTable tr:hover .specValueHighlight {
   color: #f97316 !important;
+}
+
+/* ===== Responsive Breakpoints ===== */
+@media (max-width: 1024px) {
+  .heroContainer {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+    padding: 60px 24px !important;
+  }
+  .heroContent {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .heroVisual {
+    width: 100% !important;
+    max-width: 500px !important;
+    height: 360px !important;
+    margin: 0 auto;
+  }
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .sizesGrid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .useCasesGrid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroContainer {
+    padding: 40px 16px !important;
+    gap: 32px !important;
+  }
+  .heroVisual {
+    height: 280px !important;
+  }
+  .heroTitle {
+    font-size: 28px !important;
+  }
+  .heroMeta {
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+  }
+  .heroActions {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .btnPrimary, .btnSecondary {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .featuresGrid {
+    grid-template-columns: 1fr !important;
+  }
+  .sizesGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .useCasesGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .sizesGrid {
+    grid-template-columns: 1fr !important;
+  }
 }

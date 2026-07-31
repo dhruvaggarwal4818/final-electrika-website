@@ -635,4 +635,67 @@
   color: rgba(240, 242, 245, 0.75);
 }
 
+/* ===== Responsive Breakpoints for Our Journey & Stats ===== */
+@media (max-width: 1024px) {
+  .milestonesSection {
+    height: auto !important;
+    min-height: 401px;
+    padding: 64px 24px !important;
+  }
+
+  .statsSection {
+    height: auto !important;
+    padding: 40px 24px !important;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 32px 16px !important;
+    height: auto !important;
+    padding: 20px 0;
+  }
+
+  .statItem {
+    border-right: none !important;
+    border-bottom: 0.8px solid rgba(255, 255, 255, 0.15) !important;
+    padding-bottom: 16px !important;
+    height: auto !important;
+  }
+
+  .statItem:nth-last-child(-n+2) {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .milestonesSection {
+    padding: 48px 16px !important;
+  }
+
+  .statsSection {
+    padding: 32px 16px !important;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .statItem {
+    border-bottom: 0.8px solid rgba(255, 255, 255, 0.15) !important;
+    padding-bottom: 16px !important;
+  }
+
+  .statItem:last-child {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+  }
+
+  .msDesc {
+    max-width: 100% !important;
+  }
+}
+
+
 

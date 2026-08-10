@@ -228,7 +228,6 @@ export default function HeavyDutyPlugPage() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

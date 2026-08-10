@@ -5,10 +5,36 @@ import Footer from "@/components/Footer";
 import styles from "./about.module.css";
 import ClientPills from "@/components/ClientPills";
 import Counter from "@/components/Counter";
+import { SEO_DATABASE, PRIMARY_DOMAIN } from "@/data/seoData";
 
 export const metadata = {
   title: "About Us | Electrika INC",
   description: "Learn more about Electrika INC, India's trusted B2B supplier of industrial electrical equipment since 2002.",
+  alternates: {
+    canonical: `${PRIMARY_DOMAIN}/about-us`,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: `${PRIMARY_DOMAIN}/about-us`,
+    title: "About Us | Electrika INC | Industrial Electrical Supplier India",
+    description: "Learn more about Electrika INC, India's trusted B2B supplier and channel partner of industrial electrical equipment, high mast poles and cabling since 2002.",
+    siteName: "Electrika INC",
+    images: [
+      {
+        url: "/figma_assets/83aff0eccbfacd16febf59ee2f64864f1b9a4a0c.png",
+        width: 1200,
+        height: 630,
+        alt: "About Electrika INC - Industrial Electrical Products & Infrastructure Supply Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | Electrika INC | Industrial Electrical Supplier India",
+    description: "Learn more about Electrika INC, India's trusted B2B supplier and channel partner of industrial electrical equipment, high mast poles and cabling since 2002.",
+    images: ["/figma_assets/83aff0eccbfacd16febf59ee2f64864f1b9a4a0c.png"],
+  },
 };
 
 const clientNames = [
@@ -24,8 +50,77 @@ const clientNames = [
 ];
 
 export default function AboutUsPage() {
+  const aboutSEO = SEO_DATABASE["about-us"];
+
+  const aboutPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Electrika INC",
+      "foundingDate": "2002",
+      "founder": {
+        "@type": "Person",
+        "name": "Pramod Aggarwal"
+      },
+      "areaServed": "IN",
+      "knowsAbout": [
+        "Industrial Electrical Products",
+        "High Mast Lighting",
+        "Explosion Proof Fittings",
+        "Industrial Connectors"
+      ]
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": PRIMARY_DOMAIN
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About Us",
+        "item": `${PRIMARY_DOMAIN}/about-us`
+      }
+    ]
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": aboutSEO.faqs?.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <div className={styles.pageWrapper}>
+      {/* Dynamic JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <Header />
 
       <main className={styles.mainContent}>
@@ -33,7 +128,7 @@ export default function AboutUsPage() {
         <section className={styles.heroSection}>
           <Image
             src="/figma_assets_155/9ab8f696048eb5bbbe0bf237acb49dd3609cb593.png"
-            alt="About Us Hero Background"
+            alt="Electrika INC Industrial Projects Supply - Corporate Offices and High Mast Lighting Installations Background"
             fill
             className={styles.heroBg}
             priority
@@ -59,7 +154,7 @@ export default function AboutUsPage() {
             <div className={styles.storyVisual}>
               <Image
                 src="/figma_assets_155/e22a57039a95669074b53ee015fbe42d548adebd.png"
-                alt="Electrika INC team at work"
+                alt="Electrika INC Professional Electrical Contractors and Supply Team Coordinating B2B Logistics"
                 fill
                 className={styles.storyImage}
               />
@@ -281,7 +376,7 @@ export default function AboutUsPage() {
         <section className={styles.commitmentSection}>
           <div className={styles.commitGrid}>
             <div className={styles.commitVisual}>
-              <Image src="/figma_assets_155/fba4f8b56d62ff55c6eaa8ffe5401bb98ea9e8ab.png" alt="Warehouse operations" fill className={styles.storyImage} />
+              <Image src="/figma_assets_155/fba4f8b56d62ff55c6eaa8ffe5401bb98ea9e8ab.png" alt="Electrika INC Industrial Warehouse Operations - Organized Stock of PCE Sockets, Hensel Boxes and High Mast Hardware" fill className={styles.storyImage} />
             </div>
             <div className={styles.storyContent}>
               <span className={styles.sectionEyebrow}>Our Commitment</span>

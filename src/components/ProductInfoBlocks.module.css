@@ -1,0 +1,511 @@
+/* =============================================================
+   ProductInfoBlocks.module.css
+   AI Citation Content Blocks — uses existing site design tokens
+   No existing classes are modified here; this is additive only.
+   ============================================================= */
+
+/* ── Outer wrapper ── */
+.infoBlocksWrapper {
+  width: 100%;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-bg-page);
+}
+
+/* ── Shared section variants ── */
+.block {
+  padding: 64px 0;
+  background: var(--color-bg-card);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.blockAlt {
+  padding: 64px 0;
+  background: var(--color-bg-page);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.blockDark {
+  padding: 64px 0;
+  background: var(--color-dark-blue);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.blockFaq {
+  padding: 64px 0;
+  background: var(--color-bg-panel);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* ── Container ── */
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── Eyebrow labels ── */
+.eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-orange-product);
+  margin-bottom: 10px;
+}
+
+.eyebrowLight {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-orange-home);
+  margin-bottom: 10px;
+}
+
+/* ── Section headings ── */
+.blockTitle {
+  font-size: clamp(1.35rem, 2.5vw, 1.9rem);
+  font-weight: 700;
+  color: var(--color-title);
+  margin: 0 0 32px 0;
+  line-height: 1.25;
+}
+
+.blockTitleLight {
+  font-size: clamp(1.35rem, 2.5vw, 1.9rem);
+  font-weight: 700;
+  color: var(--color-text-white);
+  margin: 0 0 32px 0;
+  line-height: 1.25;
+}
+
+/* ══════════════════════════════════════════
+   1. DEFINITION BLOCK
+   ══════════════════════════════════════════ */
+.definitionBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: var(--color-bg-panel);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-orange-product);
+  border-radius: var(--radius-card);
+  padding: 28px 32px;
+}
+
+.definitionIcon {
+  font-size: 28px;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.definitionText {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-text-muted-dark);
+  margin: 0;
+}
+
+/* ══════════════════════════════════════════
+   2. ENGINEERING NOTES
+   ══════════════════════════════════════════ */
+.bulletList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bulletItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 16px 20px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-text-muted-dark);
+}
+
+.bulletDot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+  border-radius: 50%;
+  background: var(--color-orange-product);
+  margin-top: 8px;
+}
+
+/* ══════════════════════════════════════════
+   3. ADVANTAGES GRID
+   ══════════════════════════════════════════ */
+.advantagesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.advantageCard {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-card);
+  padding: 24px;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.advantageCard:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 139, 44, 0.4);
+}
+
+.advantageNumber {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: rgba(255, 139, 44, 0.25);
+  line-height: 1;
+  margin-bottom: 10px;
+  font-variant-numeric: tabular-nums;
+}
+
+.advantageTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text-white);
+  margin: 0 0 8px 0;
+  line-height: 1.35;
+}
+
+.advantageDesc {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--color-text-white-muted);
+  margin: 0;
+}
+
+/* ══════════════════════════════════════════
+   4. APPLICATIONS GRID
+   ══════════════════════════════════════════ */
+.applicationsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.applicationCard {
+  background: var(--color-bg-panel);
+  border: 1px solid var(--color-border);
+  border-top: 3px solid var(--color-orange-product);
+  border-radius: var(--radius-card);
+  padding: 22px 24px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.applicationCard:hover {
+  box-shadow: 0 6px 24px rgba(232, 147, 58, 0.12);
+  transform: translateY(-2px);
+}
+
+.applicationTitle {
+  font-size: 0.975rem;
+  font-weight: 700;
+  color: var(--color-title);
+  margin: 0 0 8px 0;
+}
+
+.applicationDesc {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--color-text-muted-dark);
+  margin: 0;
+}
+
+/* ══════════════════════════════════════════
+   5. STANDARDS GRID
+   ══════════════════════════════════════════ */
+.standardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.standardCard {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-alt);
+  border-radius: var(--radius-card);
+  padding: 20px 22px;
+}
+
+.standardCode {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-blue-badge);
+  background: var(--color-blue-badge-bg);
+  border-radius: var(--radius-badge-rect);
+  padding: 4px 10px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.standardDesc {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-text-muted-dark);
+  margin: 0;
+}
+
+/* ══════════════════════════════════════════
+   6 & 7. TIPS — INSTALLATION & MAINTENANCE
+   ══════════════════════════════════════════ */
+.tipsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.tipsColumn {
+  /* inherits */
+}
+
+.numberedList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.numberedItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text-muted-dark);
+}
+
+.numberedBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  border-radius: 50%;
+  background: var(--grad-orange-red);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.numberedBadgeAlt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  border-radius: 50%;
+  background: var(--color-blue-badge);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ══════════════════════════════════════════
+   8. COMPARISON TABLE
+   ══════════════════════════════════════════ */
+.tableWrapper {
+  overflow-x: auto;
+  border-radius: var(--radius-card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.comparisonTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.comparisonTable thead tr {
+  background: rgba(255, 139, 44, 0.15);
+  border-bottom: 1px solid rgba(255, 139, 44, 0.3);
+}
+
+.comparisonTable thead th {
+  text-align: left;
+  padding: 14px 18px;
+  color: var(--color-text-white);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.comparisonTable tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  transition: background 0.15s ease;
+}
+
+.comparisonTable tbody tr:last-child {
+  border-bottom: none;
+}
+
+.comparisonTable tbody tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.rowHeader {
+  font-weight: 600;
+  color: var(--color-text-white-muted);
+  padding: 13px 18px;
+  white-space: nowrap;
+}
+
+.comparisonTable tbody td {
+  padding: 13px 18px;
+  color: var(--color-text-white-muted);
+  line-height: 1.5;
+}
+
+/* ══════════════════════════════════════════
+   9. FAQ SECTION
+   ══════════════════════════════════════════ */
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.faqItem {
+  padding: 24px 28px;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg-card);
+  transition: background 0.15s ease;
+}
+
+.faqItem:last-child {
+  border-bottom: none;
+}
+
+.faqItem:hover {
+  background: var(--color-bg-panel);
+}
+
+.faqQuestion {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-title);
+  margin: 0 0 10px 0;
+  line-height: 1.45;
+}
+
+.faqQIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  border-radius: 50%;
+  background: var(--grad-orange-red);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.faqAnswer {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 0.925rem;
+  line-height: 1.75;
+  color: var(--color-text-muted-dark);
+  margin: 0;
+}
+
+.faqAIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  border-radius: 50%;
+  background: var(--color-blue-badge);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════════════════ */
+@media (max-width: 900px) {
+  .block,
+  .blockAlt,
+  .blockDark,
+  .blockFaq {
+    padding: 48px 0;
+  }
+
+  .tipsRow {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .block,
+  .blockAlt,
+  .blockDark,
+  .blockFaq {
+    padding: 36px 0;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .definitionBox {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+  }
+
+  .advantagesGrid,
+  .applicationsGrid,
+  .standardsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .faqItem {
+    padding: 20px;
+  }
+}

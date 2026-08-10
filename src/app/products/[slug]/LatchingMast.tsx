@@ -211,7 +211,6 @@ export default function LatchingMastPage() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

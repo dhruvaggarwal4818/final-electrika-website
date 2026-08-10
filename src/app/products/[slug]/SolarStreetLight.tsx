@@ -295,7 +295,6 @@ export default function SolarStreetLightPage() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

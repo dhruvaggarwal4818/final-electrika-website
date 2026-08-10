@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Counter from "@/components/Counter";
 import styles from "./page.module.css";
+import { SEO_DATABASE, PRIMARY_DOMAIN } from "@/data/seoData";
 
 // Brand logos carried
 const BRANDS = [
@@ -83,8 +84,112 @@ export default function Home() {
     }
   };
 
+  const homeSEO = SEO_DATABASE.home;
+
+  const orgSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Electrika INC",
+    "alternateName": "Electrika INC India",
+    "url": PRIMARY_DOMAIN,
+    "logo": `${PRIMARY_DOMAIN}/figma_assets/83aff0eccbfacd16febf59ee2f64864f1b9a4a0c.png`,
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-9971499542",
+      "contactType": "sales support",
+      "areaServed": "IN",
+      "availableLanguage": ["en", "hi"]
+    },
+    "sameAs": [
+      "https://instagram.com/electrikainc",
+      "https://linkedin.com/company/electrika-inc"
+    ]
+  };
+
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Electrika INC",
+    "image": `${PRIMARY_DOMAIN}/figma_assets/83aff0eccbfacd16febf59ee2f64864f1b9a4a0c.png`,
+    "telephone": "+91 9971499542",
+    "email": "Electrikainc@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "L-03 Radha Palace, Gurudwara Road, Sadar bazaar",
+      "addressLocality": "Gurugram",
+      "addressRegion": "Haryana",
+      "postalCode": "122001",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "28.4582633",
+      "longitude": "77.02649"
+    },
+    "url": PRIMARY_DOMAIN,
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Electrika INC",
+    "url": PRIMARY_DOMAIN,
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": `${PRIMARY_DOMAIN}/#products?q={search_term_string}`
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": homeSEO.faqs?.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <div className={`${styles.pageWrapper} ${darkMode ? "dark-mode-active" : ""}`}>
+      {/* Dynamic JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       {/* 1. Header (Navigation) */}
       <Header />
 
@@ -140,7 +245,7 @@ export default function Home() {
                 <div className={styles.imageCard}>
                   <Image
                     src="/figma_assets/new_hero_image.jpg"
-                    alt="Industrial Electrical Background"
+                    alt="Electrika INC Industrial Electrical Infrastructure Supply - High Mast Light Poles, Explosion Proof Fittings, and PCE Sockets"
                     fill
                     priority
                     className={styles.heroImage}
@@ -228,7 +333,7 @@ export default function Home() {
               <div className={styles.aboutVisual}>
                 <Image
                   src="/figma_assets/new_about_image_v2.jpg"
-                  alt="Engineer working with High Mast Light"
+                  alt="Professional Electrical Engineer Assembling and Inspecting an Industrial High Mast Light System in India"
                   fill
                   sizes="(max-width: 1024px) 100vw, 890px"
                   className={styles.aboutImage}

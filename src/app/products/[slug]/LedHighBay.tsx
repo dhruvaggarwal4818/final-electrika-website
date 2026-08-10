@@ -305,7 +305,6 @@ export default function LedHighBay() {
 
       </main>
       
-      <Footer />
     </div>
   );
 }

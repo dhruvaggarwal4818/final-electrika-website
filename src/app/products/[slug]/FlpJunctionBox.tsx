@@ -264,7 +264,6 @@ export default function FlpJunctionBoxPage() {
 
       </main>
 
-      <Footer />
     </div>
   );
 }

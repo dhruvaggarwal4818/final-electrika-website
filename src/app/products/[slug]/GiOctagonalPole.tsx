@@ -254,7 +254,6 @@ export default function GiOctagonalPolePage() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

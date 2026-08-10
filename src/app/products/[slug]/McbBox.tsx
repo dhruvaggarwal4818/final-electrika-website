@@ -256,7 +256,6 @@ export default function McbBoxPage() {
 
       </main>
 
-      <Footer />
     </div>
   );
 }

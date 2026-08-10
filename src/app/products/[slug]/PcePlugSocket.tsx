@@ -219,7 +219,6 @@ export default function PcePlugSocketPage() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

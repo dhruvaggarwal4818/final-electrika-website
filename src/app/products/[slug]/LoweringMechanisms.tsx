@@ -212,7 +212,6 @@ export default function LoweringMechanismsPage() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

@@ -246,7 +246,6 @@ export default function SmallControlStationPage() {
 
       </main>
 
-      <Footer />
     </div>
   );
 }

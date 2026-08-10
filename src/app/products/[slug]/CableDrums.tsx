@@ -257,7 +257,6 @@ export default function CableDrumsPage() {
         </section>
 
       </main>
-      <Footer />
     </div>
   );
 }

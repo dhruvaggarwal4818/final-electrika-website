@@ -228,7 +228,6 @@ export default function DecoratedPolesPage() {
 
       </main>
 
-      <Footer />
     </div>
   );
 }

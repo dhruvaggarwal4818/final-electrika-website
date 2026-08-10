@@ -240,7 +240,6 @@ export default function HighMastPolesPage() {
         </section>
       </main>
       
-      <Footer />
     </div>
   );
 }

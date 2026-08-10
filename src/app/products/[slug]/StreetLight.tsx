@@ -207,7 +207,6 @@ export default function StreetLightPage() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

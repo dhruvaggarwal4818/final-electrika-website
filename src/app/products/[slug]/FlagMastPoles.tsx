@@ -212,7 +212,6 @@ export default function FlagMastPolesPage() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

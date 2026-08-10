@@ -315,7 +315,6 @@ export default function FlameproofLedLight() {
 
       </main>
 
-      <Footer />
     </div>
   );
 }

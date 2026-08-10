@@ -234,7 +234,6 @@ export default function EmergencyStopButtonPage() {
 
       </main>
 
-      <Footer />
     </div>
   );
 }

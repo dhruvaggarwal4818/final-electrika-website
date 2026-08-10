@@ -208,7 +208,6 @@ export default function FloodLightPage() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

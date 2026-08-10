@@ -220,7 +220,6 @@ export default function Pce125APlugPage() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

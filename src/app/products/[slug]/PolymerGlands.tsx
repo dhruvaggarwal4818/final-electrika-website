@@ -253,7 +253,6 @@ export default function PolymerGlandsPage() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

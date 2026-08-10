@@ -245,7 +245,6 @@ export default function HenselBoxesPage() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }

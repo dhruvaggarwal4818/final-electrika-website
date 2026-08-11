@@ -4,6 +4,7 @@ import "./globals.css";
 import { ViewTransitions } from "next-view-transitions";
 import ErrorSilencer from "@/components/ErrorSilencer";
 import { PRIMARY_DOMAIN } from "@/data/seoData";
+import Script from "next/script";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -93,6 +94,20 @@ export default function RootLayout({
         <head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-PZ8DP0FGVH"
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-PZ8DP0FGVH', {
+                page_path: window.location.pathname,
+              });
+            `}
+          </Script>
         </head>
         <body>
           <ErrorSilencer />

@@ -3,7 +3,7 @@ import { Poppins, Inter } from "next/font/google";
 import "./globals.css";
 import { ViewTransitions } from "next-view-transitions";
 import ErrorSilencer from "@/components/ErrorSilencer";
-import { PRIMARY_DOMAIN } from "@/data/seoData";
+import { PRIMARY_DOMAIN } from "@/data/constants";
 import Script from "next/script";
 
 const poppins = Poppins({

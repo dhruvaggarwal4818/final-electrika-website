@@ -5,7 +5,8 @@ import Footer from "@/components/Footer";
 import styles from "./about.module.css";
 import ClientPills from "@/components/ClientPills";
 import Counter from "@/components/Counter";
-import { SEO_DATABASE, PRIMARY_DOMAIN } from "@/data/seoData";
+import { SEO_DATABASE } from "@/data/seoData";
+import { PRIMARY_DOMAIN } from "@/data/constants";
 
 export const metadata = {
   title: "About Us | Electrika INC",

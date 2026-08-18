@@ -53,7 +53,7 @@ export interface PageSEO {
 }
 
 
-export const PRIMARY_DOMAIN = "https://electrikainc.com";
+import { PRIMARY_DOMAIN } from "./constants";
 
 export const SEO_DATABASE: Record<string, PageSEO> = {
   home: {

@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
-import { SEO_DATABASE, PRIMARY_DOMAIN } from "@/data/seoData";
+import { SEO_DATABASE } from "@/data/seoData";
+import { PRIMARY_DOMAIN } from "@/data/constants";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = Object.keys(SEO_DATABASE);

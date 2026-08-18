@@ -8,7 +8,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Counter from "@/components/Counter";
 import styles from "./page.module.css";
-import { SEO_DATABASE, PRIMARY_DOMAIN } from "@/data/seoData";
+import { SEO_DATABASE } from "@/data/seoData";
+import { PRIMARY_DOMAIN } from "@/data/constants";
 
 // Brand logos carried
 const BRANDS = [

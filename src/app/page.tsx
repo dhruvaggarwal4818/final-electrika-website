@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Link as TransitionLink } from 'next-view-transitions';
@@ -76,15 +74,6 @@ const TESTIMONIALS = [
 ];
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    if (typeof document !== "undefined") {
-      document.body.classList.toggle("dark");
-    }
-  };
-
   const homeSEO = SEO_DATABASE.home;
 
   const orgSchema = {
@@ -172,7 +161,7 @@ export default function Home() {
   };
 
   return (
-    <div className={`${styles.pageWrapper} ${darkMode ? "dark-mode-active" : ""}`}>
+    <div className={styles.pageWrapper}>
       {/* Dynamic JSON-LD Structured Data */}
       <script
         type="application/ld+json"
@@ -198,15 +187,6 @@ export default function Home() {
       <main>
         {/* 2. Hero Section */}
         <section className={styles.heroSection} aria-label="Hero Introduction">
-          {/* Aesthetic Theme Toggle (Moon symbol) */}
-          <button 
-            onClick={toggleDarkMode}
-            className={styles.themeToggle}
-            aria-label="Toggle Theme"
-          >
-            <span className="text-[20px] font-bold">{darkMode ? "☀️" : "🌙"}</span>
-          </button>
-
           <div className={styles.heroInner}>
             <div className={styles.heroContainer}>
               <div className={styles.heroContent}>

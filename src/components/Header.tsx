@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Header.module.css";
+import { WHATSAPP_BASE_URL } from "@/data/constants";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -69,7 +70,7 @@ export default function Header() {
         {/* Quick Action Callouts */}
         <div className={styles.actions}>
           <a
-            href="https://wa.me/919971499542"
+            href={WHATSAPP_BASE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className={`${styles.actionBtn} ${styles.btnWa}`}

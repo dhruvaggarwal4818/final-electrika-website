@@ -9,7 +9,10 @@ import { SEO_DATABASE } from "@/data/seoData";
 import { PRIMARY_DOMAIN } from "@/data/constants";
 
 export const metadata = {
-  title: "About Us | Electrika INC",
+  // "About Us | Electrika INC" already ends in "Electrika INC"; `absolute`
+  // stops the root layout's "%s | Electrika INC" title template from
+  // appending the suffix a second time.
+  title: { absolute: "About Us | Electrika INC" },
   description: "Learn more about Electrika INC, India's trusted B2B supplier of industrial electrical equipment since 2002.",
   alternates: {
     canonical: `${PRIMARY_DOMAIN}/about-us`,

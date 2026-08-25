@@ -9,7 +9,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "google-auth-library": "^10.9.0",
     "next": "16.2.9",
     "next-view-transitions": "^0.3.5",
     "react": "19.2.4",

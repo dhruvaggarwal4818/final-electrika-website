@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import styles from "./Footer.module.css";
 import { PRODUCT_CATEGORIES } from "@/data/productsData";
+import { WHATSAPP_BASE_URL } from "@/data/constants";
 import QuickEnquiry from "./QuickEnquiry";
 
 interface FooterProps {
@@ -31,9 +32,9 @@ export default function Footer({ hideEnquiry = false }: FooterProps) {
 
     if (currentProduct) {
       const text = `Hello,\n\nI am interested in:\n${currentProduct}\n\nPlease send quotation.`;
-      return `https://wa.me/919971499542?text=${encodeURIComponent(text)}`;
+      return `${WHATSAPP_BASE_URL}?text=${encodeURIComponent(text)}`;
     }
-    return "https://wa.me/919971499542";
+    return WHATSAPP_BASE_URL;
   };
 
   return (
@@ -130,7 +131,7 @@ export default function Footer({ hideEnquiry = false }: FooterProps) {
                 💼
               </a>
               <a
-                href="https://wa.me/919971499542"
+                href={WHATSAPP_BASE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.socialBtn}

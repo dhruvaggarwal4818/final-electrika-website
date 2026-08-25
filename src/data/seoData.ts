@@ -40,6 +40,14 @@ export interface PageSEO {
   brand?: string;
   manufacturer?: string;
   specs?: SpecItem[];
+  /**
+   * Specs mirrored exactly from the visible product specification table
+   * (the per-product page component). When present, this — not `specs` —
+   * is what the Product JSON-LD's additionalProperty list is built from,
+   * so structured data always matches what a visitor actually sees on
+   * the page rather than the separate SEO copy in `specs`.
+   */
+  visualSpecs?: SpecItem[];
   faqs?: FAQItem[];
   /* AI Citation Content Blocks */
   definition?: string;
@@ -116,6 +124,21 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Cross Section", value: "12-sided or 20-sided polygonal tapered sections" },
       { name: "Wind Speed Resistance", value: "Up to 150 km/h (compliant with IS 875 Part 3)" },
       { name: "Base Flange Diameter", value: "640mm PCD or project-customized flange specifications" }
+    ],
+    visualSpecs: [
+      { name: "Height Range", value: "9 m to 40 m (custom up to 50 m)" },
+      { name: "Material", value: "IS 2062 Grade A Mild Steel" },
+      { name: "Surface Treatment", value: "Hot-Dip Galvanised (IS 4759), min 86 µm" },
+      { name: "Shape", value: "Polygonal (8/12/16 sided) or Conical" },
+      { name: "Wall Thickness", value: "4 mm to 10 mm (height dependent)" },
+      { name: "Lamp Carriage Type", value: "Fixed / Motorised Lowering" },
+      { name: "No. of Lamp Positions", value: "4 / 6 / 8 / 10 / 12 / 16" },
+      { name: "Design Wind Speed", value: "Up to 180 km/h (IS 875 Part III)" },
+      { name: "Foundation Bolt Circle", value: "Custom per height and soil condition" },
+      { name: "Luminaire Compatibility", value: "LED Flood / HPS / MH (E40 / GU10)" },
+      { name: "Applicable Standards", value: "IS 2713, IS 4759, IS 875, IS 2062" },
+      { name: "Warranty", value: "2 Years (structural), coating as per IS 4759" },
+      { name: "Lead Time (standard)", value: "3–4 weeks from drawing approval" }
     ],
     faqs: [
       {
@@ -199,6 +222,24 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Hoisting Assembly", value: "Internal mechanical winch with stainless steel wire rope (non-corrosive)" },
       { name: "Top Accessories", value: "Double pulley set, gold dome finial, flag clips" }
     ],
+    visualSpecs: [
+      { name: "Height Range", value: "16 m, 20 m, 25 m, 30 m, 36 m, 40 m, 45 m, 50 m, 60 m (custom)" },
+      { name: "Number of Sections", value: "Minimum 3 sections (flanged or socketed joints)" },
+      { name: "Material", value: "IS 2062 Grade A/B Mild Steel" },
+      { name: "Surface Finish", value: "Hot-Dip Galvanised (IS 4759), minimum 86 µm coating" },
+      { name: "Shape", value: "Polygonal (8/12/16 sided) or Conical" },
+      { name: "Base Diameter", value: "Varies: 300 mm (16 m) to 900 mm (60 m)" },
+      { name: "Wall Thickness", value: "4 mm – 12 mm (height and wind-zone dependent)" },
+      { name: "Design Wind Speed", value: "Up to 180 km/h (IS 875 Part III)" },
+      { name: "Hoisting System", value: "Electric motor drive, 230V AC, 0.5 HP – 2 HP" },
+      { name: "Rope Type", value: "SS304 stainless steel wire rope, 6×19 construction" },
+      { name: "Rope Diameter", value: "6 mm – 12 mm (height dependent)" },
+      { name: "Aviation Light", value: "Red LED, 10W, 360° visibility, IP66, DGCA compliant" },
+      { name: "Flag Size (max)", value: "2×3 ft (16 m) up to 12×8 m (60 m)" },
+      { name: "Foundation", value: "Anchor bolt cage supplied; civil design drawing provided" },
+      { name: "Applicable Standards", value: "IS 2713, IS 4759, IS 875, IS 2062" },
+      { name: "Lead Time", value: "4–6 weeks from drawing approval (custom heights)" }
+    ],
     faqs: [
       {
         question: "Are national flag masts compliant with the Flag Code of India?",
@@ -258,6 +299,22 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Safe Working Load (SWL)", value: "350 kg to 850 kg payload capacity" },
       { name: "Operating System", value: "Manual handle or external electrical power tool motor" }
     ],
+    visualSpecs: [
+      { name: "System Type", value: "Motorised lowering luminaire carriage assembly" },
+      { name: "Drive Mechanism", value: "Electric gear motor with wire rope winch" },
+      { name: "Motor Rating", value: "0.5 HP – 2 HP (height/load dependent)" },
+      { name: "Power Supply", value: "230V / 415V AC, 50 Hz" },
+      { name: "Wire Rope", value: "Galvanised steel, 6x19 construction" },
+      { name: "Carriage Type", value: "Multi-arm radial head frame, fixed luminaire spacing" },
+      { name: "Number of Luminaire Arms", value: "4 / 6 / 8 / 10 / 12 (project specific)" },
+      { name: "Guide System", value: "Internal roller guides for stable vertical travel" },
+      { name: "Control", value: "Local control panel with up/down push-button operation" },
+      { name: "Limit Switches", value: "Upper and lower travel limit switches fitted as standard" },
+      { name: "Compatible Pole Height", value: "12 m to 40 m" },
+      { name: "Safety Factor (Rope)", value: "Minimum 5:1 on rated carriage load" },
+      { name: "Applicable Standards", value: "IS 2713, IS 4759" },
+      { name: "Maintenance Interval", value: "Annual rope and motor inspection recommended" }
+    ],
     faqs: [
       {
         question: "How does a self-locking winch ensure operator safety?",
@@ -316,6 +373,22 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Structural Base Steel", value: "IS 2062 Grade A Structural Steel Plate" },
       { name: "Base Design", value: "Pre-welded plate with standard anchor slot dimensions" },
       { name: "Wiring Access", value: "Integrated hand-hole with flush lockable service cover plate" }
+    ],
+    visualSpecs: [
+      { name: "Height Range", value: "3 m, 4 m, 5 m, 6 m, 7 m, 8 m, 9 m, 10 m, 11 m, 12 m" },
+      { name: "Cross-Section", value: "Octagonal (8-sided), tapered" },
+      { name: "Material", value: "IS 2062 Grade A Mild Steel" },
+      { name: "Surface Finish", value: "Hot-Dip Galvanised (IS 4759), min. 86 µm" },
+      { name: "Arm Configuration", value: "Single arm / Double arm (both sides)" },
+      { name: "Arm Length", value: "0.5 m – 2 m (project specific)" },
+      { name: "Base Plate", value: "Pre-welded with anchor bolt holes, project-specific bolt circle" },
+      { name: "Wall Thickness", value: "3 mm – 6 mm (height dependent)" },
+      { name: "Door Opening", value: "Hand-hole with lockable cover for cable access" },
+      { name: "Design Wind Speed", value: "Up to 150 km/h (IS 875 Part III)" },
+      { name: "Foundation Bolts", value: "Supplied as accessory (specify on order)" },
+      { name: "Applicable Standards", value: "IS 2713, IS 4759, IS 875, IS 2062" },
+      { name: "Test Certificates", value: "Available on bulk order quantities (MTC)" },
+      { name: "Lead Time", value: "2–3 weeks ex-factory, subject to order size" }
     ],
     faqs: [
       {
@@ -390,6 +463,21 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Material", value: "Cast steel housing, stainless steel internal components (rustproof)" },
       { name: "Safety Standards", value: "Designed for high-vibration wind loading environments" }
     ],
+    visualSpecs: [
+      { name: "Assembly Type", value: "Highmast Latching Assembly (head frame + luminaire carriage)" },
+      { name: "Arm Configuration", value: "3-arm radial, 120° equal spacing (standard)" },
+      { name: "Latch Type", value: "Spring-loaded, self-aligning mechanical latch" },
+      { name: "Head Frame", value: "Fixed assembly, permanently mounted at pole apex" },
+      { name: "Luminaire Carriage", value: "Detachable, travels down for ground-level maintenance" },
+      { name: "Arm Joint Type", value: "Reinforced hinge and bracket connection" },
+      { name: "Guide Mechanism", value: "Central guide rope with pulley at head frame" },
+      { name: "Typical Assembly Weight", value: "Approx. 110-130 kg (3-arm configuration, all components)" },
+      { name: "Compatible Pole Height", value: "15 m to 40 m" },
+      { name: "Material", value: "Hot-dip galvanised steel components" },
+      { name: "Recommended Use Cases", value: "High-traffic, maintenance-critical sites; long-term low-maintenance installations" },
+      { name: "Pricing Tier", value: "Premium — higher cost than standard fixed/pin carriage systems" },
+      { name: "Maintenance", value: "Annual latch and spring inspection recommended" }
+    ],
     faqs: [
       {
         question: "Why is a latching mechanism critical for high mast safety?",
@@ -445,6 +533,21 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Bracket Arm Layouts", value: "Ornate scroll arms, single, double, or triple light mountings" },
       { name: "Luminaire Fitment", value: "Post-top or pendant hanging lamp brackets" }
     ],
+    visualSpecs: [
+      { name: "Height Range", value: "3 m, 4 m, 5 m, 6 m, 7 m, 8 m" },
+      { name: "Material", value: "Aluminium die-cast (pole shaft and ornamental components)" },
+      { name: "Design Options", value: "100+ catalogue designs — classical, colonial, contemporary, themed" },
+      { name: "Surface Finish", value: "Polyester powder coating, UV and weather resistant" },
+      { name: "Accent Finish", value: "Brass / gold-tone detailing (design dependent)" },
+      { name: "Luminaire Compatibility", value: "LED lantern heads, decorative glass/acrylic diffusers" },
+      { name: "Base Type", value: "Decorative cast base cover with anchor bolt access" },
+      { name: "Mounting", value: "Surface-mount on RCC foundation with anchor bolts" },
+      { name: "Bracket Style", value: "Integrated cast scrollwork or straight arm (per design)" },
+      { name: "Wind Load Rating", value: "Designed per IS 875 (Part III) for project wind zone" },
+      { name: "Cable Entry", value: "Internal cable routing through pole shaft" },
+      { name: "Customisation", value: "Custom colour, finish, and bracket variations available" },
+      { name: "Lead Time", value: "3–5 weeks depending on design and quantity" }
+    ],
     faqs: [
       {
         question: "Where are decorative poles typically specified?",
@@ -496,6 +599,17 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Body Material", value: "Copper-free die-cast aluminum alloy, epoxy powder coated" },
       { name: "Optical Diffuser", value: "Toughened, thermal shock-resistant borosilicate glass" },
       { name: "Conduit Entry Size", value: "Dual M20 or 3/4\" NPT threaded entry ports" }
+    ],
+    visualSpecs: [
+      { name: "Protection Concept", value: "Flameproof Enclosure (Ex d) — IEC 60079-1" },
+      { name: "ATEX / IECEx Classification", value: "Ex d IIB T4 Gb / Ex d IIB T5 Gb (model specific)" },
+      { name: "Zone Suitability", value: "Zone 1, Zone 2 (Gas); Zone 21, Zone 22 (Dust)" },
+      { name: "IP Rating", value: "IP66" },
+      { name: "Power Consumption (LED)", value: "18W, 24W, 36W (replaces 2×18W, 2×28W, 2×36W fluorescent)" },
+      { name: "Housing Material", value: "Die-cast iron / LM6 aluminium alloy" },
+      { name: "Glass Tube", value: "Heat-resistant borosilicate glass" },
+      { name: "Wire Guard", value: "Welded steel wire cage, powder-coated" },
+      { name: "Mounting Orientation", value: "Universal (Horizontal / Vertical pendant)" }
     ],
     faqs: [
       {
@@ -559,6 +673,17 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Protection Level", value: "IP66 rating (dust-tight, high-pressure washing protection)" },
       { name: "Cooling System", value: "Finned integrated heat sink structure (high-surface convection)" },
       { name: "Light Source Type", value: "High-density COB LED chip with color rendering index CRI > 80" }
+    ],
+    visualSpecs: [
+      { name: "Ex Protection Code", value: "Ex d IIC T6 Gb / Ex tb IIIC T80°C Db" },
+      { name: "Compliance Testing Standard", value: "IEC 60079-0, IEC 60079-1, EN 60079-31" },
+      { name: "Ingress Protection Level", value: "IP66 Dust-tight & High Pressure Water Jet Resistant" },
+      { name: "Housing Assembly Material", value: "High-Strength Copper-Free Die-Cast Aluminum Gray" },
+      { name: "Optical Window Material", value: "Toughened Prismatic Borosilicate Flameproof Glass" },
+      { name: "Input Electrical Operating Range", value: "100V–277V AC, 50Hz/60Hz Functionality" },
+      { name: "Conduit Cable Entry Ports", value: "Dual NPT 3/4\" or M20 Openings (1 Pre-Plugged as shown)" },
+      { name: "Color Rendering Index (CRI)", value: "> 80 Ra" },
+      { name: "Luminaire Lifespan (L70)", value: "> 50,000 Hours Continuous Operating Conditions" }
     ],
     faqs: [
       {
@@ -634,6 +759,21 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Surge Protection", value: "10 kV built-in surge protection driver" },
       { name: "Lens Optics", value: "Symmetric / Asymmetric secondary optical distribution lens" }
     ],
+    visualSpecs: [
+      { name: "Power Range", value: "10W to 500W" },
+      { name: "Luminous Efficacy", value: "130–160 lm/W" },
+      { name: "Colour Temperature", value: "3000K / 4000K / 5000K / 6500K" },
+      { name: "CRI", value: "≥ 80 Ra" },
+      { name: "Input Voltage", value: "85–265V AC, 50 Hz" },
+      { name: "Power Factor", value: "≥ 0.95" },
+      { name: "THD", value: "< 10%" },
+      { name: "IP Rating", value: "IP65 / IP66 (model specific)" },
+      { name: "IK Rating", value: "IK08 (impact resistant)" },
+      { name: "Operating Temperature", value: "-20°C to +55°C" },
+      { name: "Housing", value: "Die-cast aluminium, powder coated" },
+      { name: "Warranty", value: "5 Years (driver + module)" },
+      { name: "Certifications", value: "BIS, CE, RoHS" }
+    ],
     faqs: [
       {
         question: "What is the warranty coverage on Bajaj LED Flood Lights?",
@@ -706,6 +846,21 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Charge Controller", value: "Intelligent Maximum Power Point Tracking (MPPT) controller" },
       { name: "Lighting Modes", value: "Automated dusk-to-dawn, motion sensing dimmer mode (PIR)" },
       { name: "Autonomy Period", value: "2 to 3 consecutive rainy/cloudy days backup" }
+    ],
+    visualSpecs: [
+      { name: "Power Range (Overall)", value: "7W to 175W across the range" },
+      { name: "Variant Types", value: "All-in-One, Standalone, Semi-Integrated, Mini High Mast" },
+      { name: "Battery Type", value: "LiFePO4 (Lithium Iron Phosphate) — standard across range" },
+      { name: "Solar Panel", value: "Monocrystalline, 18%–22% efficiency" },
+      { name: "Light Source", value: "SMD / High-Power LED, 130–150 lm/W" },
+      { name: "Control", value: "PIR motion sensor + dusk-to-dawn auto on/off (select models)" },
+      { name: "Autonomy (Backup)", value: "2–4 cloudy days typical, model dependent" },
+      { name: "IP Rating", value: "IP65 (luminaire); IP67 battery compartment (select models)" },
+      { name: "Pole Compatibility", value: "Direct pole-top or arm-mount, 3 m–10 m poles" },
+      { name: "Charge Controller", value: "Integrated MPPT / PWM controller" },
+      { name: "Operating Temperature", value: "-10°C to +55°C" },
+      { name: "Warranty", value: "2 Years standard; extended options available" },
+      { name: "MNRE / BIS Status", value: "MNRE-approved models available; BIS listed on select SKUs" }
     ],
     faqs: [
       {
@@ -780,6 +935,24 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Ingress Rating", value: "IP66 waterproof rating with high-quality silicon sealant" },
       { name: "Surge Protection", value: "Internal 10kV SPD protection modules" }
     ],
+    visualSpecs: [
+      { name: "Wattage Range", value: "20W – 350W (across variants)" },
+      { name: "System Efficacy", value: "Up to 150 lumens per watt" },
+      { name: "Input Voltage", value: "240V AC (270V AC on select variants)" },
+      { name: "Colour Temperature (CCT)", value: "5700K" },
+      { name: "Housing", value: "Epoxy powder coated, pressure die-cast aluminium" },
+      { name: "Secondary Optics", value: "Non-yellowing polycarbonate / toughened glass" },
+      { name: "Driver", value: "Potted, with inbuilt surge, voltage & open/short-circuit protection" },
+      { name: "Ingress Protection", value: "IP66" },
+      { name: "Impact Protection", value: "IK07 / IK08" },
+      { name: "Internal Surge Protection", value: "4kV (10kV external SPD provision)" },
+      { name: "Total Harmonic Distortion (THD)", value: "< 10%" },
+      { name: "Power Factor (PF)", value: "> 0.90 – 0.95" },
+      { name: "Mounting", value: "Pole-mount with tilt adjustment; NEMA/ZHAGA adapter provision on select variants" },
+      { name: "Pole Diameter Compatibility", value: "38mm – 65mm (variant dependent)" },
+      { name: "Smart Control Ready", value: "Compatible with IoT-based lighting management platforms" },
+      { name: "Applications", value: "National/State Highways, Expressways, City & Service Roads, Commercial Spaces" }
+    ],
     faqs: [
       {
         question: "What does asymmetric light distribution mean for street lights?",
@@ -850,6 +1023,20 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Current Offerings", value: "16 Amp, 32 Amp, and 63 Amp configurations" },
       { name: "Voltage Configurations", value: "230V 3-Pin (Blue) / 415V 5-Pin (Red) options" },
       { name: "Contact Pins", value: "Solid brass pins with clean self-cleaning nickel-plating" }
+    ],
+    visualSpecs: [
+      { name: "Brand / Origin", value: "PCE Elektro GmbH, Austria" },
+      { name: "Standards", value: "IEC 60309, EN 60309" },
+      { name: "Current Ratings", value: "16A, 32A, 63A, 125A" },
+      { name: "Voltage Ratings", value: "110V, 230V, 400V, 500V" },
+      { name: "Poles", value: "2P+E, 3P+E, 3P+N+E" },
+      { name: "Frequency", value: "50 Hz / 60 Hz" },
+      { name: "IP Ratings", value: "IP44, IP54, IP67 (model specific)" },
+      { name: "Housing", value: "Reinforced thermoplastic (PA66)" },
+      { name: "Operating Temp.", value: "-25°C to +40°C" },
+      { name: "Colour Coding", value: "IEC 60309 compliant (blue/red/yellow/black)" },
+      { name: "Interlocked Version", value: "Available (MAINS before switching)" },
+      { name: "Certifications", value: "CE, VDE, ÖVE, SABS" }
     ],
     faqs: [
       {
@@ -922,6 +1109,22 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Polyamide Quality", value: "Flame retardant, self-extinguishing housing polymer" },
       { name: "Wiring Connection", value: "Standard screw terminals or tool-free Turbo Twist clamping" }
     ],
+    visualSpecs: [
+      { name: "Current Ratings", value: "250A, 315A, 400A, 500A, 600A" },
+      { name: "Voltage Rating", value: "380V / 400V / 415V / 500V (3P+N+E)" },
+      { name: "Frequency", value: "50 Hz / 60 Hz" },
+      { name: "Number of Poles", value: "3P+E / 3P+N+E (5 poles)" },
+      { name: "Contact Material", value: "Copper alloy (brass/bronze), silver-plated tips on selected models" },
+      { name: "Body Material", value: "Heavy thermoplastic / die-cast aluminium alloy (model specific)" },
+      { name: "IP Rating", value: "IP44 (standard) / IP67 (submersible version)" },
+      { name: "Interlocking", value: "Mechanical safety interlock as standard" },
+      { name: "Handle", value: "Integrated moulded carrying handle" },
+      { name: "Cable Entry", value: "Gland plate for cable OD 35 mm – 80 mm" },
+      { name: "Operating Temperature", value: "-25°C to +60°C" },
+      { name: "Applicable Standards", value: "IEC 60309, EN 60309" },
+      { name: "Colour Code", value: "Red (3P, 400V–500V) / Black (special voltages) per IEC 60309" },
+      { name: "Lead Time", value: "Subject to availability — confirm with enquiry" }
+    ],
     faqs: [
       {
         question: "Can these plugs withstand outdoor weather exposure?",
@@ -978,6 +1181,21 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Ingress Code", value: "IP67 waterproof rating with knurled locking ring" },
       { name: "Safety Feature", value: "Integrated pilot contact pin (early-break electrical interlock)" },
       { name: "Cable Clamping", value: "Heavy duty internal cable gland clamp and strain relief boot" }
+    ],
+    visualSpecs: [
+      { name: "Brand / Origin", value: "PCE Elektro GmbH, Austria" },
+      { name: "Standards", value: "IEC 60309, EN 60309" },
+      { name: "Rated Current", value: "125A" },
+      { name: "Voltage Ratings", value: "400V / 500V (3P+N+E)" },
+      { name: "Poles", value: "3P+E, 3P+N+E" },
+      { name: "Frequency", value: "50 Hz / 60 Hz" },
+      { name: "IP Rating", value: "IP44 (splash-proof) / IP65 (dust-tight, water-jet resistant)" },
+      { name: "Housing Material", value: "Reinforced thermoplastic (PA66), impact & UV resistant" },
+      { name: "Operating Temperature", value: "-25°C to +40°C" },
+      { name: "Colour Coding", value: "Red (400V), IEC 60309 compliant" },
+      { name: "Contact Material", value: "Brass, silver-plated" },
+      { name: "Cable Entry", value: "Suitable for 35–50 mm² cable, screw terminals" },
+      { name: "Certifications", value: "CE, VDE, ÖVE, SABS" }
     ],
     faqs: [
       {
@@ -1107,6 +1325,20 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Seal Insert", value: "Chloroprene rubber / Neoprene compression seal ring" },
       { name: "Operating Temp", value: "-30°C to +80°C continuous service" }
     ],
+    visualSpecs: [
+      { name: "Brand / Origin", value: "AGRO AG, Switzerland" },
+      { name: "Product Line", value: "Syntec® Synthetic — Metric" },
+      { name: "Housing Material", value: "Synthetic polymer, polyamide" },
+      { name: "Sealing Element", value: "Trapezoid-shaped articulated lamellas" },
+      { name: "IP Rating", value: "IP66 (dust-tight, powerful jet protection)" },
+      { name: "Thread Range", value: "M12×1.5 to M63×1.5 (metric)" },
+      { name: "Clamping Range", value: "1.5 mm to 44.0 mm, sub-ranged" },
+      { name: "Antikink Nozzle", value: "Optional on M16×1.5 and M20×1.5" },
+      { name: "Cable Retention / Strain Relief", value: "Hexagon-profile lamellar gripping" },
+      { name: "Test Standard", value: "IEC / EN 62444 — tested on mandrels" },
+      { name: "Colour", value: "Light grey / black (RAL 7035 / 9005)" },
+      { name: "Certifications", value: "CE, tested in AGRO's certified lab" }
+    ],
     faqs: [
       {
         question: "How do polymer glands prevent cables from pulling out?",
@@ -1176,6 +1408,24 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Contact Blocks", value: "1 Normally Closed (NC) + 1 Normally Open (NO) silver contacts" },
       { name: "Box Dimensioning", value: "Compact wall mount design with metric knockouts" }
     ],
+    visualSpecs: [
+      { name: "Brand / Origin", value: "Heinrich Hensel GmbH, Germany" },
+      { name: "Model Reference", value: "PBS 0101 G8 (as shown)" },
+      { name: "Housing Material", value: "High-impact Polycarbonate (PC), self-extinguishing, UV-stabilised" },
+      { name: "IP Rating", value: "IP68 (submersible, continuous)" },
+      { name: "IK Rating", value: "IK07" },
+      { name: "Actuator", value: "Red mushroom-head, turn-to-release, Ø 40 mm" },
+      { name: "Contact Action", value: "Positive-opening (direct-open action) per IEC 60947-5-5" },
+      { name: "Contact Configuration", value: "1NC (standard); 1NO+1NC (selected models)" },
+      { name: "Rated Voltage", value: "Up to 415V AC / 250V DC" },
+      { name: "Rated Current", value: "Up to 10A AC / 6A DC" },
+      { name: "Operating Temperature", value: "-25°C to +70°C" },
+      { name: "Colour", value: "Light grey RAL 7035, red actuator" },
+      { name: "Cable Entry", value: "M20 knockouts, four sides" },
+      { name: "Housing Dimensions", value: "Approx. 80×80×65 mm" },
+      { name: "Applicable Standards", value: "IEC 60947-5-1, IEC 60947-5-5, ISO 13850" },
+      { name: "Certifications", value: "CE, VDE" }
+    ],
     faqs: [
       {
         question: "What does 'latching mushroom button' mean?",
@@ -1236,6 +1486,22 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Wiring Entry", value: "Pre-formed knockouts for metric polymer glands" },
       { name: "Internal Rails", value: "Integrated mounting bosses for clean wiring termination" }
     ],
+    visualSpecs: [
+      { name: "Enclosure Material", value: "Polycarbonate / Thermoplastic (UV-stabilised, self-extinguishing)" },
+      { name: "IP Rating", value: "IP65 (dust-tight + water jet protection)" },
+      { name: "IK Rating", value: "IK09 (10 Joule impact resistance)" },
+      { name: "Door Options", value: "Transparent (smoked) or Opaque" },
+      { name: "Protection Devices", value: "MCB / RCCB — configurable count and rating" },
+      { name: "Industrial Sockets", value: "IEC 60309 — blue (230V) and red (415V 3-phase) as required" },
+      { name: "Internal Wiring", value: "Factory pre-wired, colour-coded, terminal block connections" },
+      { name: "DIN Rail", value: "35 mm DIN rail, pre-installed" },
+      { name: "Cable Entry", value: "Bottom/side gland plate, configurable knockouts" },
+      { name: "Mounting", value: "Wall-mount or pole-mount bracket (configurable)" },
+      { name: "Operating Temperature", value: "-25°C to +60°C" },
+      { name: "Colour", value: "Light grey RAL 7035 (standard)" },
+      { name: "Brand Reference", value: "Hensel-style modular construction (as shown)" },
+      { name: "Lead Time", value: "2–3 weeks depending on configuration" }
+    ],
     faqs: [
       {
         question: "Are the buttons customizable for different actions?",
@@ -1292,6 +1558,22 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Polycarbonate Strength", value: "IK08 impact rating, UV-stabilized polymer" },
       { name: "Cover Access", value: "Transparent hinged window door with lock option" },
       { name: "Internal Mounting", value: "Pre-fitted standard 35mm zinc-plated steel DIN rail" }
+    ],
+    visualSpecs: [
+      { name: "Material", value: "High-impact Polycarbonate (PC), self-extinguishing" },
+      { name: "IP Rating", value: "IP65 (dust-tight + water jet); IP66 (powerful water jet)" },
+      { name: "IK Rating", value: "IK08 (impact resistant)" },
+      { name: "Module Range", value: "3, 4, 6, 8, 9, 12, 18, 24, 36, 48, 54 modules (single & double row)" },
+      { name: "DIN Rail", value: "35 mm × 7.5 mm, pre-installed" },
+      { name: "Neutral Strip", value: "Optional factory-fitted neutral busbar (specify at order)" },
+      { name: "Door Type", value: "Opaque or smoked transparent cover with quarter-turn fastener" },
+      { name: "Cable Entries", value: "Knockouts (bottom, sides, top) — metric PG and M-thread sizes" },
+      { name: "Colour", value: "Light grey RAL 7035" },
+      { name: "Operating Temp.", value: "-25°C to +60°C" },
+      { name: "Gland Plate", value: "Detachable gland plate (selected models)" },
+      { name: "Applicable Standards", value: "IEC 62208, EN 60670-24" },
+      { name: "Certifications", value: "CE, RoHS" },
+      { name: "Lead Time", value: "Ex-stock to 2 weeks depending on module size" }
     ],
     faqs: [
       {
@@ -1364,6 +1646,22 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Actuation Latch", value: "Mushroom head twist-to-release mechanical lock" },
       { name: "Electrical rating", value: "AC-15 240V 3A / 415V 1.5A switching duty" }
     ],
+    visualSpecs: [
+      { name: "Configuration", value: "Fully customizable per project SLD / requirement" },
+      { name: "Enclosure Type", value: "Wall-mounted, multi-compartment" },
+      { name: "Material", value: "Polycarbonate / mild steel powder-coated (site dependent)" },
+      { name: "IP Rating", value: "IP54 / IP65 (configurable)" },
+      { name: "Metering", value: "Single or multi-feeder energy meter chambers" },
+      { name: "Control Devices", value: "Push buttons, selector switches, emergency stop" },
+      { name: "Indication", value: "LED pilot lamps — red, yellow, blue, green" },
+      { name: "Protection Devices", value: "MCB / MCCB / RCCB as per load schedule" },
+      { name: "Busbar", value: "Copper/aluminium busbar sized to project load" },
+      { name: "Cable Entry", value: "Bottom/top gland plate, configurable" },
+      { name: "Door", value: "Hinged with viewing window and lock provision" },
+      { name: "Operating Temperature", value: "-10°C to +55°C" },
+      { name: "Testing", value: "100% factory tested before dispatch" },
+      { name: "Lead Time", value: "2–4 weeks depending on configuration complexity" }
+    ],
     faqs: [
       {
         question: "What is the industry application of the PBS 0101 G8?",
@@ -1417,6 +1715,20 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Corrosion Strength", value: "Chemical resistant to acids, lyes, and industrial solvents" },
       { name: "Impact Resistance", value: "IK08 protection rating (high mechanical protection)" },
       { name: "Closure System", value: "Quick-release lid screws made of non-corrosive stainless steel" }
+    ],
+    visualSpecs: [
+      { name: "Brand / Origin", value: "Heinrich Hensel GmbH, Germany" },
+      { name: "Standards", value: "IEC 62208, EN 60670" },
+      { name: "Material Options", value: "GRP (thermosetting), ASA, Steel" },
+      { name: "Size Range", value: "80×80×55 mm to 800×600×300 mm" },
+      { name: "IP Rating", value: "IP55 / IP65 / IP66 (model specific)" },
+      { name: "IK Rating", value: "IK07 to IK10" },
+      { name: "Colour", value: "Light grey RAL 7035 / Other on request" },
+      { name: "Gland Knockouts", value: "Multiple sizes, metric and PG" },
+      { name: "Door Lock", value: "Key lock / quarter-turn / padlock provision" },
+      { name: "Operating Temp.", value: "-35°C to +70°C" },
+      { name: "Internal Mounting", value: "DIN rail 35mm / mounting plate" },
+      { name: "Certifications", value: "CE, VDE, ATEX (selected models)" }
     ],
     faqs: [
       {
@@ -1486,6 +1798,22 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Wall Construction", value: "Thick-walled copper-free die-cast aluminum alloy" },
       { name: "Terminal Options", value: "Fitted with standard DIN terminal blocks (up to 35 sq.mm)" },
       { name: "Cable Entries", value: "Fitted with threaded entries (NPT / Metric) and flameproof plugs" }
+    ],
+    visualSpecs: [
+      { name: "Product", value: "Cat. No. JB/104" },
+      { name: "Enclosure", value: "Flame Proof (Ex-d), Gas Group IIA & IIB — as per IS/IEC 60079-1:2007" },
+      { name: "Area Classification", value: "Ex db IIA, IIB" },
+      { name: "Certification", value: "CIMFR, BIS, PESO" },
+      { name: "Size", value: "80mm dia x 40mm depth" },
+      { name: "Temperature Class", value: "T5" },
+      { name: "Material", value: "Die cast aluminium alloy" },
+      { name: "Finish", value: "Epoxy powder coated shade, as per IS:5" },
+      { name: "Earthing", value: "1 No. internal & 2 Nos. external" },
+      { name: "Hardware", value: "Stainless steel" },
+      { name: "Gasket", value: "Neoprene / Silicon 'O' ring endless gasket" },
+      { name: "Name Plate", value: "Stainless steel nameplate cum warning plate" },
+      { name: "Terminals", value: "Optional: 4-way 15A strip type" },
+      { name: "Cable Entry", value: "Up to 4 Nos. M20 / ½\" NPT" }
     ],
     faqs: [
       {

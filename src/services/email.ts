@@ -1,4 +1,5 @@
 import { Resend } from 'resend';
+import { COMPANY_EMAIL } from '@/data/constants';
 
 const resendKey = process.env.RESEND_API_KEY;
 const resend = resendKey ? new Resend(resendKey) : null;
@@ -24,7 +25,7 @@ export async function sendEnquiryNotificationEmail(data: EnquiryData) {
     throw new Error("Email service is unavailable.");
   }
 
-  const businessEmail = process.env.BUSINESS_EMAIL || 'electrikainc@gmail.com';
+  const businessEmail = process.env.BUSINESS_EMAIL || COMPANY_EMAIL;
 
   const htmlContent = `
     <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; border: 1px solid #e2e8f0; border-radius: 12px; background-color: #ffffff; color: #1e293b;">

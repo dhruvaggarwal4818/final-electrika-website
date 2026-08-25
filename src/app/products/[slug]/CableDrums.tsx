@@ -1,9 +1,9 @@
-"use client";
 import React from "react";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import styles from "./cable-drums.module.css";
+import { WHATSAPP_BASE_URL } from "@/data/constants";
 
 export default function CableDrumsPage() {
   const sizes = [
@@ -128,9 +128,9 @@ export default function CableDrumsPage() {
                   <p className={styles.customConfigDesc}>Choose your drum size, number of sockets (230V / 415V), PCE rating (16A / 32A), cable length, and MCB rating. We build to your spec.</p>
                   <div className={styles.customConfigActions}>
                     <a href="#enquiry-form" className={styles.quoteBtn}>📋 Request Custom Quote</a>
-                    <a 
-                      href="https://wa.me/919971499542" 
-                      target="_blank" 
+                    <a
+                      href={WHATSAPP_BASE_URL}
+                      target="_blank"
                       rel="noopener noreferrer" 
                       className={styles.whatsappBtn}
                     >

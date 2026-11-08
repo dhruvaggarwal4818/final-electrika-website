@@ -64,6 +64,11 @@ export default function Header() {
                 Contact
               </Link>
             </li>
+            <li className={styles.navItem}>
+              <Link href="/price-list" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>
+                Price list
+              </Link>
+            </li>
           </ul>
         </nav>
 

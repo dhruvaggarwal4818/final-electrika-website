@@ -1,0 +1,120 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  min-height: 136px;
+  min-width: 0;
+  padding: 22px;
+  background-color: #ffffff;
+  border: 1px solid #e8eaf0;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.logoBox {
+  position: relative;
+  flex: 0 0 150px;
+  height: 90px;
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 1px solid #f0f2f5;
+  border-radius: 10px;
+}
+
+.logoContain {
+  object-fit: contain;
+  padding: 6px;
+}
+
+.logoCover {
+  object-fit: cover;
+}
+
+.body {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.text,
+.textLarge {
+  font-family: var(--font-inter);
+  color: #555555;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.textLarge {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  font-family: var(--font-inter);
+  font-weight: 700;
+  font-size: 12.5px;
+  line-height: 15px;
+  color: #ffffff;
+  background-color: #f97316;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #ea580c;
+}
+
+.button:focus-visible {
+  outline: 2px solid #1a9fd8;
+  outline-offset: 2px;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .logoBox {
+    flex-basis: 110px;
+    height: 72px;
+  }
+
+  .textLarge {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    gap: 12px;
+    min-height: 112px;
+    padding: 14px;
+  }
+
+  .logoBox {
+    flex-basis: 84px;
+    height: 60px;
+  }
+
+  .text {
+    font-size: 13px;
+  }
+
+  .textLarge {
+    font-size: 15px;
+  }
+
+  .button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}

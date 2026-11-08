@@ -496,12 +496,11 @@
 }
 
 .partnerLogo {
-  opacity: 0.55;
-  transition: opacity 0.2s;
   object-fit: contain;
-}
-.partnerCard:hover .partnerLogo {
-  opacity: 1;
+  max-width: 90%;
+  height: auto;
+  /* Blends white logo backgrounds into the grey card. */
+  mix-blend-mode: multiply;
 }
 
 .clientsWrap {

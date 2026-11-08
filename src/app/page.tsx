@@ -9,23 +9,51 @@ import styles from "./page.module.css";
 import { SEO_DATABASE } from "@/data/seoData";
 import { PRIMARY_DOMAIN } from "@/data/constants";
 
-// Brand logos carried
+// Brand logos carried. Files are trimmed to the logo itself, and sizes give each
+// roughly the same visual area, so wide logos are longer and tall ones narrower.
 const BRANDS = [
-  { name: "Bajaj", src: "/figma_assets/701133d47720789b84569e9d18059437cf8ef79a.png", width: 125, height: 63 },
-  { name: "Surya Roshni", src: "/figma_assets/c996060d11d90ebd9268c794033e78653888594b.png", width: 143, height: 114 },
-  { name: "Hensel", src: "/figma_assets/9c9f57c31fe627dd6c0ef9f6b76bf4d62508f1b7.png", width: 131, height: 53 },
-  { name: "PCE", src: "/figma_assets/ce67be05bd9881eec2a16dd080e90b0e13ce81d5.png", width: 114, height: 73 },
-  { name: "Transrail", src: "/figma_assets/8cfde7f4ef8bdfca0273e4e8f6098411e02772d0.png", width: 95, height: 32 },
-  { name: "Valmont", src: "/figma_assets/5d7ec0206edeb913077c94813a8d54fd3180fd94.png", width: 121, height: 50 },
-  { name: "Utkarsh", src: "/figma_assets/2a6b008c3461d0be1bad353e5f6514ccda6e6060.png", width: 107, height: 41 },
-  { name: "Hira RR Ispat", src: "/figma_assets/5d10b21ff7e99a932938483c934b6d7cc29e8e0f.png", width: 123, height: 74 },
-  { name: "Bajaj Secondary", src: "/figma_assets/3314c5863ad94a5674095fe86b2c43ea0d8c6784.png", width: 64, height: 46 },
-  { name: "Surya Roshni Secondary", src: "/figma_assets/84c18ec8b33e02297d337cac0c3210ce0bb26434.png", width: 121, height: 27 },
-  { name: "Hensel Secondary", src: "/figma_assets/b30f0cf57c67fecd475e35aa16d8dd3d7442b5f4.png", width: 124, height: 111 },
-  { name: "PCE Secondary", src: "/figma_assets/da9b196635716ec04c7f237c4d82a28ddf3584c7.png", width: 88, height: 70 },
+  { name: "AKG", src: "/figma_assets/brands/strip/akg.png", width: 114, height: 39 },
+  { name: "Schneider Electric", src: "/figma_assets/brands/strip/schneider.png", width: 122, height: 36 },
+  { name: "Polycab", src: "/figma_assets/brands/strip/polycab.png", width: 124, height: 36 },
+  { name: "Halonix", src: "/figma_assets/brands/strip/halonix.png", width: 165, height: 26 },
+  { name: "Transrail", src: "/figma_assets/brands/strip/transrail.png", width: 115, height: 38 },
+  { name: "Valmont", src: "/figma_assets/brands/strip/valmont.png", width: 162, height: 27 },
+  { name: "Utkarsh", src: "/figma_assets/brands/strip/utkarsh.png", width: 106, height: 41 },
+  { name: "Hira RR Ispat", src: "/figma_assets/brands/strip/hira.png", width: 101, height: 44 },
+  { name: "Bajaj", src: "/figma_assets/brands/strip/bajaj.png", width: 74, height: 52 },
+  { name: "Surya Roshni", src: "/figma_assets/brands/strip/surya.png", width: 141, height: 31 },
+  { name: "Hensel", src: "/figma_assets/brands/strip/hensel.png", width: 130, height: 34 },
+  { name: "PCE", src: "/figma_assets/brands/strip/pce.png", width: 35, height: 52 },
 ];
 
 import { PRODUCT_CATEGORIES } from "@/data/productsData";
+import { COMPANY_DOWNLOADS } from "@/data/priceListData";
+import BrandResourceCard from "@/components/BrandResourceCard";
+import ScrollReveal from "@/components/ScrollReveal";
+
+// Fade up as they scroll into view. Product rows animate as a whole because
+// their cards can scroll sideways on smaller screens.
+const REVEAL_SELECTORS = [
+  styles.heroBadge,
+  styles.heroTitle,
+  styles.heroSubtitle,
+  styles.heroButtons,
+  styles.heroTrust,
+  styles.heroVisual,
+  styles.brandsContainer,
+  styles.downloadPanel,
+  styles.sectionHeader,
+  styles.sectionHeaderCentered,
+  styles.featureCard,
+  styles.aboutVisual,
+  styles.aboutContent,
+  styles.categorySection,
+  styles.projectCard,
+  styles.clientsGrid,
+  styles.processStep,
+  styles.statCard,
+  styles.testimonialCard,
+].map((className) => `.${className}`);
 
 // Project Gallery
 const PROJECTS = [
@@ -34,15 +62,15 @@ const PROJECTS = [
   { name: "Switchgear & Connectors", src: "/figma_assets/projects_switchgear.jpg" },
 ];
 
-// Client Logos (Trusted By)
+// Client Logos (Trusted By). Trimmed files, sized to roughly the same visual area.
 const CLIENTS = [
-  { name: "Transrail", src: "/figma_assets/2b7750f9baf8675ba961acb5d67ce5a2870b75f6.png" },
-  { name: "Valmont Industries", src: "/figma_assets/07c4a1d3663cc2a32d396a2b8960377d5c1110b2.png" },
-  { name: "Utkarsh", src: "/figma_assets/eb5ebfdf6b96b5ff016dbd41e0350e8f7c98f2f2.png" },
-  { name: "Hira RR Ispat", src: "/figma_assets/2ad8d84caacaaaa9ac72e38553fe235d6c8b5a25.png" },
-  { name: "Bajaj Logo", src: "/figma_assets/a51a81e643c4cb49bbab7edf950baf43a1c51454.png" },
-  { name: "Bajaj Electricals", src: "/figma_assets/58e7e62c2b7de08b4967543e004fcf842bffc6c8.png" },
-  { name: "Bajaj Projects", src: "/figma_assets/981b1d95f66b1371800c51e3904fc229060e5676.png" },
+  { name: "Taj", src: "/figma_assets/brands/clients/taj.png", width: 66, height: 58 },
+  { name: "Hyundai", src: "/figma_assets/brands/clients/hyundai.png", width: 82, height: 46 },
+  { name: "Taiki-Sha", src: "/figma_assets/brands/clients/taiki-sha.png", width: 121, height: 31 },
+  { name: "Suzuki", src: "/figma_assets/brands/clients/suzuki.png", width: 75, height: 50 },
+  { name: "Honda", src: "/figma_assets/brands/clients/honda.png", width: 69, height: 55 },
+  { name: "Bharat Petroleum", src: "/figma_assets/brands/clients/bharat-petroleum.png", width: 52, height: 60 },
+  { name: "DLF", src: "/figma_assets/brands/clients/dlf.png", width: 94, height: 40 },
 ];
 
 // Testimonials
@@ -270,6 +298,19 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Company downloads */}
+        <section className={styles.downloadSection} aria-labelledby="downloads-heading">
+          <div className={styles.downloadPanel}>
+            <h2 id="downloads-heading" className={styles.sectionTitle}>Download Catalog and profile</h2>
+            <div className={styles.downloadDivider}></div>
+            <div className={styles.downloadGrid}>
+              {COMPANY_DOWNLOADS.map((item) => (
+                <BrandResourceCard key={item.name} item={item} largeText />
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* 4. Why Choose Us (Features) Section */}
         <section className={styles.featuresSection} aria-labelledby="features-heading">
           <div className={styles.container}>
@@ -411,7 +452,7 @@ export default function Home() {
                             fill
                             sizes="(max-width: 768px) 100vw, 250px"
                             className={styles.productCardImage}
-                            style={{ viewTransitionName: prod.slug ? `product-image-${prod.slug}` : 'none' }}
+                            style={{ viewTransitionName: prod.slug ? `product-image-${prod.slug}` : 'none', objectPosition: prod.imagePosition }}
                           />
                           {prod.badge && (
                             <span className={styles.productBadge}>{prod.badge}</span>
@@ -470,8 +511,8 @@ export default function Home() {
                     <Image
                       src={client.src}
                       alt={`${client.name} logo`}
-                      fill
-                      sizes="120px"
+                      width={client.width}
+                      height={client.height}
                       className={styles.clientLogo}
                     />
                   </div>
@@ -589,6 +630,8 @@ export default function Home() {
 
       {/* 12. Footer (includes CTA banner and Enquiry form) */}
       <Footer />
+
+      <ScrollReveal selectors={REVEAL_SELECTORS} />
     </div>
   );
 }

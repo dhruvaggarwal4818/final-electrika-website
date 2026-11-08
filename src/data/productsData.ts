@@ -2,6 +2,8 @@ export interface ProductItem {
   name: string;
   desc: string;
   src: string;
+  /** CSS object-position, for images that need a specific part kept in the card crop. */
+  imagePosition?: string;
   slug?: string;
   badge?: string;
 }
@@ -22,25 +24,29 @@ export const PRODUCT_CATEGORIES: Category[] = [
       {
         name: "National Flag Mast Poles",
         desc: "High-grade GI flag poles for govt buildings, monuments & public spaces",
-        src: "/figma_assets/3ddf7ebdff7c3954be1dc92b42122d365b22a8f6.png",
+        src: "/figma_assets/home_products/flag-mast.png",
+        imagePosition: "50% 7%",
         slug: "flag-mast-poles",
       },
       {
         name: "Industrial High Mast Poles",
         desc: "9m–35m GI poles, PCD 640mm — highways, ports, stadiums",
-        src: "/figma_assets/f4e60f5298204c68e69fff5b1424a502a63a1051.png",
+        src: "/figma_assets/home_products/high-mast.png",
+        imagePosition: "50% 13%",
         slug: "high-mast-poles",
       },
       {
         name: "Lowering Mechanisms",
         desc: "Winch-based lamp carriage systems for high mast maintenance",
-        src: "/figma_assets/54a2a4482bdbc8690f591e6d0d925819fc3f0e04.png",
+        src: "/figma_assets/home_products/lowering-mechanism.png",
+        imagePosition: "50% 9%",
         slug: "lowering-mechanisms",
       },
       {
         name: "GI octagonal pole",
         desc: "Premium GI octagonal poles designed for reliable street and area lighting.",
-        src: "/figma_assets/feb1da7b3af51ff25e5a077f3581a4bba907eed4.png",
+        src: "/figma_assets/home_products/gi-octagonal.png",
+        imagePosition: "50% 6%",
         slug: "gi-octagonal-pole",
       },
       {
@@ -52,7 +58,8 @@ export const PRODUCT_CATEGORIES: Category[] = [
       {
         name: "Decorative Street Poles",
         desc: "Heritage-style lamp posts for parks, campuses & heritage projects",
-        src: "/figma_assets/431b524a2c63f8f6f53d0fc332626bb2f90c136b.png",
+        src: "/figma_assets/home_products/decorative-pole.png",
+        imagePosition: "50% 0%",
         slug: "decorated-poles",
       },
     ],

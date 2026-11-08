@@ -349,19 +349,14 @@ export default function AboutUsPage() {
             As channel partners for some of the electrical industry's most renowned manufacturers, we deliver products backed by genuine documentation, full warranty, and proven reliability — never grey market substitutes.
           </p>
           <div className={styles.partnersGrid}>
-            <div className={styles.partnerCard}><Image src="/figma_assets_155/3314c5863ad94a5674095fe86b2c43ea0d8c6784.png" alt="Bajaj" width={116} height={88} className={styles.partnerLogo}/></div>
-            <div className={styles.partnerCard}><Image src="/figma_assets_155/84c18ec8b33e02297d337cac0c3210ce0bb26434.png" alt="Surya" width={209} height={44} className={styles.partnerLogo}/></div>
-            <div className={styles.partnerCard}><Image src="/figma_assets_155/5f20f8f616b3fafd2ff95601308cde79d56c42f6.png" alt="Hensel" width={213} height={80} className={styles.partnerLogo}/></div>
-            <div className={styles.partnerCard}>
-              <Image src="/figma_assets_155/701133d47720789b84569e9d18059437cf8ef79a.png" alt="Transrail" width={112} height={37} className={styles.partnerLogo} />
-            </div>
-            
-            <div className={styles.partnerCard}><Image src="/figma_assets_155/5d7ec0206edeb913077c94813a8d54fd3180fd94.png" alt="Valmont Industries" width={205} height={74} className={styles.partnerLogo}/></div>
-            <div className={styles.partnerCard}>
-              <Image src="/figma_assets_155/e594fac3b5e26a648d424ad8e33fd0edc8bf006b.png" alt="Utkarsh" width={96} height={37} className={styles.partnerLogo} />
-            </div>
-            <div className={styles.partnerCard}><Image src="/figma_assets_155/5d10b21ff7e99a932938483c934b6d7cc29e8e0f.png" alt="Hira RR Ispat" width={167} height={87} className={styles.partnerLogo}/></div>
-            <div className={styles.partnerCard}><Image src="/figma_assets_155/da9b196635716ec04c7f237c4d82a28ddf3584c7.png" alt="PCE" width={181} height={88} className={styles.partnerLogo}/></div>
+            <div className={styles.partnerCard}><Image src="/figma_assets/brands/strip/bajaj.png" alt="Bajaj" width={92} height={64} className={styles.partnerLogo}/></div>
+            <div className={styles.partnerCard}><Image src="/figma_assets/brands/strip/surya.png" alt="Surya" width={165} height={36} className={styles.partnerLogo}/></div>
+            <div className={styles.partnerCard}><Image src="/figma_assets_155/5f20f8f616b3fafd2ff95601308cde79d56c42f6.png" alt="Hensel" width={64} height={64} className={styles.partnerLogo}/></div>
+            <div className={styles.partnerCard}><Image src="/figma_assets/brands/strip/akg.png" alt="AKG" width={133} height={45} className={styles.partnerLogo}/></div>
+            <div className={styles.partnerCard}><Image src="/figma_assets/brands/strip/valmont.png" alt="Valmont Industries" width={190} height={32} className={styles.partnerLogo}/></div>
+            <div className={styles.partnerCard}><Image src="/figma_assets/brands/strip/transrail.png" alt="Transrail" width={135} height={45} className={styles.partnerLogo}/></div>
+            <div className={styles.partnerCard}><Image src="/figma_assets/brands/strip/hira.png" alt="Hira RR Ispat" width={118} height={51} className={styles.partnerLogo}/></div>
+            <div className={styles.partnerCard}><Image src="/figma_assets/brands/strip/pce.png" alt="PCE" width={43} height={64} className={styles.partnerLogo}/></div>
           </div>
         </section>
 

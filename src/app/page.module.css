@@ -372,12 +372,6 @@
   justify-content: center;
   min-width: 140px;
   height: 52px;
-  opacity: 0.55;
-  transition: opacity 0.2s ease;
-}
-
-.brandCard:hover {
-  opacity: 1;
 }
 
 .brandImage {
@@ -918,14 +912,11 @@
 
 .clientLogoWrapper {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
-  opacity: 0.55;
-  transition: opacity 0.2s ease;
-}
-
-.clientCard:hover .clientLogoWrapper {
-  opacity: 0.95;
 }
 
 .clientLogo {
@@ -1243,4 +1234,136 @@
   .statCard:nth-child(odd) {
     border-right: none;
   }
+}
+
+/* Company downloads */
+.downloadSection {
+  width: 100%;
+  padding: 16px 15px 0;
+  background-color: var(--color-bg-page);
+}
+
+.downloadPanel {
+  max-width: 1881px;
+  margin: 0 auto;
+  padding: 27px 40px 48px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+
+.downloadPanel .sectionTitle {
+  color: #0d1117;
+  margin-bottom: 8px;
+}
+
+.downloadDivider {
+  width: 97px;
+  height: 4px;
+  margin-bottom: 22px;
+  background: linear-gradient(90deg, var(--color-orange-home), rgba(232, 147, 58, 0));
+  border-radius: 2px;
+}
+
+.downloadGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 590px));
+  gap: 24px 74px;
+}
+
+@media (max-width: 1024px) {
+  .downloadSection {
+    padding: 16px 16px 0;
+  }
+
+  .downloadPanel {
+    padding: 24px 20px 28px;
+  }
+
+  .downloadGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .downloadGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .downloadSection {
+    padding: 12px 12px 0;
+  }
+
+  .downloadPanel {
+    padding: 20px 12px;
+  }
+
+  .downloadPanel .sectionTitle {
+    font-size: 24px;
+  }
+}
+
+/* Hero opening animation. Only the entry is animated ("backwards"), so hover
+   effects on the buttons keep working afterwards. The photo never starts
+   invisible, which keeps it fast to appear. */
+@keyframes heroRise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+
+@keyframes heroSettle {
+  from {
+    transform: scale(1.05);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .heroBadge,
+  .heroTitle,
+  .heroSubtitle,
+  .heroButtons,
+  .heroTrust {
+    animation: heroRise 0.6s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  }
+
+  .heroTitle {
+    animation-delay: 90ms;
+  }
+
+  .heroSubtitle {
+    animation-delay: 180ms;
+  }
+
+  .heroButtons {
+    animation-delay: 270ms;
+  }
+
+  .heroTrust {
+    animation-delay: 360ms;
+  }
+
+  .heroImage {
+    animation: heroSettle 1.2s ease-out backwards;
+  }
+}
+
+/* Same raised frames as the Price list page, tuned for the grey panel. */
+.downloadGrid > article {
+  box-shadow:
+    inset 0 1px 0 #ffffff,
+    0 1px 2px rgba(15, 23, 42, 0.12),
+    0 6px 12px rgba(15, 23, 42, 0.12),
+    0 16px 30px rgba(15, 23, 42, 0.18);
+}
+
+.downloadGrid > article > div:first-child {
+  border-color: #e3e7ee;
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.12),
+    0 4px 8px rgba(15, 23, 42, 0.12),
+    0 10px 18px -4px rgba(15, 23, 42, 0.22);
 }

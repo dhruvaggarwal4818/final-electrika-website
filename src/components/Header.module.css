@@ -192,3 +192,29 @@
   }
 }
 
+
+/* Menu items and buttons keep their full width instead of squeezing or wrapping. */
+.navLink,
+.actionBtn {
+  white-space: nowrap;
+}
+
+.logoLink,
+.actions {
+  flex-shrink: 0;
+}
+
+/* Landscape tablets: the full menu just fits, so tighten spacing, not text size. */
+@media (min-width: 1025px) and (max-width: 1150px) {
+  .navList {
+    gap: 20px;
+  }
+
+  .logoImage {
+    max-width: 170px;
+  }
+
+  .actionBtn {
+    padding: 0 12px;
+  }
+}

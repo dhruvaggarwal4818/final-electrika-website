@@ -5,7 +5,7 @@ import { PRIMARY_DOMAIN } from "@/data/constants";
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = Object.keys(SEO_DATABASE);
   
-  return routes.map((route) => {
+  const pages: MetadataRoute.Sitemap = routes.map((route) => {
     let url = `${PRIMARY_DOMAIN}`;
     if (route !== "home") {
       if (route === "about-us") {
@@ -38,4 +38,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority,
     };
   });
+
+  pages.push({
+    url: `${PRIMARY_DOMAIN}/price-list`,
+    lastModified: new Date("2026-11-08T12:00:00Z"),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
+  return pages;
 }

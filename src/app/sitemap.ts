@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { SEO_DATABASE } from "@/data/seoData";
 import { PRIMARY_DOMAIN } from "@/data/constants";
+import { PRICE_LIST_BRANDS, PRICE_LIST_PAGE_UPDATED } from "@/data/priceListData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = Object.keys(SEO_DATABASE);
@@ -41,10 +42,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   pages.push({
     url: `${PRIMARY_DOMAIN}/price-list`,
-    lastModified: new Date("2026-11-08T12:00:00Z"),
+    lastModified: new Date(`${PRICE_LIST_PAGE_UPDATED}T12:00:00Z`),
     changeFrequency: "monthly",
     priority: 0.7,
   });
+
+  // Electrika-issued price list PDFs (searchable text). Manufacturers' own PDFs
+  // are left out and stay discoverable through the links on /price-list.
+  for (const brand of PRICE_LIST_BRANDS) {
+    const lastModified = brand.priceList?.sitemapLastModified;
+    if (brand.file && lastModified) {
+      pages.push({
+        url: `${PRIMARY_DOMAIN}${brand.file}`,
+        lastModified: new Date(`${lastModified}T12:00:00Z`),
+        changeFrequency: "monthly",
+        priority: 0.6,
+      });
+    }
+  }
 
   return pages;
 }

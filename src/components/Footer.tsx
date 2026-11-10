@@ -167,6 +167,11 @@ export default function Footer({ hideEnquiry = false }: FooterProps) {
                 </Link>
               </li>
               <li>
+                <Link href="/price-list" className={styles.columnLink}>
+                  Price List
+                </Link>
+              </li>
+              <li>
                 <Link href="#enquiry-form" className={styles.columnLink}>
                   Contact
                 </Link>

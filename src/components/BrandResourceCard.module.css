@@ -72,9 +72,45 @@
   background-color: #ea580c;
 }
 
-.button:focus-visible {
+.button:focus-visible,
+.buttonOutline:focus-visible {
   outline: 2px solid #1a9fd8;
   outline-offset: 2px;
+}
+
+/* Price list cards only: effective date line and View / Download buttons. */
+.meta {
+  margin-top: -4px;
+  font-family: var(--font-inter);
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #0e2848;
+}
+
+.buttonRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.buttonOutline {
+  display: inline-block;
+  padding: 7px 15px;
+  font-family: var(--font-inter);
+  font-weight: 700;
+  font-size: 12.5px;
+  line-height: 15px;
+  color: #f97316;
+  background-color: #ffffff;
+  border: 1px solid #f97316;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.buttonOutline:hover {
+  color: #ffffff;
+  background-color: #f97316;
 }
 
 @media (max-width: 1024px) {
@@ -115,6 +151,11 @@
 
   .button {
     padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .buttonOutline {
+    padding: 7px 11px;
     font-size: 12px;
   }
 }

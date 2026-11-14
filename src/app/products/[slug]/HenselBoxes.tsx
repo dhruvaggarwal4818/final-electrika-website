@@ -98,8 +98,8 @@ export default function HenselBoxesPage() {
               <div className={styles.heroContent}>
                 <div className={styles.heroBadge}>Hensel Boxes</div>
                 <h1 className={styles.heroTitle}>
-                  Enclosures & Distribution <br />
-                  <span className={styles.orangeText}>Hensel Boxes</span>
+                  Hensel Polycarbonate <br />
+                  <span className={styles.orangeText}>Junction Boxes</span>
                 </h1>
                 <p className={styles.heroDesc}>
                   German-engineered Hensel electrical enclosures, junction boxes, and distribution boards. From IP55 weatherproof boxes to IK10 anti-vandal consumer units. Authorised distributor.

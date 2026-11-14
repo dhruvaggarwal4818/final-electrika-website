@@ -9,7 +9,7 @@ export default function FlpJunctionBoxPage() {
     { name: "Product", val: "Cat. No. JB/104" },
     { name: "Enclosure", val: "Flame Proof (Ex-d), Gas Group IIA & IIB — as per IS/IEC 60079-1:2007" },
     { name: "Area Classification", val: "Ex db IIA, IIB" },
-    { name: "Certification", val: "CIMFR, BIS, PESO" },
+    { name: "Certification", val: "ISI marked (BIS); CIMFR / PESO certificates per model on request" },
     { name: "Size", val: "80mm dia x 40mm depth" },
     { name: "Temperature Class", val: "T5" },
     { name: "Material", val: "Die cast aluminium alloy" },
@@ -26,12 +26,12 @@ export default function FlpJunctionBoxPage() {
     {
       iconFallback: "🔥",
       title: "Flameproof Ex-d Enclosure",
-      desc: "Certified Ex db IIA, IIB as per IS/IEC 60079-1:2007. Contains internal explosions and prevents flame propagation.",
+      desc: "Ex db flameproof protection to IS/IEC 60079-1, gas group IIA / IIB (IIC on request). Contains internal explosions and prevents flame propagation.",
     },
     {
       iconFallback: "📜",
-      title: "CIMFR / BIS / PESO Certified",
-      desc: "Fully certified for use in Indian hazardous-area installations, with documentation supplied for site clearance.",
+      title: "Manufacturer Certified",
+      desc: "ISI-marked enclosure supplied with the manufacturer's test and certification documents (BIS / CIMFR / PESO as applicable to the model) for site clearance.",
     },
     {
       iconFallback: "🧱",
@@ -65,7 +65,7 @@ export default function FlpJunctionBoxPage() {
           <div className={`${styles.container} ${styles.warningInner}`}>
             <div className={styles.warningIcon}>⚠️</div>
             <p className={styles.warningText}>
-              <span className={styles.warningHighlight}>Certified for Hazardous Area Use · </span>
+              <span className={styles.warningHighlight}>For Hazardous Area Use · </span>
               Flame Proof (Ex-d), Gas Group IIA &amp; IIB · IS/IEC 60079-1:2007 compliant — do not open when energised
             </p>
           </div>
@@ -82,7 +82,7 @@ export default function FlpJunctionBoxPage() {
                   <span className={styles.orangeText}>Flameproof Ex-d Enclosure</span>
                 </h1>
                 <p className={styles.heroDesc}>
-                  Cat. No. JB/104 — a flameproof, weatherproof junction box / control station enclosure engineered for safe cable termination in gas-classified hazardous areas. Die-cast aluminium alloy body certified to IS/IEC 60079-1:2007.
+                  Cat. No. JB/104 — a flameproof, weatherproof junction box / control station enclosure engineered for safe cable termination in gas-classified hazardous areas. Die-cast aluminium alloy body manufactured to IS/IEC 60079-1 and ISI marked.
                 </p>
 
                 <div className={styles.metaGrid}>
@@ -99,7 +99,7 @@ export default function FlpJunctionBoxPage() {
                     <span className={styles.metaLabel}>Voltage</span>
                   </div>
                   <div className={styles.metaItem}>
-                    <span className={styles.metaVal}>CIMFR/BIS/PESO</span>
+                    <span className={styles.metaVal}>ISI / BIS</span>
                     <span className={styles.metaLabel}>Certification</span>
                   </div>
                 </div>
@@ -124,7 +124,7 @@ export default function FlpJunctionBoxPage() {
                     priority
                   />
                   <div className={styles.tagPremium}>In Stock</div>
-                  <div className={styles.tagZone}>Ex-d Certified</div>
+                  <div className={styles.tagZone}>Ex-d Flameproof</div>
                 </div>
               </div>
             </div>
@@ -135,9 +135,9 @@ export default function FlpJunctionBoxPage() {
         <section className={styles.featuresSection}>
           <div className={styles.container}>
             <span className={styles.sectionEyebrow}>Key Features</span>
-            <h2 className={styles.sectionTitle}>Certified Safety for Hazardous Areas</h2>
+            <h2 className={styles.sectionTitle}>Flameproof Safety for Hazardous Areas</h2>
             <p className={styles.sectionIntro}>
-              Every FLP Junction Box is built and certified to contain an internal explosion, preventing ignition of the surrounding atmosphere.
+              Every FLP junction box is designed to contain an internal explosion, preventing ignition of the surrounding atmosphere.
             </p>
 
             <div className={styles.featuresGrid}>
@@ -170,7 +170,7 @@ export default function FlpJunctionBoxPage() {
         <section className={styles.constructionSection}>
           <div className={styles.container}>
             <span className={styles.sectionEyebrow}>Construction</span>
-            <h2 className={styles.sectionTitle}>Built to Contain, Certified to Protect</h2>
+            <h2 className={styles.sectionTitle}>Built to Contain, Designed to Protect</h2>
             <p className={styles.sectionIntro}>
               A closer look at the enclosure, nameplate, and dimensional drawing for installation planning.
             </p>

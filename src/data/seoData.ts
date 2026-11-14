@@ -109,16 +109,15 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
     ]
   },
   "high-mast-poles": {
-    title: "Industrial High Mast Poles (9m-35m) | Electrika INC",
-    description: "Shop 9m to 35m hot-dip galvanized steel high mast poles. Built to IS 875 & IS 2062. Ideal for highways, shipping ports, airports, and sports stadiums.",
-    keywords: ["High Mast Poles", "Galvanized Steel Mast 30m", "High Mast Lighting Supplier", "IS 2062 High Mast", "PCD 640mm Mast Pole", "High Mast India"],
+    title: "High Mast Poles (12.5m to 40m) | Electrika INC",
+    description: "12.5m to 40m hot-dip galvanized steel high mast poles. Built to IS 875 & IS 2062. Ideal for highways, shipping ports, airports, and sports stadiums.",
+    keywords: ["High Mast Poles", "Galvanized Steel Mast 30m", "16m High Mast", "20m High Mast", "30m High Mast", "High Mast Lighting Supplier", "IS 2062 High Mast", "PCD 640mm Mast Pole", "High Mast India"],
     canonical: `${PRIMARY_DOMAIN}/products/high-mast-poles`,
     entityType: "Product",
     brand: "Valmont / Bajaj / Utkarsh",
-    manufacturer: "Electrika INC",
-    directAnswer: "Industrial High Mast Poles are structural steel columns ranging from 9m to 35m in height. Assembled in polygonal sections, these masts are hot-dip galvanized inside and out to IS 4759 standards to prevent corrosion. They feature a pitch circle diameter (PCD) typically of 640mm and are designed to withstand wind speeds up to 150 km/h under IS 875 Part III regulations, accommodating multi-directional LED floodlight rings for large-area lighting.",
+    directAnswer: "Industrial High Mast Poles are structural steel columns, commonly 12.5m, 16m, 20m, 25m, 30m, 35m and 40m in height. Assembled in polygonal sections, these masts are hot-dip galvanized inside and out to IS 4759 standards to prevent corrosion. They feature a pitch circle diameter (PCD) typically of 640mm and are designed to withstand wind speeds up to 150 km/h under IS 875 Part III regulations, accommodating multi-directional LED floodlight rings for large-area lighting.",
     specs: [
-      { name: "Height Range", value: "9 meters to 35 meters" },
+      { name: "Height Range", value: "12.5 meters to 40 meters" },
       { name: "Material Grade", value: "IS 2062 Grade A / S355 Structural Steel" },
       { name: "Galvanization Standard", value: "Hot-Dip Galvanized to IS 4759 (Minimum 86 microns)" },
       { name: "Cross Section", value: "12-sided or 20-sided polygonal tapered sections" },
@@ -126,7 +125,7 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Base Flange Diameter", value: "640mm PCD or project-customized flange specifications" }
     ],
     visualSpecs: [
-      { name: "Height Range", value: "9 m to 40 m (custom up to 50 m)" },
+      { name: "Height Range", value: "12.5 m to 40 m (12.5 / 16 / 20 / 25 / 30 / 35 / 40 m)" },
       { name: "Material", value: "IS 2062 Grade A Mild Steel" },
       { name: "Surface Treatment", value: "Hot-Dip Galvanised (IS 4759), min 86 µm" },
       { name: "Shape", value: "Polygonal (8/12/16 sided) or Conical" },
@@ -142,7 +141,7 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
     ],
     faqs: [
       {
-        question: "What are the common applications for 9m to 35m high mast poles?",
+        question: "What are the common applications for 12.5m to 40m high mast poles?",
         answer: "These structural masts are primarily deployed in high-acreage outdoor areas requiring uniform illumination, such as highway junctions, toll plazas, shipping docks, airport aprons, railway yards, coal yards, and sports complexes."
       },
       {
@@ -150,12 +149,12 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
         answer: "Yes, we supply complete high-tensile foundation J-bolts, templates, and base fixing hardware custom-designed for the specific mast height and local soil characteristics."
       }
     ],
-    definition: "High Mast Poles are tall structural steel columns (9m–40m) used to mount multiple high-power floodlights at elevation for broad-area illumination. Fabricated from IS 2062 Grade A mild steel in tapered polygonal sections, they are hot-dip galvanized inside and out to IS 4759 standards. The top-mounted lamp carriage ring holds 4–16 luminaires and can be raised or lowered via an integrated winch system for ground-level maintenance without cranes or scaffolding.",
+    definition: "High Mast Poles are tall structural steel columns (12.5m–40m) used to mount multiple high-power floodlights at elevation for broad-area illumination. Fabricated from IS 2062 Grade A mild steel in tapered polygonal sections, they are hot-dip galvanized inside and out to IS 4759 standards. The top-mounted lamp carriage ring holds 4–16 luminaires and can be raised or lowered via an integrated winch system for ground-level maintenance without cranes or scaffolding.",
     engineeringNotes: [
       "Pole sections are joined using telescopic slip-joint connections welded and inspected per IS 2713 structural weld certification.",
       "Foundation bolt circle diameter (PCD) and bolt size are calculated using soil bearing capacity data specific to the installation site.",
       "All structural welds are ultrasonic or radiographic tested (UT/RT) for critical infrastructure projects on request.",
-      "Wall thickness ranges from 4mm (9m poles) to 12mm (40m poles) to manage structural bending moment from wind loads.",
+      "Wall thickness increases from about 4mm on 12.5m poles to about 12mm on 40m poles to manage structural bending moment from wind loads.",
       "Motorised lowering systems use self-locking worm-drive winches that automatically hold the luminaire ring in position if power is lost."
     ],
     advantages: [
@@ -213,7 +212,6 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
     canonical: `${PRIMARY_DOMAIN}/products/flag-mast-poles`,
     entityType: "Product",
     brand: "Utkarsh / Valmont",
-    manufacturer: "Electrika INC",
     directAnswer: "National Flag Mast Poles are specialized high-strength galvanized steel poles (typically 12m to 40m high) designed for prestigious monumental flag hoisting. Featuring a tapered multi-sided polygonal design and a hidden internal mechanical winch rope hoist system, these masts ensure smooth flag raising and lowering. Galvanized to IS 4759 standard, they withstand harsh outdoor environments without rusting.",
     specs: [
       { name: "Height Standards", value: "12 m, 15 m, 20 m, 30 m, and custom up to 40 m" },
@@ -284,13 +282,12 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
     ]
   },
   "lowering-mechanisms": {
-    title: "Winch Lowering Mechanisms for High Masts | Electrika INC",
-    description: "Reliable winch-based lamp carriage lowering systems for high mast maintenance. Safe ground-level servicing for floodlights without climbing.",
-    keywords: ["High Mast Winch", "Lowering Mechanism", "Winch lamp carriage", "Double drum winch", "Mast maintenance winch system"],
+    title: "High Mast Lowering Mechanism — Motorised Winch | Electrika INC",
+    description: "Motorised winch lowering mechanisms for high mast lamp rings — bring floodlights to ground level for safe maintenance without cranes, ladders or climbing. Get a quote.",
+    keywords: ["High Mast Lowering Mechanism", "High Mast Lowering System", "Motorised lowering mechanism", "High Mast Winch", "Lowering Mechanism", "Winch lamp carriage", "Double drum winch", "Mast maintenance winch system"],
     canonical: `${PRIMARY_DOMAIN}/products/lowering-mechanisms`,
     entityType: "Product",
     brand: "Valmont / Bajaj",
-    manufacturer: "Electrika INC",
     directAnswer: "Winch Lowering Mechanisms are mechanical assembly systems integrated inside high mast poles. They consist of a double-drum self-lubricating winch unit, stainless steel wire ropes, and a power tool arrangement that allows the entire top-mounted LED luminaire ring to be lowered to ground level. This system eliminates the need for ladders or high-reach cranes during routine maintenance and lighting replacement.",
     specs: [
       { name: "System Type", value: "Double Drum / Single Drum Self-Looping Winch" },
@@ -365,7 +362,6 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
     canonical: `${PRIMARY_DOMAIN}/products/gi-octagonal-pole`,
     entityType: "Product",
     brand: "Utkarsh / Valmont / Bajaj",
-    manufacturer: "Electrika INC",
     directAnswer: "A Galvanized Octagonal Steel Pole is an 8-sided tapered structural column used for mounting outdoor street lights. Made from premium IS 2062 grade mild steel, these poles are hot-dip galvanized inside and out (IS 4759) to withstand extreme weather. They offer a much higher strength-to-weight ratio than traditional tubular poles and feature an internal lockable hand-hole door for electrical loop-in wiring and MCB connections.",
     specs: [
       { name: "Height Selection", value: "3m, 4m, 5m, 6m, 7m, 8m, 9m, 10m, 11m, 12m" },
@@ -450,11 +446,10 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
   "latching-mast": {
     title: "Latching Mechanism for High Mast Light Rings | Electrika INC",
     description: "Engineered high mast latching mechanisms for secure overhead locking of luminaire rings. Relieves structural strain on SS ropes.",
-    keywords: ["High Mast Latching", "Latching Mechanism", "Secure overhead mast lock", "Bajaj high mast latching", "Winch rope safety lock"],
+    keywords: ["High Mast Latching Mechanism", "High Mast Latching", "Latching Mechanism", "High mast latching system", "Secure overhead mast lock", "Bajaj high mast latching", "Winch rope safety lock"],
     canonical: `${PRIMARY_DOMAIN}/products/latching-mast`,
     entityType: "Product",
     brand: "Valmont / Bajaj",
-    manufacturer: "Electrika INC",
     directAnswer: "A Latching Mast Mechanism is an overhead docking system mounted at the top of a high mast pole. When the luminaire carriage ring is raised to its operating position, the latching mechanism automatically engages, anchoring the carriage directly to the top mast assembly. This mechanical latching transfers the heavy luminaire load onto the mast structure, completely relieving tension on the stainless steel winching wire ropes and preventing catastrophic rope fatigue.",
     specs: [
       { name: "Engagement System", value: "Automatic spring-loaded gravity latching pins" },
@@ -464,7 +459,7 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Safety Standards", value: "Designed for high-vibration wind loading environments" }
     ],
     visualSpecs: [
-      { name: "Assembly Type", value: "Highmast Latching Assembly (head frame + luminaire carriage)" },
+      { name: "Assembly Type", value: "High Mast Latching Assembly (head frame + luminaire carriage)" },
       { name: "Arm Configuration", value: "3-arm radial, 120° equal spacing (standard)" },
       { name: "Latch Type", value: "Spring-loaded, self-aligning mechanical latch" },
       { name: "Head Frame", value: "Fixed assembly, permanently mounted at pole apex" },
@@ -519,23 +514,22 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
   },
   "decorated-poles": {
     title: "Decorative Street Lighting Poles & Heritage Posts | Electrika INC",
-    description: "Premium heritage-style cast iron & GI decorative lamp posts. Beautiful classic designs for parks, township pathways, and historic developments.",
-    keywords: ["Decorative Poles", "Heritage Street Light Pole", "Cast Iron Lamp Post", "Ornate pathways lighting pole", "Classic garden lamp post"],
+    description: "Heritage and modern decorative lamp posts in aluminium, cast iron or GI steel — material chosen per design and site. Beautiful classic designs for parks, township pathways, and historic developments.",
+    keywords: ["Decorative Poles", "Heritage Street Light Pole", "Cast Iron Lamp Post", "Aluminium Decorative Pole", "GI Decorative Pole", "Ornate pathways lighting pole", "Classic garden lamp post"],
     canonical: `${PRIMARY_DOMAIN}/products/decorated-poles`,
     entityType: "Product",
     brand: "Bajaj / Ligman / Custom",
-    manufacturer: "Electrika INC",
-    directAnswer: "Decorative Street Poles are architectural lamp posts designed to provide high-quality lighting while enhancing the aesthetic appeal of a property or city avenue. Fabricated from combinations of steel columns, cast iron decorative base scrolls, and ornate single/double bracket arms, these poles are finished with specialized polyurethane anti-corrosive paint to stand up to outdoor conditions.",
+    directAnswer: "Decorative Street Poles are architectural lamp posts designed to provide high-quality lighting while enhancing the aesthetic appeal of a property or city avenue. Depending on the design, site and client requirement, they are made in die-cast aluminium, cast iron or galvanised (GI) steel with ornate bases and single/double bracket arms, these poles are finished with specialized polyurethane anti-corrosive paint to stand up to outdoor conditions.",
     specs: [
       { name: "Height Options", value: "3m, 4m, 5m, and 6m configurations" },
-      { name: "Materials", value: "Galvanized steel pipe core, cast aluminum/cast iron embellishments" },
+      { name: "Materials", value: "Die-cast aluminium, cast iron or GI steel — selected per design and site" },
       { name: "Surface Paint", value: "UV-resistant Polyurethane (PU) paint over zinc chromate primer" },
       { name: "Bracket Arm Layouts", value: "Ornate scroll arms, single, double, or triple light mountings" },
       { name: "Luminaire Fitment", value: "Post-top or pendant hanging lamp brackets" }
     ],
     visualSpecs: [
       { name: "Height Range", value: "3 m, 4 m, 5 m, 6 m, 7 m, 8 m" },
-      { name: "Material", value: "Aluminium die-cast (pole shaft and ornamental components)" },
+      { name: "Material", value: "Aluminium die-cast / cast iron / GI steel — chosen per design, site and client requirement" },
       { name: "Design Options", value: "100+ catalogue designs — classical, colonial, contemporary, themed" },
       { name: "Surface Finish", value: "Polyester powder coating, UV and weather resistant" },
       { name: "Accent Finish", value: "Brass / gold-tone detailing (design dependent)" },
@@ -554,10 +548,11 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
         answer: "They are widely used in urban landscaping projects, theme parks, golf courses, resort walkways, university campuses, public plazas, and residential township roads."
       }
     ],
-    definition: "Decorative Street Poles are aesthetically designed lamp posts that combine structural lighting functionality with architectural visual appeal. Built around a galvanized steel structural core, they are adorned with cast aluminum or cast iron ornamental bases, scroll bracket arms, and decorative shaft collars. Finished with UV-resistant polyurethane (PU) paint over zinc chromate primer, they are available in custom heritage colors such as British Racing Green, Antique Black, and Cream.",
+    definition: "Decorative Street Poles are aesthetically designed lamp posts that combine structural lighting functionality with architectural visual appeal. The material — die-cast aluminium, cast iron or galvanised steel — is selected before manufacturing according to the pole design, the site conditions and the client's requirement, and they are adorned with ornamental bases, scroll bracket arms, and decorative shaft collars. Finished with UV-resistant polyurethane (PU) paint over zinc chromate primer, they are available in custom heritage colors such as British Racing Green, Antique Black, and Cream.",
     engineeringNotes: [
-      "The core structural steel shaft is hot-dip galvanized before ornamental components are attached, ensuring the load-bearing structure is fully protected from corrosion.",
-      "Decorative cast iron base scrolls are sand-cast using high-silicon grey iron for maximum detail fidelity and impact resistance.",
+      "Material is chosen per project: die-cast aluminium is light and corrosion-resistant (suited to coastal and humid sites), cast iron gives traditional heavy heritage detailing, and GI steel suits taller or higher-load poles at lower cost.",
+      "Where a steel shaft is used, it is hot-dip galvanized before ornamental components are attached, ensuring the load-bearing structure is protected from corrosion.",
+      "Cast iron ornamental bases and scrolls are sand-cast for fine detailing and impact resistance where a traditional heritage look is specified.",
       "The PU paint system is applied in three layers (zinc chromate primer + epoxy mid-coat + PU topcoat) for a minimum 15-year outdoor color retention.",
       "Bracket arm connections use full-penetration butt welds ground flush to the pole surface for a seamless architectural appearance."
     ],
@@ -586,13 +581,11 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
   },
   "flp-led-light": {
     title: "Flame-proof LED Tube Lights (Zone 1 & 2) | Electrika INC",
-    description: "Heavy-duty explosion-proof LED linear tube fittings (IP66). Certified Ex d IIC T6 Gb for hazardous oil, gas & chemical environments.",
+    description: "Heavy-duty explosion-proof LED linear tube fittings (IP66). Ex d flameproof (gas group IIB, T4/T5 — model specific) for hazardous oil, gas & chemical environments.",
     keywords: ["Flame-proof LED lights", "Explosion Proof LED Tube", "FLP Linear Fitting", "Zone 1 Ex d light", "Hazardous area lighting India"],
     canonical: `${PRIMARY_DOMAIN}/products/flp-led-light`,
     entityType: "Product",
-    brand: "Hensel / PCE / FLP Brand",
-    manufacturer: "Electrika INC",
-    directAnswer: "Flameproof LED Tube Lights are explosion-resistant linear light fixtures certified for Zone 1, 2, 21, and 22 hazardous areas. Built with a high-strength, copper-free die-cast aluminum housing and an impact-resistant toughened borosilicate glass envelope, they prevent any internal electrical spark or gas ignition from escaping and triggering explosions in the surrounding atmosphere.",
+    directAnswer: "Flameproof LED Tube Lights are explosion-resistant linear light fixtures designed for Zone 1, 2, 21, and 22 hazardous areas. Built with a high-strength, copper-free die-cast aluminum housing and an impact-resistant toughened borosilicate glass envelope, they prevent any internal electrical spark or gas ignition from escaping and triggering explosions in the surrounding atmosphere.",
     specs: [
       { name: "Hazardous Area Rating", value: "Ex d IIC T6 Gb / Ex tb IIIC T80°C Db" },
       { name: "Ingress Protection", value: "IP66 dust-tight and high-pressure jet water resistant" },
@@ -617,7 +610,7 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
         answer: "Flameproof (Ex d) fixtures are designed to contain an internal explosion safely within their heavy-duty housing without allowing the flame path to escape. Intrinsically safe (Ex i) limits the electrical energy to prevent spark ignition entirely, which is rarely possible for high-lumen lighting."
       }
     ],
-    definition: "Flameproof LED Tube Lights (FLP LED Lights) are explosion-resistant linear lighting fixtures certified for use in Zone 1, 2, 21, and 22 hazardous areas under the ATEX/IECEx classification system. They feature a heavy-duty copper-free die-cast aluminum housing with precision-machined flat-joint flame paths, a robust toughened borosilicate glass envelope, and a high-efficiency LED driver. The Ex d IIC T6 Gb certification ensures any internal fault, arc, or explosion is fully contained within the fixture without triggering external ignition.",
+    definition: "Flameproof LED Tube Lights (FLP LED Lights) are explosion-resistant linear lighting fixtures designed for use in Zone 1, 2, 21, and 22 hazardous areas under the ATEX/IECEx classification system. They feature a heavy-duty copper-free die-cast aluminum housing with precision-machined flat-joint flame paths, a robust toughened borosilicate glass envelope, and a high-efficiency LED driver. The Ex d IIC T6 Gb certification ensures any internal fault, arc, or explosion is fully contained within the fixture without triggering external ignition.",
     engineeringNotes: [
       "The flame path gap (joint between body and cover) is machined to tolerances of ±0.01mm to ensure hot gases cool below the T6 temperature limit (85°C) before escaping.",
       "All threaded conduit entries are provided with certified flameproof plugs — these must not be replaced with standard rubber bungs as this invalidates the Ex certification.",
@@ -625,8 +618,8 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       "The borosilicate glass diffuser is tested to EN 60079-1 impact resistance requirements to withstand accidental tool strikes in industrial environments."
     ],
     advantages: [
-      { title: "Zone 1 & 21 Certified", desc: "Certified for the highest-risk continuous and intermittent hazardous area zones, enabling deployment where standard IP-rated lights are a legal ignition hazard." },
-      { title: "IEC 60079 Compliant", desc: "Full compliance with the international IECEx and ATEX certification systems enables global project acceptance and insurance approval." },
+      { title: "Zone 1 & 21 Rated", desc: "Designed for Zone 1 and Zone 21 hazardous areas, where standard IP-rated lights are a legal ignition hazard. Confirm the certificate for the exact model and gas group at enquiry." },
+      { title: "Built to IEC 60079", desc: "Flameproof construction to the IEC 60079 series, with the manufacturer's test and Ex certificates supplied per model for project and insurance approval." },
       { title: "High-Efficiency LED", desc: "Modern LED drivers reduce power consumption by 60–70% versus legacy FLP fluorescent tubes with identical lumen output." },
       { title: "IP66 Rated", desc: "Complete dust-tight and high-pressure jet-water resistant sealing, enabling safe use in wash-down and process areas." },
       { title: "Long 50,000-Hour Life", desc: "LED light source rated for L70 at 50,000 hours eliminates frequent lamp replacement that would require area isolation in hazardous zones." }
@@ -660,12 +653,10 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
   },
   "flp-led-highbay": {
     title: "Flameproof LED High Bay Lights Ex d IIC T6 | Electrika INC",
-    description: "High-power flameproof LED high-bay luminaires. IP66 rating, Zone 1 & 21 certified. Engineered for chemical warehouses and oil refineries.",
+    description: "High-power flameproof LED high-bay luminaires. IP66 rating, for Zone 1 & 21 hazardous areas. Engineered for chemical warehouses and oil refineries.",
     keywords: ["Flameproof LED High Bay", "Explosion Proof Highbay Light", "Ex d IIC T6 High Bay", "IP66 Hazardous LED Highbay", "Industrial FLP Lighting"],
     canonical: `${PRIMARY_DOMAIN}/products/flp-led-highbay`,
     entityType: "Product",
-    brand: "Electrika / Premium FLP Partners",
-    manufacturer: "Electrika INC",
     directAnswer: "A Flameproof LED High Bay Light is a high-lumen, explosion-proof fixture designed for high-ceiling industrial facilities in hazardous environments. It utilizes an integrated finned cooling array for premium heat dissipation, a heavy-duty copper-free cast housing, and Ex d IIC T6 protection. This makes it ideal for petroleum processing lines, chemical silos, and paint spray booths.",
     specs: [
       { name: "Certification Code", value: "Ex d IIC T6 Gb / Ex tb IIIC T80°C Db" },
@@ -688,7 +679,7 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
     faqs: [
       {
         question: "Are these high-bay lights suitable for paint booths with flammable solvent vapors?",
-        answer: "Yes, our flameproof high-bays are fully certified for Zone 1 and Zone 2 gas environments, which includes Class I, Div 1/2 scenarios with organic solvent vapors."
+        answer: "Yes, these flameproof high-bays are rated for Zone 1 and Zone 2 gas environments (manufacturer's certificate supplied per model), which includes Class I, Div 1/2 scenarios with organic solvent vapors."
       }
     ],
     definition: "Flameproof LED High Bay Lights are high-lumen explosion-proof luminaires engineered for high-ceiling industrial facilities (6m–20m mounting heights) in classified hazardous atmospheres. Featuring a large integrated aluminum finned heat sink for passive thermal management, a high-density COB LED light source, and a copper-free die-cast aluminum Ex d IIC T6 housing, they replace legacy HID high-pressure sodium and metal halide lamps in oil refineries, chemical warehouses, and pharmaceutical production lines.",
@@ -710,7 +701,7 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { title: "Chemical Warehouses", desc: "Flammable liquid storage buildings, solvent blending areas, and chemical drum storage zones classified Zone 1 or 2." },
       { title: "Paint Spray Booths", desc: "Automotive body manufacturing spray lines and industrial coating booths with continuous organic solvent vapour atmosphere." },
       { title: "Aerospace Fuelling Facilities", desc: "Aviation fuel storage buildings, hydrant pit servicing areas, and aircraft fuelling pump rooms." },
-      { title: "Mining — Underground", desc: "DGMS/CMRS certified applications for firedamp-classified underground coal mine tunnels and headings." }
+      { title: "Mining — Underground", desc: "Where DGMS-approved models are specified — firedamp-classified underground coal mine tunnels and headings." }
     ],
     standards: [
       { code: "IEC 60079-0 / IEC 60079-1", description: "General requirements and flameproof enclosure standard for Ex d equipment." },
@@ -745,12 +736,12 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
   },
   "flood-light": {
     title: "Bajaj LED Flood Lights (50W-400W) B2B Supply | Electrika INC",
-    description: "Shop high-lumen Bajaj LED floodlights for industrial yards, stadiums & facade lighting. Energy-efficient outdoor illumination. Quick quotes.",
+    description: "High-lumen Bajaj LED floodlights for industrial yards, stadiums & facade lighting. Energy-efficient outdoor illumination. Quick quotes.",
     keywords: ["Bajaj LED Flood Lights", "Bajaj Industrial Floodlight", "High-power LED flood panel", "IP66 outdoor floodlight", "Bajaj B2B supplier"],
     canonical: `${PRIMARY_DOMAIN}/products/flood-light`,
     entityType: "Product",
     brand: "Bajaj Electricals",
-    manufacturer: "Bajaj / Distributed by Electrika INC",
+    manufacturer: "Bajaj Electricals",
     directAnswer: "Bajaj LED Flood Lights are high-output outdoor luminaires designed for wide-area B2B industrial projects. Built with die-cast aluminum housings and highly efficient multi-chip LED arrays, they deliver excellent lumens per watt. Backed by Bajaj's official manufacturer warranty, they are the industry standard for stadiums, shipyards, railway platforms, and perimeter security.",
     specs: [
       { name: "Power Range", value: "50W, 100W, 150W, 200W, 250W, 300W, and 400W options" },
@@ -832,13 +823,12 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
     }
   },
   "solar-street-light": {
-    title: "All-in-One Solar Street Lights (Integrated) | Electrika INC",
-    description: "Integrated solar LED street lights. High-efficiency solar panels, LiFePO4 batteries, and smart motion sensors. Zero electricity bills.",
-    keywords: ["Solar Street Lights", "Integrated Solar LED Streetlight", "LiFePO4 solar street light", "All in one solar light", "Smart solar street lighting"],
+    title: "Solar Street Lights — All-in-One & Split Type | Electrika INC",
+    description: "Solar LED street lights in all-in-one, split (standalone), semi-integrated and mini high mast types — LiFePO4 batteries, motion sensors, no grid power needed. Get a quote.",
+    keywords: ["Solar Street Lights", "Solar street light price", "Split type solar street light", "Semi integrated solar street light", "Solar high mast light", "Integrated Solar LED Streetlight", "LiFePO4 solar street light", "All in one solar light", "Smart solar street lighting"],
     canonical: `${PRIMARY_DOMAIN}/products/solar-street-light`,
     entityType: "Product",
-    brand: "Integrated Solar Solutions",
-    manufacturer: "Electrika INC",
+    brand: "Bajaj / Sunsoko",
     directAnswer: "An All-in-One Solar Street Light is a fully self-contained outdoor luminaire. It integrates a high-efficiency monocrystalline solar panel, long-life Lithium Iron Phosphate (LiFePO4) battery cells, a smart MPPT charge controller, and a high-brightness LED array into a single compact casing. These systems feature automated dusk-to-dawn sensors and PIR motion sensors to optimize battery usage.",
     specs: [
       { name: "Solar Panel Type", value: "Monocrystalline silicon, high efficiency solar conversion" },
@@ -921,12 +911,11 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
   },
   "led-street-light": {
     title: "Industrial LED Street Lights & Highway Luminaires | Electrika INC",
-    description: "Shop energy-efficient IP66 street light luminaires for highways, municipal roads & factories. Premium heat dissipation, long lifespan.",
+    description: "Energy-efficient IP66 LED street light luminaires for highways, municipal roads & factories. Premium heat dissipation, long lifespan.",
     keywords: ["LED Street lights", "Industrial street luminaire", "Highway lighting fixture", "IP66 street lamp", "LED road lighting India"],
     canonical: `${PRIMARY_DOMAIN}/products/led-street-light`,
     entityType: "Product",
     brand: "Bajaj / Crompton / Surya",
-    manufacturer: "Electrika INC",
     directAnswer: "Industrial LED Street Lights are specialized outdoor light fixtures designed for municipal avenues, highways, and factory roads. Built with high-purity die-cast aluminum housings and custom asymmetric glass lenses, they direct light uniformly across roads to eliminate dark spots and glare. An integrated surge protector safeguards the fixture from lightning strikes and grid voltage spikes.",
     specs: [
       { name: "Wattage Selection", value: "30W, 45W, 60W, 90W, 120W, 150W, and 180W" },
@@ -1009,20 +998,20 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
     }
   },
   "pce-plug-socket": {
-    title: "PCE Industrial Sockets & Interlocked Outlets | Electrika INC",
-    description: "Authorized supply of PCE industrial interlocked socket outlets. IP67 rated, robust mechanical switch interlocking, dust and moisture proof.",
-    keywords: ["Industrial Socket Outlets", "PCE Interlocked Socket", "IP67 Industrial Outlet", "PCE Sockets Austria", "Mechanical interlock socket"],
+    title: "PCE Industrial Plugs & Couplers — IEC 60309 | Electrika INC",
+    description: "PCE (Austria) IEC 60309 industrial plugs, sockets and couplers — 16A to 125A, blue 230V and red 415V, IP44 to IP67. Interlocked sockets on request. Bulk supply across India.",
+    keywords: ["PCE industrial plug", "PCE plug and socket", "Industrial plug and coupler", "IEC 60309 plug", "CEE plug socket", "32A industrial plug", "3 pin industrial plug 230V", "5 pin industrial plug 415V", "PCE Austria India"],
     canonical: `${PRIMARY_DOMAIN}/products/pce-plug-socket`,
     entityType: "Product",
     brand: "PCE Austria",
-    manufacturer: "PCE / Distributed by Electrika INC",
-    directAnswer: "PCE Industrial Sockets and Interlocked Outlets are heavy-duty electrical connection interfaces manufactured by PCE Austria. They are designed with a mechanical interlocking mechanism that prevents the socket switch from being turned 'ON' unless the matching plug is fully inserted. Likewise, the plug cannot be pulled out while the power is live, providing a spark-free connection in wet, dusty, and demanding industrial sites.",
+    manufacturer: "PCE Elektro GmbH",
+    directAnswer: "PCE industrial plugs, sockets and couplers are IEC 60309 (CEE) connectors made by PCE in Austria for the safe connection of portable tools, machines and temporary power supplies. They are colour-coded by voltage — blue for 230V and red for 400/415V — and keyed so a plug only fits a socket of the same rating. The range covers 16A to 125A, with IP44 to IP67 protection depending on the model.",
     specs: [
-      { name: "Enclosure Protection", value: "IP67 (completely dust-tight and submersible up to 1 meter)" },
-      { name: "Material Quality", value: "Amilan grade high-impact polyamide 6 polymer casing" },
-      { name: "Current Offerings", value: "16 Amp, 32 Amp, and 63 Amp configurations" },
-      { name: "Voltage Configurations", value: "230V 3-Pin (Blue) / 415V 5-Pin (Red) options" },
-      { name: "Contact Pins", value: "Solid brass pins with clean self-cleaning nickel-plating" }
+      { name: "Standard", value: "IEC 60309 / EN 60309 (CEE industrial connectors)" },
+      { name: "Product Types", value: "Plugs, couplers (cable sockets), wall and panel-mount sockets" },
+      { name: "Current Ratings", value: "16A, 32A, 63A and 125A" },
+      { name: "Voltage Colour Code", value: "Blue 230V (3-pin) / Red 400–415V (4 or 5-pin)" },
+      { name: "Protection", value: "IP44, IP54 or IP67 depending on model" }
     ],
     visualSpecs: [
       { name: "Brand / Origin", value: "PCE Elektro GmbH, Austria" },
@@ -1035,79 +1024,90 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Housing", value: "Reinforced thermoplastic (PA66)" },
       { name: "Operating Temp.", value: "-25°C to +40°C" },
       { name: "Colour Coding", value: "IEC 60309 compliant (blue/red/yellow/black)" },
-      { name: "Interlocked Version", value: "Available (MAINS before switching)" },
+      { name: "Interlocked Version", value: "Available on request" },
       { name: "Certifications", value: "CE, VDE, ÖVE, SABS" }
     ],
     faqs: [
       {
-        question: "Why is a mechanical interlock feature important?",
-        answer: "The mechanical interlock prevents user error by locking the plug into the socket before power can flow. This prevents arcs and sparks during insertion and removal, which is a major safety requirement in dusty, damp, or chemical facilities."
+        question: "What is the difference between an industrial plug, socket and coupler?",
+        answer: "A plug has pins and is fitted to the cable of the tool or machine. A socket is the fixed outlet on a wall, panel or distribution box. A coupler (also called a connector or cable socket) is a socket fitted on the end of a cable — it is used to extend a lead or join two cables, like the blue 32A plug and coupler pair shown on this page."
+      },
+      {
+        question: "What do the blue and red colours on industrial plugs mean?",
+        answer: "Under IEC 60309 the colour shows the voltage: blue is 200–250V single-phase (3 pins), red is 380–415V three-phase (4 or 5 pins) and yellow is 110V. Each colour and rating is keyed differently, so a 230V tool cannot be plugged into a 415V socket by mistake."
+      },
+      {
+        question: "Which current rating do I need — 16A, 32A, 63A or 125A?",
+        answer: "Choose a rating equal to or above the full-load current of the equipment. 16A suits hand tools and small machines, 32A suits welding sets, compressors and site boards, while 63A and 125A are used for large machines, cranes and main site supplies. Share your load details and we will recommend the right size."
+      },
+      {
+        question: "Do you supply interlocked sockets?",
+        answer: "Yes. Interlocked sockets, which have a built-in switch that only turns on when the plug is fully inserted, are available on request alongside the standard plug, socket and coupler range."
       }
     ],
-    definition: "PCE Industrial Sockets and Interlocked Outlets are premium-grade electrical connection interfaces manufactured by PCE Elektrotechnik GmbH, Austria, under IEC 60309 (CEE standard). The mechanical interlock prevents the socket from being switched 'ON' unless the matching plug is fully and correctly inserted, and conversely prevents the plug from being withdrawn while the power switch is in the 'ON' position. This dual-safety mechanism eliminates live-disconnect arcing in wet, dusty, and chemically aggressive industrial environments.",
+    definition: "PCE industrial plugs, sockets and couplers are heavy-duty power connectors manufactured by PCE Elektro GmbH, Austria, to IEC 60309 (the international CEE standard for industrial connectors). They are used wherever portable tools, machines and temporary supplies are connected in factories, construction sites and outdoor locations. Colour coding and pin keying by voltage and current prevent wrong connections, and sealed IP67 models keep out dust and water.",
     engineeringNotes: [
-      "The interlocking mechanism is a purely mechanical cam-and-lever system requiring no electronic components, ensuring it functions reliably even in power-failure scenarios.",
-      "Amilan PA66 thermoplastic enclosure material provides UL94 V-0 flame classification, chemical resistance to industrial oils, and UV stability for outdoor use.",
-      "Solid brass contact pins are nickel-plated with a self-wiping contact geometry — each insertion cycle cleans the contact surface, maintaining low contact resistance over 10,000+ mating cycles.",
-      "The IP67 rating is achieved with a precision neoprene gasket between the plug and socket faces plus a separate cable entry gland seal on the socket body."
+      "IEC 60309 connectors use a 'clock-hour' position for the earth pin, so plugs and sockets of different voltages cannot be mated even when the current rating is the same.",
+      "The earth pin is longer than the phase pins, so earth connects first on insertion and breaks last on withdrawal.",
+      "IP44 models are splash-proof and suited to covered areas; IP67 models use a sealed screw-ring or latching cover and are suited to outdoor sites and wash-down areas.",
+      "Couplers and plugs include a cable clamp (strain relief) — always tighten it on the cable sheath, not on the individual cores."
     ],
     advantages: [
-      { title: "Spark-Free Live Connections", desc: "The interlock mechanism prevents insertion and withdrawal under live conditions, eliminating arcing that causes pin erosion and fire risk in damp environments." },
-      { title: "IP67 Waterproof Rating", desc: "Certified submersible to 1 meter depth for 30 minutes — suitable for outdoor construction sites, wash-down areas, and marine deck installations." },
-      { title: "PCE Austria Quality", desc: "Manufactured by PCE GmbH Austria with CE, VDE, and SABS certification; genuine products with full manufacturer documentation available through Electrika INC." },
-      { title: "Full Range Availability", desc: "Complete product ecosystem available: plugs, sockets, couplers, panel-mount sockets, extension reels, and interlocked distribution boards across 16A, 32A, and 63A." }
+      { title: "Genuine PCE Austria Range", desc: "Original PCE connectors with manufacturer documentation, supplied in bulk for projects and contractors." },
+      { title: "Wrong-Connection Proof", desc: "Colour coding and keyed earth-pin positions stop a tool being connected to the wrong voltage." },
+      { title: "16A to 125A", desc: "One family of connectors covers everything from hand tools to large three-phase machines." },
+      { title: "Plugs, Couplers & Sockets", desc: "Matching plugs, couplers, wall sockets and panel-mount sockets, with interlocked versions available on request." }
     ],
     applications: [
-      { title: "Construction Sites", desc: "Temporary power distribution for tower cranes, hoists, concrete mixers, and site accommodation units." },
-      { title: "Marine & Offshore Vessels", desc: "Shore power connection boxes, vessel electrical system connections, and offshore rig portable equipment." },
-      { title: "Event & Entertainment", desc: "Stage power distribution, concert rigging systems, outdoor event temporary power feeds." },
-      { title: "Mining Operations", desc: "Underground and surface mining machinery connections rated for wet and dusty mine environments." }
+      { title: "Construction Sites", desc: "Extension leads and temporary power for tools, mixers, hoists, site offices and lighting." },
+      { title: "Factories & Workshops", desc: "Plug-in connection of machines, welding sets, compressors and maintenance equipment." },
+      { title: "Events & Temporary Power", desc: "Stage, exhibition and outdoor event power distribution using portable leads." },
+      { title: "Outdoor & Wash-Down Areas", desc: "IP67 sealed connectors for wet, dusty and exposed locations." }
     ],
     standards: [
-      { code: "IEC 60309-1/2", description: "International standard for plugs, socket-outlets and couplers for industrial purposes — defines dimensions, testing, and colour coding." },
-      { code: "EN 60309", description: "European adoption of IEC 60309 — mandatory for CE marking of industrial connectors." },
-      { code: "VDE 0623", description: "German electrical equipment safety certification recognized across European industrial markets." },
-      { code: "IS 9968 (Part II)", description: "Indian Standard for industrial plugs and sockets, equivalent to IEC 60309." }
+      { code: "IEC 60309-1/2", description: "International standard for plugs, socket-outlets and couplers for industrial purposes — dimensions, testing and colour coding." },
+      { code: "EN 60309", description: "European adoption of IEC 60309." },
+      { code: "IS/IEC 60309", description: "Indian adoption of the IEC 60309 industrial connector standard." },
+      { code: "IEC 60529", description: "Ingress protection (IP) ratings — IP44, IP54, IP67." }
     ],
     installationTips: [
-      "Always match cable CSA to the socket current rating — use minimum 2.5mm² for 16A, 4mm² for 32A, and 16mm² for 63A connections.",
-      "Apply a small amount of silicone grease to the socket cap gasket face every 6 months to maintain a supple, watertight seal.",
-      "Check the IEC 60309 colour code before installation: Blue = 230V/50Hz, Red = 400V/50Hz, Yellow = 110V — connecting wrong voltage to a device causes immediate equipment damage."
+      "Match the cable size to the connector rating — typically at least 2.5mm² for 16A and 4–6mm² for 32A, subject to cable length and installation method.",
+      "Check the colour before wiring: blue for 230V single-phase, red for 415V three-phase.",
+      "Tighten the cable clamp onto the outer sheath so no pull reaches the terminals."
     ],
     maintenanceTips: [
-      "Inspect contact pins for discoloration, pitting, or deformation every 6 months; replace plugs with damaged pins immediately to prevent overheating.",
-      "Clean dust and debris from the socket sleeve interior using a dry brush every 3 months in dusty site environments.",
-      "Test the interlock mechanism function every 3 months by attempting to insert/withdraw the plug with the switch in ON position — resistance confirms proper operation.",
-      "Measure the contact resistance across each pin pair annually using a milliohm meter; values above 5mΩ indicate worn contacts requiring plug replacement."
+      "Inspect pins for discoloration, pitting or bending and replace damaged plugs immediately to prevent overheating.",
+      "Keep socket and coupler lids closed when not in use to maintain the IP rating.",
+      "Clean dust from socket sleeves with a dry brush in dusty site environments."
     ],
     comparison: {
-      title: "PCE Interlocked Socket vs. Standard Industrial Socket",
-      columns: ["Attribute", "PCE Interlocked Socket", "Standard Industrial Socket"],
+      title: "Industrial (IEC 60309) Plug vs. Domestic 3-Pin Plug",
+      columns: ["Attribute", "IEC 60309 Industrial Plug", "Domestic 3-Pin Plug"],
       rows: [
-        { label: "Live Withdrawal Prevention", values: ["Yes (mechanical interlock)", "No"] },
-        { label: "IP Rating", values: ["IP67 (submersible)", "IP44–IP55 (typical)"] },
-        { label: "Contact Material", values: ["Nickel-plated solid brass", "Brass (varies by brand)"] },
-        { label: "Standard", values: ["IEC 60309", "Varies (often proprietary)"] },
-        { label: "Current Range", values: ["16A, 32A, 63A, 125A", "16A–63A (varies)"] },
-        { label: "Use Environment", values: ["Wet, dusty, marine, hazardous", "Indoor dry environments"] }
+        { label: "Current Range", values: ["16A to 125A", "6A / 16A"] },
+        { label: "Three-Phase Option", values: ["Yes (4 and 5-pin, 415V)", "No"] },
+        { label: "Voltage Keying", values: ["Colour code + keyed earth pin", "None"] },
+        { label: "Water / Dust Protection", values: ["IP44 to IP67", "None (indoor only)"] },
+        { label: "Cable Strain Relief", values: ["Built-in cable clamp", "Basic or none"] },
+        { label: "Typical Use", values: ["Sites, factories, outdoor equipment", "Homes and offices"] }
       ]
     }
   },
   "heavy-duty-plug": {
-    title: "Heavy-Duty Industrial Plugs (16A/32A/63A/125A) | Electrika INC",
-    description: "Premium PCE heavy-duty industrial plugs. High-impact polyamide body, copper-alloy pins, IP67 waterproof rating for extreme sites.",
-    keywords: ["Heavy-Duty Industrial Plugs", "PCE 5-pin Plug", "IP67 industrial plug", "PCE 32A plug", "High current industrial plug"],
+    title: "Heavy-Duty Industrial Plugs Above 125A (250A–600A) | Electrika INC",
+    description: "High-current industrial plugs above 125A — 250A, 315A, 400A, 500A and 600A, 3P+E / 3P+N+E, IP44 or IP67, with mechanical interlock and carrying handle. Get a quote.",
+    keywords: ["Heavy duty industrial plug", "High current industrial plug", "250A industrial plug", "400A industrial plug", "630A plug socket", "Above 125A plug", "3 phase high current connector", "Shore power plug"],
     canonical: `${PRIMARY_DOMAIN}/products/heavy-duty-plug`,
     entityType: "Product",
     brand: "PCE Austria",
-    manufacturer: "PCE / Distributed by Electrika INC",
-    directAnswer: "Heavy-Duty Industrial Plugs are premium electrical connectors manufactured by PCE Austria. Made of PA6 polyamide material with solid nickel-plated copper contact pins, they are built to withstand severe impact, chemical exposure, and wet conditions. They are standard equipment on construction sites, mining rigs, and manufacturing lines.",
+    manufacturer: "PCE Elektro GmbH",
+    directAnswer: "Heavy-duty industrial plugs are high-current power connectors rated above 125A — typically 250A, 315A, 400A, 500A and 600A — for connecting large machines, generators, shore power and temporary substations. They are three-phase (3P+E or 3P+N+E), have heavy copper-alloy contacts, a mechanical interlock that prevents live connection or disconnection, a built-in carrying handle, and IP44 or IP67 protection.",
     specs: [
-      { name: "Current Rating Selection", value: "16A, 32A, 63A, and 125A" },
-      { name: "Pin Configurations", value: "3-pin (2P+E), 4-pin (3P+E), 5-pin (3P+N+E)" },
-      { name: "Waterproof Standard", value: "IP67 (threaded locking ring with neoprene seal)" },
-      { name: "Polyamide Quality", value: "Flame retardant, self-extinguishing housing polymer" },
-      { name: "Wiring Connection", value: "Standard screw terminals or tool-free Turbo Twist clamping" }
+      { name: "Current Ratings", value: "Above 125A — 250A, 315A, 400A, 500A, 600A" },
+      { name: "Poles", value: "3P+E / 3P+N+E (5-pole)" },
+      { name: "Voltage", value: "380V / 400V / 415V / 500V" },
+      { name: "Protection", value: "IP44 (standard) / IP67 (watertight version)" },
+      { name: "Safety", value: "Mechanical interlock against live insertion and withdrawal" }
     ],
     visualSpecs: [
       { name: "Current Ratings", value: "250A, 315A, 400A, 500A, 600A" },
@@ -1127,58 +1127,66 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
     ],
     faqs: [
       {
-        question: "Can these plugs withstand outdoor weather exposure?",
-        answer: "Yes, our IP67 PCE plugs feature a threaded locking collar and internal gaskets that seal out water and dust, allowing them to remain outdoors in rain and snow safely."
+        question: "When do I need a plug above 125A?",
+        answer: "When the equipment's full-load current is more than 125A — for example large motors and compressors, welding rectifier banks, generator and DG set outputs, temporary substations, tower cranes and ship shore power. Standard IEC 60309 plugs stop at 125A, so these loads need a high-current plug of 250A to 600A."
+      },
+      {
+        question: "Why do these plugs have a mechanical interlock?",
+        answer: "Connecting or disconnecting hundreds of amps under load causes a dangerous arc. The interlock only allows the plug to be inserted or removed when the supply is switched off, protecting the operator and the contacts."
+      },
+      {
+        question: "Can high-current plugs be used outdoors?",
+        answer: "Yes. The IP67 version is watertight for outdoor yards, ports and wet areas; the IP44 version suits covered and indoor locations."
       }
     ],
-    definition: "Heavy-Duty Industrial Plugs are rugged, high-current electrical connectors manufactured by PCE Austria to IEC 60309 standards. Available in 16A, 32A, 63A, and 125A ratings with 3-pin (2P+E), 4-pin (3P+E), and 5-pin (3P+N+E) configurations, they are built with flame-retardant PA6 polyamide housings and solid nickel-plated copper contact pins for minimum contact resistance. Rated IP67, they maintain watertight sealing via a precision threaded locking collar and internal neoprene gaskets.",
+    definition: "Heavy-duty industrial plugs are high-current three-phase power connectors for loads above 125A, available in 250A, 315A, 400A, 500A and 600A ratings. They use heavy copper-alloy contacts, a thermoplastic or die-cast aluminium body, an integrated carrying handle and a mechanical safety interlock, and are offered in IP44 and IP67 versions. They are used where large machines, generators and temporary power supplies must be connected and disconnected safely without hard wiring.",
     engineeringNotes: [
-      "The PA6 polyamide housing is self-extinguishing to UL94 V-0 flame classification and rated for continuous operating temperatures from -25°C to +40°C.",
-      "Turbo Twist tool-free wire termination (available on select models) uses a spring-clamp mechanism instead of traditional screw terminals, reducing assembly time by 70%.",
-      "The threaded locking collar engagement ensures the plug-to-socket connection is mechanically retained even under the pull tension of a suspended flexible cable.",
-      "IEC 60309 colour coding (blue, red, yellow, black) encodes operating voltage and frequency into the plug body itself, preventing incorrect voltage connections in multi-supply environments."
+      "Above 125A, connectors use much larger contact surfaces and heavier pins to keep contact resistance — and therefore heating — low at full load.",
+      "The mechanical interlock ensures the connection is only made or broken with the supply switched off, preventing arcing at high current.",
+      "These connectors are heavy; the integrated handle allows safe handling and correct alignment during insertion.",
+      "Cable entry is designed for large-diameter cables (approximately 35 mm to 80 mm outer diameter); always use a correctly sized cable and gland for the rated current."
     ],
     advantages: [
-      { title: "Impact-Resistant PA6 Body", desc: "Glass-fibre reinforced polyamide is virtually unbreakable on construction sites, withstanding hammer blows and vehicle drive-overs that destroy standard plug bodies." },
-      { title: "IP67 Watertight Sealing", desc: "Submersible sealing allows use in shipyards, construction site pump areas, and outdoor events in monsoon conditions." },
-      { title: "IEC 60309 Colour Coded", desc: "Standardized colour coding prevents costly wrong-voltage connections in multi-supply site environments with 110V, 230V, and 415V circuits." },
-      { title: "Full Range from 16A to 125A", desc: "Single-source supply of the complete current range eliminates multiple supplier coordination for projects with mixed load equipment." }
+      { title: "250A to 600A in One Range", desc: "Covers loads above the 125A limit of standard industrial plugs, from large motors to main temporary supplies." },
+      { title: "Interlocked for Safety", desc: "Prevents live insertion and withdrawal — essential at high current." },
+      { title: "IP44 or IP67", desc: "Choose IP44 for covered areas or IP67 for outdoor, wet and port environments." },
+      { title: "Built for Heavy Handling", desc: "Copper-alloy contacts, rugged body and carrying handle for repeated connection on site." }
     ],
     applications: [
-      { title: "Construction Sites", desc: "Tower cranes, temporary sub-stations, concrete plants, and construction hoist motor connections." },
-      { title: "Manufacturing & Process Plants", desc: "Machine tool temporary connections, conveyor drive motors, and compressor power feeds during maintenance periods." },
-      { title: "Marine & Offshore", desc: "Vessel-to-shore power connections, offshore platform portable equipment, and shipyard dry-dock power distribution." },
-      { title: "Mining Equipment", desc: "Underground drill rig connections, continuous miner power supplies, and surface crushing plant electrical feeds." }
+      { title: "Generators & DG Sets", desc: "Plug-in connection of generator outputs to site and event distribution panels." },
+      { title: "Temporary Substations", desc: "Connecting mobile transformers and containerised substations to site distribution." },
+      { title: "Ports & Shore Power", desc: "Ship-to-shore power, cranes and container yard equipment." },
+      { title: "Heavy Industry", desc: "Large motors, compressors, welding rectifier banks and process plant equipment." }
     ],
     standards: [
-      { code: "IEC 60309-1/2", description: "Defines the design, testing, and dimensions of industrial plugs and socket-outlets for international interchangeability." },
-      { code: "EN 60309", description: "European standard — CE marking requirement for industrial connectors sold in EU markets." },
-      { code: "VDE 0623", description: "German electrical safety certification — recognized across European industrial procurement specifications." }
+      { code: "IEC 60309-1", description: "General requirements for industrial plugs, socket-outlets and couplers." },
+      { code: "EN 60309", description: "European adoption of IEC 60309." },
+      { code: "IEC 60529", description: "Ingress protection ratings — IP44 and IP67." }
     ],
     installationTips: [
-      "Strip cable insulation to exactly the depth marked inside the plug body — over-stripping exposes live conductors to the plug shell, creating a shock hazard.",
-      "Tighten the cable retention clamp (strain relief) after wiring to prevent pull-out forces from reaching the terminal connections during cable handling.",
-      "Visually inspect the neoprene gasket face on the plug body before use; replace the gasket if any deformation, cracking, or permanent compression set is visible."
+      "Size the cable for the full rated current and installation conditions — at 250A and above, undersized cable is the main cause of overheating.",
+      "Tighten terminals to the manufacturer's torque value and re-check after the first period of load.",
+      "Tighten the cable gland or clamp on the outer sheath so cable weight never pulls on the terminals."
     ],
     maintenanceTips: [
-      "Inspect contact pins before each use for mechanical damage, discolouration, or deformation — damaged pins transfer high contact resistance which causes overheating.",
-      "Clean the inside of the plug body with a dry brush quarterly in dusty environments; compacted dust between pins causes tracking and arcing failures.",
-      "Store plugs with a protective IP67 cap over the face when not in use to protect pins from impact damage and oxidation between uses."
+      "Inspect contacts for discoloration or pitting before connection; replace damaged connectors immediately.",
+      "Check the interlock operates correctly — the plug must not release while the supply is on.",
+      "Keep caps closed on unused plugs and sockets to protect contacts and maintain the IP rating."
     ]
   },
   "125a-plug": {
     title: "PCE 125A Industrial Plug (High Current 5-Pin) | Electrika INC",
-    description: "Shop PCE 125A high-current industrial plugs. Features pilot-pin safety contacts, solid copper pins, IP67 waterproof sealing. Fast delivery.",
-    keywords: ["125A Industrial Plug", "PCE 125A 5-pin plug", "IP67 125 Amp connector", "High-power B2B industrial plug", "Copper pin 125A plug"],
+    description: "PCE 125A high-current industrial plugs — IEC 60309, available in IP44 (splash-proof) and IP67 (watertight) versions, pilot-pin safety contacts. Bulk supply across India.",
+    keywords: ["125A Industrial Plug", "PCE 125A 5-pin plug", "IP67 125 Amp connector", "IP44 125A plug", "High-power B2B industrial plug", "Copper pin 125A plug"],
     canonical: `${PRIMARY_DOMAIN}/products/125a-plug`,
     entityType: "Product",
     brand: "PCE Austria",
-    manufacturer: "PCE / Distributed by Electrika INC",
+    manufacturer: "PCE Elektro GmbH",
     directAnswer: "The PCE 125A Industrial Plug is a heavy-duty, high-capacity electrical connector designed for high-current industrial equipment. It features solid brass pins with nickel plating for minimal contact resistance and a built-in safety pilot contact pin. This secondary pin acts as an electrical interlock, cutting power before the main power pins separate during disconnection.",
     specs: [
       { name: "Maximum Current Limit", value: "125 Amperes continuous duty" },
       { name: "Pin Count", value: "5-Pin (3P+N+E) three phase layout" },
-      { name: "Ingress Code", value: "IP67 waterproof rating with knurled locking ring" },
+      { name: "Ingress Code", value: "IP44 (splash-proof) or IP67 (watertight, knurled locking ring)" },
       { name: "Safety Feature", value: "Integrated pilot contact pin (early-break electrical interlock)" },
       { name: "Cable Clamping", value: "Heavy duty internal cable gland clamp and strain relief boot" }
     ],
@@ -1189,7 +1197,7 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Voltage Ratings", value: "400V / 500V (3P+N+E)" },
       { name: "Poles", value: "3P+E, 3P+N+E" },
       { name: "Frequency", value: "50 Hz / 60 Hz" },
-      { name: "IP Rating", value: "IP44 (splash-proof) / IP65 (dust-tight, water-jet resistant)" },
+      { name: "IP Rating", value: "IP44 (splash-proof) / IP67 (dust-tight, temporary immersion)" },
       { name: "Housing Material", value: "Reinforced thermoplastic (PA66), impact & UV resistant" },
       { name: "Operating Temperature", value: "-25°C to +40°C" },
       { name: "Colour Coding", value: "Red (400V), IEC 60309 compliant" },
@@ -1240,12 +1248,11 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
   },
   "synthetic-cable-drum": {
     title: "Schill Synthetic Rubber Cable Drum Systems | Electrika INC",
-    description: "Heavy-duty Schill Germany cable drums with Hensel weatherproof sockets and Siemens MCB protection. Fully customizable length and current.",
+    description: "Heavy-duty Schill Germany cable drums with Hensel weatherproof sockets and Siemens MCB protection. Customised by Electrika INC to your cable length, sockets and current rating.",
     keywords: ["Synthetic Cable Drum Systems", "Schill Cable Drum Germany", "Hensel socket cable drum", "Siemens MCB cable reel", "Heavy duty industrial drum"],
     canonical: `${PRIMARY_DOMAIN}/products/synthetic-cable-drum`,
     entityType: "Product",
     brand: "Schill Germany / Hensel / PCE",
-    manufacturer: "Electrika INC (Assembled in India)",
     directAnswer: "Synthetic Rubber Cable Drum Systems are high-capacity portable power distributors built with a premium Schill Germany vulcanized synthetic rubber reel. They are customized with Hensel weatherproof socket configurations, PCE input plugs, and built-in Siemens MCB overload protection, making them ideal for heavy machinery, events, and construction sites.",
     specs: [
       { name: "Reel Material", value: "Unbreakable vulcanized synthetic rubber (excellent insulation)" },
@@ -1310,13 +1317,13 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
     }
   },
   "ip66-polymer-glands": {
-    title: "IP66 Synthetic Polymer Cable Glands | Electrika INC",
-    description: "Weatherproof IP66/IP68 synthetic polymer cable glands. Excellent strain relief, vibration proof, and chemical resistant. Wide size range.",
-    keywords: ["IP-66 Synthetic polymer Glands", "Weatherproof Cable Gland", "Nylon polymer gland M20", "IP68 cable entry gland", "Vibration proof gland"],
+    title: "AGRO IP66 Synthetic Polymer Cable Glands | Electrika INC",
+    description: "AGRO (Switzerland) Syntec IP66 synthetic polymer cable glands. Excellent strain relief, vibration proof, and chemical resistant. Wide size range.",
+    keywords: ["AGRO cable gland", "AGRO Syntec gland", "IP66 polymer cable gland", "Weatherproof Cable Gland", "Nylon polymer gland M20", "IP68 cable entry gland", "Vibration proof gland"],
     canonical: `${PRIMARY_DOMAIN}/products/ip66-polymer-glands`,
     entityType: "Product",
-    brand: "Hensel / PCE / Premium Brands",
-    manufacturer: "Electrika INC",
+    brand: "AGRO",
+    manufacturer: "AGRO AG, Switzerland",
     directAnswer: "IP66 Synthetic Polymer Cable Glands are cable entry sealing components made of high-quality polyamide PA6. Equipped with internal neoprene gaskets and integrated lamellar strain relief claws, they create a watertight seal around cables entering electrical enclosures, preventing dust and moisture ingress while protecting the cable from tension.",
     specs: [
       { name: "Protection Standards", value: "IP66 / IP68 dust-tight and watertight certification" },
@@ -1394,12 +1401,12 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
   },
   "emergency-stop-button": {
     title: "Hensel IP65 Emergency Stop Push Button Boxes | Electrika INC",
-    description: "Shop Hensel IP65 rated emergency stop buttons. Impact-resistant polycarbonate enclosure, mushroom head turn-to-release button. Safe machine isolation.",
-    keywords: ["Hensel Emergency Stop Boxes", "Hensel EM Stop IP65", "Emergency stop push button box", "Industrial safety button", "Polycarbonate stop box"],
+    description: "Hensel IP65 rated emergency stop push button boxes. Impact-resistant polycarbonate enclosure, mushroom head turn-to-release button. Safe machine isolation.",
+    keywords: ["Hensel Emergency Stop Boxes", "Hensel PBS 0101 G8", "Hensel PBS push button station", "Hensel EM Stop IP65", "Emergency stop push button box", "Industrial safety button", "Polycarbonate stop box"],
     canonical: `${PRIMARY_DOMAIN}/products/emergency-stop-button`,
     entityType: "Product",
     brand: "Hensel Germany",
-    manufacturer: "Hensel / Fitted by Electrika INC",
+    manufacturer: "Heinrich Hensel GmbH",
     directAnswer: "Hensel Emergency Stop Boxes are industrial safety control enclosures. They feature a high-impact polycarbonate housing rated at IP65, fitted with a heavy-duty, red mushroom-head 'Turn-to-Release' latching push button. These boxes are designed for emergency machine shutdown and operator safety in harsh manufacturing settings.",
     specs: [
       { name: "Ingress Protection", value: "IP65 dust-tight and water-resistant" },
@@ -1412,7 +1419,7 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Brand / Origin", value: "Heinrich Hensel GmbH, Germany" },
       { name: "Model Reference", value: "PBS 0101 G8 (as shown)" },
       { name: "Housing Material", value: "High-impact Polycarbonate (PC), self-extinguishing, UV-stabilised" },
-      { name: "IP Rating", value: "IP68 (submersible, continuous)" },
+      { name: "IP Rating", value: "IP65 (dust-tight, water-jet protected)" },
       { name: "IK Rating", value: "IK07" },
       { name: "Actuator", value: "Red mushroom-head, turn-to-release, Ø 40 mm" },
       { name: "Contact Action", value: "Positive-opening (direct-open action) per IEC 60947-5-5" },
@@ -1471,20 +1478,19 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
     ]
   },
   "small-control-station": {
-    title: "Small Industrial Control Stations (IP65) | Electrika INC",
-    description: "Shop durable small control stations for factory floor safety. IP65 polycarbonate enclosures with custom push buttons and selector switches.",
-    keywords: ["Small Control Station", "Industrial push button box", "Polycarbonate control box", "IP65 operator control box", "Factory safety button panel"],
+    title: "Industrial Socket Distribution Box with MCB | Electrika INC",
+    description: "IP65 industrial socket distribution box with MCB / RCCB protection and IEC 60309 sockets — blue 230V and red 415V 3-phase. Factory-wired to your requirement. Get a quote.",
+    keywords: ["Industrial socket distribution box", "Socket box with MCB", "IEC 60309 socket box", "Industrial socket board", "Construction site power distribution box", "3 phase socket distribution box", "Power socket box for factory", "Hensel socket distribution box"],
     canonical: `${PRIMARY_DOMAIN}/products/small-control-station`,
     entityType: "Product",
     brand: "Hensel / PCE",
-    manufacturer: "Electrika INC",
-    directAnswer: "Small Industrial Control Stations are wall-mounted operator stations designed for localized machine control. Assembled in rugged IP65 polycarbonate housings, they can be configured with start-stop push buttons, selector switches, and indicator pilot lights, providing a reliable interface on factory floors.",
+    directAnswer: "An industrial socket distribution box is a compact, wall-mounted enclosure that combines MCB / RCCB protection with IEC 60309 industrial sockets, so tools and machines can be plugged into a protected supply. Electrika INC supplies these boxes in IP65 polycarbonate enclosures with blue 230V and red 415V three-phase sockets, factory-wired to your requirement.",
     specs: [
-      { name: "Enclosure Material", value: "High-grade impact-resistant Polycarbonate" },
-      { name: "Protection Class", value: "IP65 dustproof and weatherproof seal" },
-      { name: "Operator Options", value: "Flush buttons, key selectors, selector switches, pilot lights" },
-      { name: "Wiring Entry", value: "Pre-formed knockouts for metric polymer glands" },
-      { name: "Internal Rails", value: "Integrated mounting bosses for clean wiring termination" }
+      { name: "Enclosure", value: "IP65 polycarbonate / thermoplastic, wall or pole mounted" },
+      { name: "Protection Devices", value: "MCB / RCCB — number and rating as per requirement" },
+      { name: "Industrial Sockets", value: "IEC 60309 — blue 230V and red 415V 3-phase" },
+      { name: "Wiring", value: "Factory pre-wired on DIN rail with terminal blocks" },
+      { name: "Door", value: "Transparent (smoked) or opaque" }
     ],
     visualSpecs: [
       { name: "Enclosure Material", value: "Polycarbonate / Thermoplastic (UV-stabilised, self-extinguishing)" },
@@ -1504,53 +1510,64 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
     ],
     faqs: [
       {
-        question: "Are the buttons customizable for different actions?",
-        answer: "Yes, we customize these stations with different colors (green for start, red for stop), selector switches, and key switches to fit your specific machinery requirements."
+        question: "Which sockets can be fitted in the box?",
+        answer: "Any IEC 60309 industrial socket — typically blue 16A/32A 230V single-phase sockets and red 16A/32A/63A 415V three-phase sockets. The box shown has two blue 230V sockets and one red 415V socket, but the number, type and rating are built to your requirement."
+      },
+      {
+        question: "Is each socket protected separately?",
+        answer: "Yes. Each socket is normally fed through its own MCB, so a fault on one tool trips only that outlet. An RCCB can be added for earth-leakage (shock) protection, which is recommended on construction sites and wet areas."
+      },
+      {
+        question: "Can the box be installed outdoors?",
+        answer: "Yes. The IP65 polycarbonate enclosure is dust-tight and protected against water jets, so it can be mounted on outdoor walls, poles and site structures. Keep socket lids closed when not in use to maintain protection."
+      },
+      {
+        question: "Where is a socket distribution box used?",
+        answer: "On construction sites, factory floors, workshops, welding bays, warehouses, and anywhere portable tools or machines need a safe plug-in power point from a protected supply."
       }
     ],
-    definition: "Small Industrial Control Stations are wall-mounted operator interface units assembled inside compact IP65-rated polycarbonate enclosures. They house combinations of push buttons, selector switches, key switches, and pilot indicator lights used by machine operators to perform START, STOP, FORWARD, REVERSE, SPEED, and MODE selection functions locally at the machine. Assembled by Electrika INC with Hensel enclosures and Schneider Electric or ABB operator elements, they provide reliable and ergonomic operator control interfaces for a wide range of industrial machinery.",
+    definition: "An industrial socket distribution box is a small power distribution board that combines circuit protection devices (MCBs and RCCBs) with IEC 60309 industrial sockets inside a single weatherproof enclosure. It takes one incoming supply and provides several protected plug-in outlets for tools, machines and temporary equipment. Electrika INC supplies them in IP65 polycarbonate enclosures, factory-wired with colour-coded conductors, DIN-rail terminals and blue 230V / red 415V sockets.",
     engineeringNotes: [
-      "The polycarbonate enclosure body is moulded as a single seamless unit — there are no screws or joints on the side faces that could allow water entry under long-term wash-down cycles.",
-      "Operator push button elements are available in 22mm diameter (standard IEC) for compatibility with Schneider, ABB, and Siemens actuators and contact block modules.",
-      "Pilot indicator lights use energy-efficient LED lamp inserts rated for 100,000+ hours, eliminating in-service lamp replacement.",
-      "Internal wiring uses numbered DIN rail terminal blocks to enable clean, documented wiring and easy field troubleshooting."
+      "Each outgoing socket is wired through its own MCB, so a fault on one tool does not cut power to the others.",
+      "An RCCB (typically 30 mA) can be added upstream of the sockets for personal protection against earth-leakage shock.",
+      "IEC 60309 colour coding — blue for 230V, red for 415V — prevents single-phase tools being connected to a three-phase outlet.",
+      "Devices are mounted on 35 mm DIN rail with numbered terminal blocks, so circuits are easy to trace and extend on site."
     ],
     advantages: [
-      { title: "IP65 Sealed Enclosure", desc: "Polycarbonate body sealed with a peripheral gasket provides IP65 protection against industrial dust and high-pressure water jets during factory wash-down." },
-      { title: "Fully Customizable", desc: "Button colors, switch types, pilot light colors, label inserts, and wiring configurations are all specified and assembled to customer requirements." },
-      { title: "Compact & Ergonomic", desc: "Small form factor (as compact as 100×100mm) enables mounting directly on machine guards, control desks, and conveyor frames without space constraints." },
-      { title: "Schneider / ABB Elements", desc: "Uses market-leading operator element brands ensuring long spares availability and consistent contact block specifications over the machine's lifetime." }
+      { title: "Protection + Sockets in One Box", desc: "MCB / RCCB protection and industrial sockets in a single enclosure — no separate DB and socket boxes needed." },
+      { title: "IP65 Weatherproof", desc: "Dust-tight and water-jet protected polycarbonate enclosure suitable for outdoor and site use." },
+      { title: "230V and 415V Outlets", desc: "Blue single-phase and red three-phase IEC 60309 sockets in any combination." },
+      { title: "Built to Your Requirement", desc: "Number of sockets, ratings, MCBs and door type are configured to your load list." }
     ],
     applications: [
-      { title: "Machine Tool Start-Stop", desc: "Operator start-stop stations on lathes, milling machines, grinding machines, and machining centres." },
-      { title: "Conveyor Drive Control", desc: "Local start-stop and speed select buttons for conveyor belt motors at head, tail, and intermediate drive positions." },
-      { title: "Fan & Pump Control", desc: "Local stop-start stations for HVAC fans, cooling tower motors, and process pump drives in industrial buildings." },
-      { title: "Material Handling Equipment", desc: "Pallet stacker, forklift battery charger, and overhead crane pendant replacement stations." }
+      { title: "Construction Sites", desc: "Protected plug-in power for drills, mixers, pumps, welding sets and site lighting." },
+      { title: "Factory Floors", desc: "Local power points for machines, maintenance tools and portable equipment." },
+      { title: "Workshops & Welding Bays", desc: "Three-phase and single-phase outlets for welding sets, grinders and compressors." },
+      { title: "Warehouses & Utility Areas", desc: "Outlets for battery chargers, cleaning machines and temporary equipment." }
     ],
     standards: [
-      { code: "IEC 60947-5-1", description: "Low-voltage switchgear standard for electromechanical control circuit devices and switching elements." },
-      { code: "IEC 60529 (IP65)", description: "Ingress protection standard for dust-tight, water-jet resistant enclosures." },
-      { code: "IEC 61439", description: "Low-voltage switchgear and controlgear assemblies — verification testing requirements." }
+      { code: "IEC 60309", description: "Plugs, socket-outlets and couplers for industrial purposes — sockets and colour coding." },
+      { code: "IEC 61439-4", description: "Low-voltage assemblies for construction sites (ACS) — reference for site socket distribution boxes." },
+      { code: "IEC 60529 (IP65)", description: "Ingress protection — dust-tight and water-jet resistant enclosure." }
     ],
     installationTips: [
-      "Mount the station at between 1.0m and 1.4m from the floor for ergonomic use from a standing position per OSHA and ISO 14738 ergonomic guidelines.",
-      "Use metric polymer cable glands at each wiring entry knockouts; seal any unused knockouts with blank metric plugs to maintain the IP65 rating.",
-      "Label each push button with an engraved (not adhesive) legend plate — adhesive labels deteriorate in 6–12 months in oily and humid factory environments."
+      "Mount the box where sockets are easy to reach but protected from vehicle impact and standing water.",
+      "Size the incoming cable and main protection for the total connected load of all sockets.",
+      "Fit cable glands on every entry and blank off unused knockouts to keep the IP65 rating."
     ],
     maintenanceTips: [
-      "Test all push button functions and verify all pilot lights are operational every 3 months as part of the machine's routine maintenance schedule.",
-      "Clean the operator button surfaces and enclosure face quarterly with a dry cloth in dusty factories — clogged button actuator passages prevent button return.",
-      "Inspect contact blocks annually for carbon pitting and silver layer depletion; replace contacts when visible pitting or resistance above 0.5Ω is measured."
+      "Press the RCCB test button monthly to confirm earth-leakage protection is working.",
+      "Check socket pins and terminals for heat discoloration and re-tighten connections annually.",
+      "Keep socket lids and the enclosure door closed when not in use, and replace damaged lids or gaskets."
     ]
   },
   "mcb-box": {
     title: "IP65 Weatherproof MCB Distribution Boxes | Electrika INC",
-    description: "Buy weatherproof IP65 MCB boxes with transparent doors. Polycarbonate body, DIN rail mount. Ideal for outdoor solar & power distribution.",
+    description: "Weatherproof IP65 MCB boxes with transparent doors. Polycarbonate body, DIN rail mount. Ideal for outdoor solar & power distribution.",
     keywords: ["Weatherproof MCB box", "IP65 MCB Enclosure", "DIN rail distribution box", "Polycarbonate MCB box", "Outdoor distribution enclosure"],
     canonical: `${PRIMARY_DOMAIN}/products/mcb-box`,
     entityType: "Product",
     brand: "Hensel / PCE / Premium Brands",
-    manufacturer: "Electrika INC",
     directAnswer: "Weatherproof MCB Distribution Boxes are surface-mounted enclosures rated at IP65. Built with high-strength polycarbonate and featuring a transparent lockable door, they include internal DIN rails for mounting circuit breakers, surge protectors, and timers in outdoor or damp settings.",
     specs: [
       { name: "Module Capacity", value: "Available in 4, 8, 12, 18, and 24 module widths" },
@@ -1631,83 +1648,110 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
     }
   },
   "pbs-control-box": {
-    title: "Hensel PBS 0101 G8 Emergency Stop Station | Electrika INC",
-    description: "Hensel PBS 0101 G8 emergency stop push button station. IP65 rated, durable polycarbonate casing, yellow safety background. Shop today.",
-    keywords: ["Hensel PBS Control Box", "PBS 0101 G8", "Hensel emergency button box", "IP65 push button station", "Safety stop station India"],
+    title: "Multi-Meter Panel Box — Hensel Modular | Electrika INC",
+    description: "Hensel modular multi-meter panel box with separate transparent meter compartments, busbar chamber, main switch, R-Y-B phase lamps and MCB section. Built to your meter count. Get a quote.",
+    keywords: ["Multi meter panel box", "Multi-meter distribution board", "Energy meter panel box", "Meter board for apartments", "Hensel meter box", "Hensel modular enclosure", "Polycarbonate meter box", "Sub-metering panel"],
     canonical: `${PRIMARY_DOMAIN}/products/pbs-control-box`,
     entityType: "Product",
-    brand: "Hensel Germany",
-    manufacturer: "Hensel / Distributed by Electrika INC",
-    directAnswer: "The Hensel PBS 0101 G8 is a specialized emergency stop push button station. Built with a high-durability polycarbonate housing rated at IP65 and styled with a yellow cover for quick safety identification, it houses a heavy-duty latching red mushroom push button that provides reliable safety isolation.",
+    brand: "Hensel",
+    directAnswer: "A multi-meter panel box is a wall-mounted distribution board that holds several energy meters in separate compartments, all fed from a common busbar and main switch. It lets one incoming supply be metered separately for each flat, shop, tenant or feeder. Electrika INC supplies these panels, built from Hensel modular insulated enclosures with transparent meter windows, so meters can be read without opening the panel.",
     specs: [
-      { name: "Product Code", value: "PBS 0101 G8 / Hensel Series" },
-      { name: "Protection Standard", value: "IP65 water and dust tight rating" },
-      { name: "Visual Identification", value: "Bright yellow lid, red mushroom actuator (safety codes compliant)" },
-      { name: "Actuation Latch", value: "Mushroom head twist-to-release mechanical lock" },
-      { name: "Electrical rating", value: "AC-15 240V 3A / 415V 1.5A switching duty" }
+      { name: "Enclosure System", value: "Hensel modular insulated enclosures, joined side-by-side and stacked" },
+      { name: "Meter Compartments", value: "Separate compartments with transparent covers — quantity as per requirement" },
+      { name: "Busbar Chamber", value: "Dedicated chamber with colour-coded R / Y / B / N busbars" },
+      { name: "Main Incomer", value: "Main switch / isolator in a central section with viewing window" },
+      { name: "Indication", value: "Red, yellow and blue phase indicator lamps" }
     ],
     visualSpecs: [
-      { name: "Configuration", value: "Fully customizable per project SLD / requirement" },
-      { name: "Enclosure Type", value: "Wall-mounted, multi-compartment" },
-      { name: "Material", value: "Polycarbonate / mild steel powder-coated (site dependent)" },
-      { name: "IP Rating", value: "IP54 / IP65 (configurable)" },
-      { name: "Metering", value: "Single or multi-feeder energy meter chambers" },
-      { name: "Control Devices", value: "Push buttons, selector switches, emergency stop" },
-      { name: "Indication", value: "LED pilot lamps — red, yellow, blue, green" },
-      { name: "Protection Devices", value: "MCB / MCCB / RCCB as per load schedule" },
-      { name: "Busbar", value: "Copper/aluminium busbar sized to project load" },
-      { name: "Cable Entry", value: "Bottom/top gland plate, configurable" },
-      { name: "Door", value: "Hinged with viewing window and lock provision" },
-      { name: "Operating Temperature", value: "-10°C to +55°C" },
-      { name: "Testing", value: "100% factory tested before dispatch" },
-      { name: "Lead Time", value: "2–4 weeks depending on configuration complexity" }
+      { name: "Product Type", value: "Multi-meter distribution panel (modular)" },
+      { name: "Enclosure", value: "Hensel modular insulated enclosures, light grey" },
+      { name: "IP Rating", value: "IP65 enclosure range (final rating depends on cable entries)" },
+      { name: "Meter Compartments", value: "Individual compartments with transparent covers" },
+      { name: "Meter Count", value: "As per requirement (build shown: 4 meters)" },
+      { name: "Meter Type", value: "Single-phase or three-phase energy meters, as specified" },
+      { name: "Meter Isolation", value: "Individual MCB / isolator per meter compartment" },
+      { name: "Busbar", value: "Colour-coded R / Y / B / N busbar chamber" },
+      { name: "Main Incomer", value: "Main switch / isolator, rated to total load" },
+      { name: "Indication", value: "R / Y / B phase indicator lamps" },
+      { name: "Outgoing Protection", value: "MCB / RCCB section, ratings as per load" },
+      { name: "Mounting", value: "Wall-mounted; conduit or gland cable entry" }
     ],
     faqs: [
       {
-        question: "What is the industry application of the PBS 0101 G8?",
-        answer: "It is widely specified as a local machine isolation switch in factories, packaging yards, conveyor systems, and near hazardous industrial equipment."
+        question: "How many meters can one panel hold?",
+        answer: "The panel is modular — meter compartments are added side-by-side or stacked, so the meter count is set by your requirement. The build shown has four meter compartments around a central busbar and main-switch section. Share your meter count and load and we will propose the layout."
+      },
+      {
+        question: "Can the meters be read without opening the panel?",
+        answer: "Yes. Each meter sits behind a transparent cover, so readings can be taken from outside without opening the compartment or exposing live parts."
+      },
+      {
+        question: "Where is a multi-meter panel used?",
+        answer: "In residential apartments, commercial complexes, shops, industrial sheds with several tenants, and in factories that need separate sub-metering for different feeders or departments."
+      },
+      {
+        question: "What do the red, yellow and blue lamps show?",
+        answer: "They are phase indicator lamps for the R, Y and B phases of the incoming supply, showing at a glance that all three phases are present."
+      },
+      {
+        question: "What details do you need to quote a multi-meter panel?",
+        answer: "Send the number of meters, whether each is single-phase or three-phase, the incoming supply and main switch rating, the load or MCB rating for each outgoing circuit, and the installation site. A single-line diagram (SLD) helps but is not essential — we can propose the layout from your meter count and loads."
       }
     ],
-    definition: "The Hensel PBS 0101 G8 is a purpose-built emergency stop push button station manufactured by Hensel Germany. Featuring a high-visibility yellow polycarbonate enclosure lid and a heavy-duty red mushroom-head latching actuator, it is designed for unambiguous emergency identification in factory and outdoor environments. The IP65-rated enclosure and Turn-to-Release latch mechanism meet the requirements of IEC 60947-5-5 for emergency stop devices used in machine safety systems.",
+    definition: "A multi-meter panel box (also called a multi-meter distribution board or meter board) is an assembly that brings one incoming supply onto a common busbar and distributes it through several individually metered outgoing circuits. Electrika INC supplies these panels built from Hensel modular insulated enclosures: each energy meter has its own compartment with a transparent cover and its own isolating device, the busbars sit in a separate chamber, and a central section carries the main switch and R-Y-B phase indicator lamps.",
     engineeringNotes: [
-      "The PBS 0101 G8 product code designates: PBS = Push Button Station, 0101 = single mushroom button configuration, G8 = Hensel's 8-module enclosure size series.",
-      "Yellow lid colour is specified per IEC 60947-5-5 and ISO 13850 which require actuators to be RED on a YELLOW background for universal identification as emergency stop devices.",
-      "The AC-15 duty rating (240V 3A / 415V 1.5A) is the standard duty class for inductive load switching — suitable for direct control of contactor coils in 415V motor circuits."
+      "Each meter sits in its own compartment, so a meter can be read, sealed or replaced without exposing the busbars or other users' circuits.",
+      "The busbar chamber is separated from the meter compartments; colour-coded R / Y / B / N bars make phase identification and load balancing straightforward.",
+      "Modular enclosures are joined together, so the panel can be extended later by adding meter compartments instead of replacing the whole board.",
+      "Insulated (non-metallic) enclosures do not rust, which suits humid, coastal and outdoor-covered locations."
     ],
     advantages: [
-      { title: "High Visibility Yellow Design", desc: "ISO 13850-compliant yellow lid and red mushroom actuator ensures immediate visual identification as the emergency stop station in any factory environment." },
-      { title: "Hensel Germany Reliability", desc: "Manufactured by Hensel Germany to IEC 60947-5-5 specification with CE certification for machine safety applications across European and Indian markets." },
-      { title: "IP65 Weatherproof", desc: "Suitable for installation on outdoor machinery, pump stations, and process equipment where the button must resist rain and dust ingress." },
-      { title: "IEC 60947-5-5 Compliant", desc: "Positive break (direct opening) NC contact block ensures fail-safe isolation even if contact welding occurs due to short circuit current." }
+      { title: "Separate Metering per User", desc: "Every flat, shop, tenant or feeder gets its own meter and isolating device from one common supply." },
+      { title: "Readable Without Opening", desc: "Transparent meter covers allow readings to be taken without opening compartments." },
+      { title: "Expandable Modular Design", desc: "Meter compartments can be added later as the building or load grows." },
+      { title: "Built to Your Requirement", desc: "Meter count, meter type, incomer rating and outgoing MCBs are configured to your single-line diagram." }
     ],
     applications: [
-      { title: "Factory Machine Isolation", desc: "Local emergency stop point adjacent to every machine operating station per ISO 13849 safety requirements." },
-      { title: "Conveyor Belt Lines", desc: "Intermediate emergency stop stations along conveyor lengths required at regular intervals by factory safety standards." },
-      { title: "Outdoor Process Equipment", desc: "IP65 rating enables installation on outdoor pump stations, compressors, and ventilation fans requiring accessible emergency stop." }
+      { title: "Residential Apartments", desc: "Individual flat meters fed from a common building supply." },
+      { title: "Commercial Complexes & Shops", desc: "Separate metering for each shop or office in malls and market buildings." },
+      { title: "Shared Industrial Sheds", desc: "Tenant-wise metering in industrial parks and multi-unit factory buildings." },
+      { title: "Factory Sub-Metering", desc: "Department or feeder-wise energy monitoring inside a single plant." }
     ],
     standards: [
-      { code: "IEC 60947-5-5", description: "Emergency stop device standard — direct-opening positive break contact requirement." },
-      { code: "ISO 13850", description: "Safety of machinery — Emergency stop function design principles." },
-      { code: "IEC 60529 (IP65)", description: "Ingress protection — dust-tight and water-jet resistant sealing."}  
+      { code: "IEC 61439", description: "Low-voltage switchgear and controlgear assemblies — reference standard for distribution boards." },
+      { code: "IEC 60529", description: "Ingress protection (IP) rating of the enclosure." }
     ],
     installationTips: [
-      "Wire the NC contact block in series with the machine's safety relay coil to create a fail-safe stop loop — a broken wire in this series circuit causes the machine to stop, not run.",
-      "Verify the button's operating height is between 0.6m and 1.7m per ISO 13850 for ergonomic reach by operators of varying heights."
+      "Mount the panel so the meter windows are at a comfortable reading height and in a well-lit location.",
+      "Spread single-phase meters evenly across the R, Y and B phases to keep the supply balanced.",
+      "Confirm the meter type and sealing requirements with your electricity distribution company before ordering."
     ],
     maintenanceTips: [
-      "Test the emergency stop function weekly as part of the machine's mandatory pre-shift safety check.",
-      "Replace the mushroom button actuator immediately if the turn-to-release feel becomes stiff or the button fails to latch positively on depression.",
-      "Inspect the yellow lid and enclosure for UV-induced colour fade or impact damage annually in outdoor installations."
-    ]
+      "Re-tighten busbar and meter terminals annually — loose connections are the main cause of heating in meter panels.",
+      "Check that all three phase indicator lamps glow; a dark lamp can indicate a missing phase.",
+      "Keep transparent covers clean and replace any cracked cover or gasket to maintain protection."
+    ],
+    comparison: {
+      title: "Multi-Meter Panel vs. Separate Individual Meter Boxes",
+      columns: ["Attribute", "Multi-Meter Panel Box", "Separate Meter Boxes"],
+      rows: [
+        { label: "Incoming Supply", values: ["One common incomer and busbar", "Separate cable run to each box"] },
+        { label: "Wall Space", values: ["Compact, single grouped panel", "Spread across the wall"] },
+        { label: "Meter Reading", values: ["All meters in one place, behind clear covers", "Reader visits each box"] },
+        { label: "Phase Balancing", values: ["Easy — meters spread across R / Y / B at one busbar", "Harder to track"] },
+        { label: "Future Expansion", values: ["Add modular compartments", "Add new box and new cable"] },
+        { label: "Best For", values: ["Apartments, complexes, multi-tenant buildings", "Single or two-user premises"] }
+      ]
+    }
   },
   "hensel-boxes": {
-    title: "Hensel Small Polycarbonate Distribution Boxes | Electrika INC",
+    title: "Hensel Polycarbonate Junction Boxes (IP65/66/67) | Electrika INC",
     description: "Premium Hensel polycarbonate distribution boxes (IP65/66/67). Extremely robust, acid & alkaline resistant. Ideal for harsh industrial plants.",
-    keywords: ["Hensel Boxes", "Hensel Polycarbonate Box", "IP65 Distribution Enclosure", "Hensel Junction Box India", "Acid-resistant junction box"],
+    keywords: ["Hensel junction box", "Polycarbonate junction box", "IP67 junction box", "Hensel distribution box", "Hensel Boxes", "Hensel Polycarbonate Box", "IP65 Distribution Enclosure", "Hensel Junction Box India", "Acid-resistant junction box"],
     canonical: `${PRIMARY_DOMAIN}/products/hensel-boxes`,
     entityType: "Product",
     brand: "Hensel Germany",
-    manufacturer: "Hensel / Distributed by Electrika INC",
+    manufacturer: "Heinrich Hensel GmbH",
     directAnswer: "Hensel Small Distribution Boxes are heavy-duty polycarbonate junction boxes rated up to IP67. Manufactured by Hensel Germany, they are resistant to impact, acids, alkalis, and UV radiation, making them the industry standard for chemical processing plants, fertilizer factories, and coastal infrastructure.",
     specs: [
       { name: "Ingress Ratings", value: "IP65 / IP66 / IP67 options" },
@@ -1785,12 +1829,12 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
   },
   "flp-junction-box": {
     title: "Flameproof Junction Boxes (Zone 1, 2, 21, 22) | Electrika INC",
-    description: "Shop certified flameproof FLP junction boxes. Heavy-duty copper-free cast aluminum, IP65 protection. Safe wiring in explosive areas.",
+    description: "Flameproof (FLP) junction boxes for hazardous areas. Heavy-duty copper-free cast aluminum, IP65 protection. Safe wiring in explosive areas.",
     keywords: ["FLP Junction boxes", "Flameproof Junction Box", "Explosion Proof Junction Box", "Zone 1 Ex d enclosure", "Hazardous area terminal box"],
     canonical: `${PRIMARY_DOMAIN}/products/flp-junction-box`,
     entityType: "Product",
-    brand: "Electrika / Certified FLP Manufacturers",
-    manufacturer: "Electrika INC",
+    brand: "Sudhir Switchgears",
+    manufacturer: "Sudhir Switchgears Pvt. Ltd.",
     directAnswer: "Flameproof (FLP) Junction Boxes are specialized hazardous-area wiring enclosures. Built with thick copper-free cast aluminum walls and machined flat flame-path joints, they contain any internal electrical spark or explosion safely within the box, preventing ignition of external gases or dust in Zone 1, 2, 21, and 22 environments.",
     specs: [
       { name: "Ex Protection Code", value: "Ex d IIC T6 Gb / Ex tb IIIC T80°C Db" },
@@ -1803,7 +1847,7 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { name: "Product", value: "Cat. No. JB/104" },
       { name: "Enclosure", value: "Flame Proof (Ex-d), Gas Group IIA & IIB — as per IS/IEC 60079-1:2007" },
       { name: "Area Classification", value: "Ex db IIA, IIB" },
-      { name: "Certification", value: "CIMFR, BIS, PESO" },
+      { name: "Certification", value: "ISI marked (BIS); CIMFR / PESO certificates per model on request" },
       { name: "Size", value: "80mm dia x 40mm depth" },
       { name: "Temperature Class", value: "T5" },
       { name: "Material", value: "Die cast aluminium alloy" },
@@ -1829,8 +1873,8 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       "Internal terminal blocks are rated at full working voltage (up to 690V) with adequate creepage and clearance distances to prevent internal tracking under condensation conditions."
     ],
     advantages: [
-      { title: "IEC 60079-1 Type-Tested", desc: "Factory type-tested to the international flameproof enclosure standard, providing globally accepted certification for use in ATEX, IECEx, and PESO-approved hazardous area installations." },
-      { title: "All Gas Group Coverage", desc: "Certified for IIC group (hydrogen and acetylene) — the most demanding gas classification — ensuring suitability across all common petrochemical and chemical industry gas environments." },
+      { title: "IS/IEC 60079-1 Flameproof Design", desc: "Manufactured to the IS/IEC 60079-1 flameproof enclosure standard and ISI marked, with the manufacturer's test documents supplied for site approval." },
+      { title: "Gas Group Options", desc: "Available for gas groups IIA and IIB, with IIC (hydrogen and acetylene) models on request — confirm the gas group of your area at enquiry." },
       { title: "Zero Copper Content", desc: "Copper-free aluminum alloy prevents the formation of explosive copper acetylide compounds in acetylene atmosphere applications." },
       { title: "IP65/IP66 Dual Protection", desc: "Beyond the Ex d flame containment, IP65/66-rated sealing keeps water and dust out of the wiring termination area, preventing insulation degradation." }
     ],
@@ -1838,7 +1882,7 @@ export const SEO_DATABASE: Record<string, PageSEO> = {
       { title: "Oil & Gas Wellheads", desc: "Instrument junction boxes for wellhead sensors, pressure transmitters, and flow meter wiring in Zone 1 classified upstream oil and gas areas." },
       { title: "Petrochemical Pump Rooms", desc: "Cable junction points in pump room manifolds where explosive petroleum vapour atmospheres are continuously present." },
       { title: "Pharmaceutical Solvent Plants", desc: "Wiring interconnection boxes in IEC Zone 1 classified pharmaceutical API and solvent handling areas." },
-      { title: "Coal Mine Electrical Systems", desc: "DGMS-approved underground coal mine wiring junction points in firedamp-classified (methane) headings and panels." }
+      { title: "Coal Mine Electrical Systems", desc: "Underground coal mine wiring junction points in firedamp-classified (methane) areas — DGMS-approved models only." }
     ],
     standards: [
       { code: "IEC 60079-0", description: "General requirements for all electrical equipment intended for use in explosive gas atmospheres." },

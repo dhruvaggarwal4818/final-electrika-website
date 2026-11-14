@@ -7,7 +7,7 @@ import styles from "./decorated-poles.module.css";
 export default function DecoratedPolesPage() {
   const specParams = [
     { name: "Height Range", val: "3 m, 4 m, 5 m, 6 m, 7 m, 8 m" },
-    { name: "Material", val: "Aluminium die-cast (pole shaft and ornamental components)" },
+    { name: "Material", val: "Aluminium die-cast / cast iron / GI steel — chosen per design, site and client requirement" },
     { name: "Design Options", val: "100+ catalogue designs — classical, colonial, contemporary, themed" },
     { name: "Surface Finish", val: "Polyester powder coating, UV and weather resistant" },
     { name: "Accent Finish", val: "Brass / gold-tone detailing (design dependent)" },
@@ -22,10 +22,10 @@ export default function DecoratedPolesPage() {
   ];
 
   const features = [
-    { title: "Aluminium Die-Cast Construction", desc: "Precision die-cast aluminium components deliver crisp ornamental detailing that sand-cast or fabricated steel poles cannot replicate, while remaining lightweight and corrosion-resistant.", icon: "🏛️" },
+    { title: "Material Chosen for Your Site", desc: "Die-cast aluminium, cast iron or GI steel — we select the metal before manufacturing based on the pole design, the site (coastal, urban, heritage zone) and your requirement.", icon: "🏛️" },
     { title: "100+ Heritage & Modern Designs", desc: "Catalogue spans classical European scrollwork, colonial-style lanterns, minimalist contemporary columns, and themed designs for heritage zones, gardens, and boulevards.", icon: "🎨" },
     { title: "Integrated Ornamental Bracket", desc: "Cast scrollwork brackets connect the lamp head to the pole as a single design language — not a bolt-on afterthought — for a cohesive, premium appearance.", icon: "📐" },
-    { title: "Corrosion-Resistant Finish", desc: "Polyester powder coating over die-cast aluminium resists weathering, UV fade, and coastal salt exposure far longer than painted mild steel alternatives.", icon: "🛡️" },
+    { title: "Corrosion-Resistant Finish", desc: "Powder-coated or PU-painted finishes matched to the chosen metal resist weathering, UV fade, and coastal salt exposure for long outdoor life.", icon: "🛡️" },
     { title: "Brass & Gold-Tone Accents", desc: "Decorative finial caps and banding in brass or gold-tone detailing add a premium architectural touch, commonly specified for hotel driveways, government plazas, and luxury townships.", icon: "✨" },
     { title: "3 m to 8 m Range", desc: "Covers garden pathway lighting at the shorter end up to boulevard and plaza lighting at 8 m, fitting most landscaped and heritage-zone lighting plans.", icon: "📏" }
   ];
@@ -65,11 +65,11 @@ export default function DecoratedPolesPage() {
             <div className={styles.heroContent}>
               <span className={styles.heroBadge}>Decorative Poles</span>
               <h1 className={styles.heroTitle}>
-                Aluminium Die-Cast <br />
-                <span>Decorative Poles</span>
+                Decorative Street <br />
+                <span>Lighting Poles</span>
               </h1>
               <p className={styles.heroDesc}>
-                Heritage-style decorative lighting poles for landscaped roads, parks, plazas, and premium townships. Cast in aluminium for a refined, long-lasting finish, available from 3 m to 8 m, with over 100 design options to match any architectural theme.
+                Heritage-style decorative lighting poles for landscaped roads, parks, plazas, and premium townships. Made in die-cast aluminium, cast iron or GI steel — chosen to suit the design, site and your requirement — available from 3 m to 8 m, with over 100 design options to match any architectural theme.
               </p>
 
               <div className={styles.heroMeta}>
@@ -82,8 +82,8 @@ export default function DecoratedPolesPage() {
                   <span className={styles.metaLabel}>Designs</span>
                 </div>
                 <div className={styles.metaItem}>
-                  <span className={styles.metaVal}>Aluminium</span>
-                  <span className={styles.metaLabel}>Die-Cast</span>
+                  <span className={styles.metaVal}>Al / CI / GI</span>
+                  <span className={styles.metaLabel}>Material</span>
                 </div>
                 <div className={styles.metaItem}>
                   <span className={styles.metaVal}>24hr</span>
@@ -127,7 +127,7 @@ export default function DecoratedPolesPage() {
             <div className={styles.highlightStrip}>
               <h4 className={styles.highlightStripTitle}>100+ Design Catalogue:</h4>
               <p className={styles.highlightStripDesc}>
-                From classic wrought-iron scrollwork to minimalist contemporary profiles, our decorative pole range spans more than 100 distinct designs. Share your project theme or reference image and we'll recommend matching options from the catalogue.
+                From classic wrought-iron scrollwork to minimalist contemporary profiles, our decorative pole range spans more than 100 distinct designs. Share your project theme or reference image and we&apos;ll recommend matching options from the catalogue.
               </p>
             </div>
 

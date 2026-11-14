@@ -6,7 +6,7 @@ import styles from "./latching-mast.module.css";
 
 export default function LatchingMastPage() {
   const specParams = [
-    { name: "Assembly Type", val: "Highmast Latching Assembly (head frame + luminaire carriage)", highlight: false },
+    { name: "Assembly Type", val: "High Mast Latching Assembly (head frame + luminaire carriage)", highlight: false },
     { name: "Arm Configuration", val: "3-arm radial, 120° equal spacing (standard)", highlight: false },
     { name: "Latch Type", val: "Spring-loaded, self-aligning mechanical latch", highlight: true },
     { name: "Head Frame", val: "Fixed assembly, permanently mounted at pole apex", highlight: false },
@@ -58,8 +58,8 @@ export default function LatchingMastPage() {
               <div className={styles.heroContent}>
                 <span className={styles.heroBadge}>Premium — Latching Mechanisms</span>
                 <h1 className={styles.heroTitle}>
-                  Highmast Latching <br />
-                  <span className={styles.orangeText}>Assembly System</span>
+                  High Mast Latching <br />
+                  <span className={styles.orangeText}>Mechanism</span>
                 </h1>
                 <p className={styles.heroDesc}>
                   The most durable and reliable method of hoisting luminaire arms on a high mast. The latching assembly mechanically locks each arm of the luminaire carriage into a fixed, self-aligning position against the head frame — delivering a rock-solid connection that resists vibration, wind sway, and repeated raise/lower cycles far better than simple pin or clamp designs.
@@ -97,8 +97,8 @@ export default function LatchingMastPage() {
               <div className={styles.heroVisual}>
                 <div className={styles.heroImageWrapper} >
                   <Image
-                    src="/figma_assets/latching_mast_hero_v2.png"
-                    alt="Highmast Latching Assembly System"
+                    src="/figma_assets/c6132d94069938a8917c09486e4162e364875cf3.png"
+                    alt="High mast latching mechanism — isometric view of head frame, luminaire carriage and latch assembly"
                     fill
                     sizes="(max-width: 1024px) 100vw, 570px"
                     className={styles.heroImage} style={{ viewTransitionName: 'product-image-latching-mast' }}

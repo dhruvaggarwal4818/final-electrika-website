@@ -8,7 +8,7 @@ export default function HighMastPolesPage() {
   const specParams = [
     { name: "Material", val: "IS 2062 Grade A Mild Steel", highlight: false },
     { name: "Surface Treatment", val: "Hot-Dip Galvanised (IS 4759), min 86 µm", highlight: false },
-    { name: "Height Range", val: "9 m to 40 m (custom up to 50 m)", highlight: false },
+    { name: "Height Range", val: "12.5 m to 40 m (12.5 / 16 / 20 / 25 / 30 / 35 / 40 m)", highlight: false },
     { name: "Shape", val: "Polygonal (8/12/16 sided) or Conical", highlight: false },
     { name: "Wall Thickness", val: "4 mm to 10 mm (height dependent)", highlight: false },
     { name: "Lamp Carriage Type", val: "Fixed / Motorised Lowering", highlight: false },
@@ -41,7 +41,7 @@ export default function HighMastPolesPage() {
                 </p>
                 <div className={styles.metaGrid}>
                   <div className={styles.metaItem}>
-                    <div className={styles.metaVal}>9–40m</div>
+                    <div className={styles.metaVal}>12.5–40m</div>
                     <div className={styles.metaLabel}>Height Range</div>
                   </div>
                   <div className={styles.metaItem}>

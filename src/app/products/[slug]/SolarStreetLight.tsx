@@ -95,7 +95,7 @@ export default function SolarStreetLightPage() {
               </span>
               <h1 className={styles.heroTitle}>
                 Solar Street Lights — <br />
-                <span className={styles.orangeText}>4 Variant Range</span>
+                <span className={styles.orangeText}>All-in-One &amp; Split Type</span>
               </h1>
               <p className={styles.heroDesc}>
                 A complete solar street lighting range covering every site condition and budget — All-in-One, Standalone, Semi-Integrated, and Mini High Mast configurations. Power output spans 7W to 175W across the range.

@@ -19,8 +19,8 @@ export default function FlameproofLedLight() {
 
   const features = [
     { 
-      title: "Ex d IIB T4 / T5 Certified", 
-      desc: "ATEX/IECEx certified Exd flameproof protection class, Group IIB (covers most industrial gases including LPG, ethylene, town gas), Temperature Class T4/T5 — max surface temperature 135°C/100°C.", 
+      title: "Ex d IIB T4 / T5 Protection", 
+      desc: "Ex d flameproof protection class, Group IIB (covers most industrial gases including LPG, ethylene, town gas), Temperature Class T4/T5 — max surface temperature 135°C/100°C.", 
       icon: "🛡️" 
     },
     { 
@@ -44,8 +44,8 @@ export default function FlameproofLedLight() {
       icon: "🏗️" 
     },
     { 
-      title: "IS 5572 / IS 2148 Certified", 
-      desc: "Certified to Indian Standards for flameproof electrical equipment in addition to international ATEX / IECEx certification — meeting the requirements of PESO, OISD, DGMS, and other Indian regulatory authorities.", 
+      title: "Built to Indian Standards", 
+      desc: "Designed to Indian flameproof equipment standards (IS/IEC 60079), with the manufacturer's test certificates supplied per model for PESO, OISD and site approvals.", 
       icon: "📜" 
     }
   ];
@@ -83,7 +83,7 @@ export default function FlameproofLedLight() {
     { title: "Chemical Plants", desc: "Solvent handling, reaction areas, storage zones for flammable liquids", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polygon points="12 2 22 8 22 16 12 22 2 16 2 8"/></svg> },
     { title: "Flour Mills & Grain Silos", desc: "Dust Zone 21/22 classified areas — explosive flour/grain dust atmosphere", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polygon points="12 2 22 7 12 12 2 7 12 2"/><polyline points="2 12 12 17 22 12"/><polyline points="2 17 12 22 22 17"/></svg> },
     { title: "Paint Spray Booths", desc: "Automotive and industrial paint shops with solvent vapour hazard", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> },
-    { title: "Mining — DGMS Zones", desc: "Underground coal mines, firedamp zones — DGMS and CMRS certified applications", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg> }
+    { title: "Mining — DGMS Zones", desc: "Underground coal mines and firedamp zones — where DGMS-approved models are specified", icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg> }
   ];
 
   return (
@@ -97,8 +97,8 @@ export default function FlameproofLedLight() {
           <div className={styles.warningStripInner}>
             <div className={styles.warningIcon}>⚠</div>
             <p className={styles.warningText}>
-              <span>Certified for Hazardous Area Use · </span>
-              Zone 1, Zone 2 (Gas) · Zone 21, Zone 22 (Dust) · ATEX / IECEx / IS 5572 compliant — for use where explosive atmospheres may be present
+              <span>For Hazardous Area Use · </span>
+              Zone 1, Zone 2 (Gas) · Zone 21, Zone 22 (Dust) · Ex d flameproof construction — for use where explosive atmospheres may be present
             </p>
           </div>
         </div>
@@ -163,7 +163,7 @@ export default function FlameproofLedLight() {
         <section className={styles.understandingSection}>
           <div className={styles.container}>
             <span className={styles.sectionEyebrow}>Understanding the Product</span>
-            <h2 className={styles.sectionTitle}>What Does "Flameproof" Actually Mean?</h2>
+            <h2 className={styles.sectionTitle}>What Does &quot;Flameproof&quot; Actually Mean?</h2>
             <p className={styles.sectionIntro}>
               Not just weatherproof — a flameproof (Ex d) enclosure is designed so that if a gas ignites <i>inside</i> the enclosure, the explosion cannot propagate to the surrounding hazardous atmosphere. The housing contains and quenches the flame before it can escape. This is a mandatory requirement in classified hazardous areas.
             </p>
@@ -214,7 +214,7 @@ export default function FlameproofLedLight() {
             <span className={styles.sectionEyebrow}>Hazardous Area Classification</span>
             <h2 className={styles.sectionTitle}>Which Zone Is Your Site?</h2>
             <p className={styles.sectionIntro}>
-              Hazardous areas are classified by how frequently an explosive atmosphere is present. This product is certified for the most demanding gas and dust zone classes.
+              Hazardous areas are classified by how frequently an explosive atmosphere is present. This product is designed for Zone 1/2 gas and Zone 21/22 dust areas — check the model&apos;s certificate for your exact zone and gas group.
             </p>
 
             <div className={styles.zonesGrid}>
@@ -225,7 +225,7 @@ export default function FlameproofLedLight() {
                   <p className={styles.zoneSubtitle}>{zone.sub}</p>
                   <p className={styles.zoneDesc}>{zone.desc}</p>
                   <div className={styles.zoneCompat}>
-                    ✓ This product is certified
+                    ✓ Suitable for this zone
                   </div>
                 </div>
               ))}
@@ -262,7 +262,7 @@ export default function FlameproofLedLight() {
             <span className={styles.sectionEyebrow}>Technical Data</span>
             <h2 className={styles.sectionTitle}>Product Specifications</h2>
             <p className={styles.sectionIntro}>
-              Full technical data sheet. Test certificates and ATEX/IECEx/IS certificates available on request with enquiry.
+              Full technical data sheet. Manufacturer&apos;s test and Ex certificates for the exact model are available on request with enquiry.
             </p>
 
             <div className={styles.specsWrapper}>

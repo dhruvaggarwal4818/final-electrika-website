@@ -123,14 +123,10 @@ export default async function ProductDetailPage({ params }: PageProps) {
       "@type": "Product",
       "name": seo.title.split("|")[0].trim(),
       "description": seo.description,
-      "brand": {
-        "@type": "Brand",
-        "name": seo.brand || "Electrika INC"
-      },
-      "manufacturer": {
-        "@type": "Organization",
-        "name": seo.manufacturer || "Electrika INC"
-      },
+      // Electrika INC is the supplier (seller), not the maker: brand and
+      // manufacturer are only emitted when the real maker is known.
+      ...(seo.brand ? { "brand": { "@type": "Brand", "name": seo.brand } } : {}),
+      ...(seo.manufacturer ? { "manufacturer": { "@type": "Organization", "name": seo.manufacturer } } : {}),
       "category": "Industrial Electrical Equipment",
       "image": seo.ogImage || `${PRIMARY_DOMAIN}/figma_assets/83aff0eccbfacd16febf59ee2f64864f1b9a4a0c.png`,
       "additionalProperty": (seo.visualSpecs || seo.specs)?.map(spec => ({
@@ -155,7 +151,12 @@ export default async function ProductDetailPage({ params }: PageProps) {
             "price": "0",
             "priceCurrency": "INR",
             "availability": "https://schema.org/InStock",
-            "validFrom": "2026-01-01"
+            "validFrom": "2026-01-01",
+            "seller": {
+              "@type": "Organization",
+              "name": "Electrika INC",
+              "url": PRIMARY_DOMAIN
+            }
           }
         ]
       }

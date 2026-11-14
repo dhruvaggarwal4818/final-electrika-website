@@ -12,7 +12,7 @@ export default function Pce125APlugPage() {
     { name: "Voltage Ratings", val: "400V / 500V (3P+N+E)", highlight: true },
     { name: "Poles", val: "3P+E, 3P+N+E", highlight: false },
     { name: "Frequency", val: "50 Hz / 60 Hz", highlight: false },
-    { name: "IP Rating", val: "IP44 (splash-proof) / IP65 (dust-tight, water-jet resistant)", highlight: false },
+    { name: "IP Rating", val: "IP44 (splash-proof) / IP67 (dust-tight, temporary immersion)", highlight: false },
     { name: "Housing Material", val: "Reinforced thermoplastic (PA66), impact & UV resistant", highlight: true },
     { name: "Operating Temperature", val: "-25°C to +40°C", highlight: false },
     { name: "Colour Coding", val: "Red (400V), IEC 60309 compliant", highlight: false },
@@ -33,8 +33,8 @@ export default function Pce125APlugPage() {
       icon: "⚡",
     },
     {
-      title: "IP44 & IP65 Variants",
-      desc: "Choose IP44 for general indoor/covered use, or IP65 for dust-tight, water-jet-resistant outdoor and washdown environments.",
+      title: "IP44 & IP67 Variants",
+      desc: "Choose IP44 for general indoor/covered use, or IP67 for dust-tight, watertight outdoor and washdown environments.",
       icon: "🛡️",
     },
     {
@@ -83,10 +83,10 @@ export default function Pce125APlugPage() {
                 <span className={styles.heroBadge}>PCE Connectors</span>
                 <h1 className={styles.heroTitle}>
                   125A Plug & Socket <br />
-                  <span className={styles.orangeText}>IP44 / IP65</span>
+                  <span className={styles.orangeText}>IP44 / IP67</span>
                 </h1>
                 <p className={styles.heroDesc}>
-                  Heavy-duty 125A industrial plug and socket set built to IEC 60309 / EN 60309 standards. Reinforced thermoplastic housing rated IP44 or IP65 for splash-proof and dust/water-jet-proof duty on construction sites, factory floors, and heavy machinery connections.
+                  Heavy-duty 125A industrial plug and socket set built to IEC 60309 / EN 60309 standards. Reinforced thermoplastic housing rated IP44 or IP67 for splash-proof and watertight duty on construction sites, factory floors, and heavy machinery connections.
                 </p>
 
                 <div className={styles.metaGrid}>
@@ -95,7 +95,7 @@ export default function Pce125APlugPage() {
                     <span className={styles.metaLabel}>Rated Current</span>
                   </div>
                   <div className={styles.metaItem}>
-                    <span className={styles.metaVal}>IP44/65</span>
+                    <span className={styles.metaVal}>IP44/67</span>
                     <span className={styles.metaLabel}>Protection</span>
                   </div>
                   <div className={styles.metaItem}>
@@ -122,7 +122,7 @@ export default function Pce125APlugPage() {
                 <div className={styles.heroImageWrapper}>
                   <Image
                     src="/figma_assets_254_3022_v2/8bff05589e959f191914ae18dca3cee0cfb98e2f.png"
-                    alt="125A industrial plug and socket, IP44/65 rated, held by a technician on a work site"
+                    alt="125A industrial plug and socket, IP44/67 rated, held by a technician on a work site"
                     fill
                     sizes="(max-width: 1024px) 100vw, 570px"
                     className={styles.heroImage}

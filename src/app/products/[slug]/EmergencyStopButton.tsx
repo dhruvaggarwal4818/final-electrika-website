@@ -9,7 +9,7 @@ export default function EmergencyStopButtonPage() {
     { name: "Brand / Origin", val: "Heinrich Hensel GmbH, Germany" },
     { name: "Model Reference", val: "PBS 0101 G8 (as shown)" },
     { name: "Housing Material", val: "High-impact Polycarbonate (PC), self-extinguishing, UV-stabilised" },
-    { name: "IP Rating", val: "IP68 (submersible, continuous)" },
+    { name: "IP Rating", val: "IP65 (dust-tight, water-jet protected)" },
     { name: "IK Rating", val: "IK07" },
     { name: "Actuator", val: "Red mushroom-head, turn-to-release, Ø 40 mm" },
     { name: "Contact Action", val: "Positive-opening (direct-open action) per IEC 60947-5-5" },
@@ -33,8 +33,8 @@ export default function EmergencyStopButtonPage() {
     },
     {
       iconFallback: "💧",
-      title: "IP68 — Fully Submersible",
-      desc: "Rated for continuous immersion in water. Exceeds IP65/66 — suitable for washdown areas, outdoor plant, marine applications, and underground machinery.",
+      title: "IP65 — Dust-Tight & Weatherproof",
+      desc: "Fully protected against dust and water jets from any direction — suitable for outdoor plant, washdown areas, and dusty factory environments.",
     },
     {
       iconFallback: "🌡️",
@@ -64,7 +64,7 @@ export default function EmergencyStopButtonPage() {
     { icon: "📦", title: "Packaging Machinery", desc: "E-stop on filling, sealing, and wrapping lines" },
     { icon: "🔨", title: "Press & Forging", desc: "Overrun protection, die-change safety stops" },
     { icon: "⚓", title: "Marine & Offshore", desc: "Washdown-resistant controls for engine rooms and decks" },
-    { icon: "🧪", title: "Food & Pharma", desc: "Hygienic washdown areas — IP68 prevents ingress during cleaning" },
+    { icon: "🧪", title: "Food & Pharma", desc: "Hygienic washdown areas — IP65 sealing resists water jets during cleaning" },
   ];
 
   return (
@@ -83,12 +83,12 @@ export default function EmergencyStopButtonPage() {
                   <span className={styles.orangeText}>Emergency Stop Button</span>
                 </h1>
                 <p className={styles.heroDesc}>
-                  German-engineered Hensel emergency stop push-button in a robust polycarbonate enclosure. Rated IP68, built to withstand high temperatures and harsh industrial environments. The mushroom-head actuator and positive-opening contact mechanism meet the strictest safety standards for machine and process control.
+                  German-engineered Hensel emergency stop push-button in a robust polycarbonate enclosure. Rated IP65, built to withstand high temperatures and harsh industrial environments. The mushroom-head actuator and positive-opening contact mechanism meet the strictest safety standards for machine and process control.
                 </p>
 
                 <div className={styles.metaGrid}>
                   <div className={styles.metaItem}>
-                    <span className={styles.metaVal}>IP68</span>
+                    <span className={styles.metaVal}>IP65</span>
                     <span className={styles.metaLabel}>Protection</span>
                   </div>
                   <div className={styles.metaItem}>

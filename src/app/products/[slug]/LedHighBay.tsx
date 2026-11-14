@@ -46,28 +46,28 @@ export default function LedHighBay() {
       title: "Zone 1", 
       sub: "Gas / Vapor", 
       desc: "Areas where explosive gas atmospheres are likely to occur in normal operation intermittently.",
-      compat: "Fully Certified"
+      compat: "Suitable"
     },
     { 
       id: "zone2", 
       title: "Zone 2", 
       sub: "Gas / Vapor", 
       desc: "Areas where explosive gas atmospheres are not likely to occur, or persist for only a short period.",
-      compat: "Fully Certified"
+      compat: "Suitable"
     },
     { 
       id: "zone21", 
       title: "Zone 21", 
       sub: "Dust / Powder", 
       desc: "Environments where combustible dust clouds are expected to occur occasionally in normal operations.",
-      compat: "Fully Certified"
+      compat: "Suitable"
     },
     { 
       id: "zone22", 
       title: "Zone 22", 
       sub: "Dust / Powder", 
       desc: "Environments where combustible dust layers or clouds are rare and disappear quickly.",
-      compat: "Fully Certified"
+      compat: "Suitable"
     }
   ];
 
@@ -77,7 +77,7 @@ export default function LedHighBay() {
     { title: "Chemical Plants", desc: "Solvent handling, reaction areas, storage zones for flammable liquids", icon: "🧪" },
     { title: "Flour Mills & Grain Silos", desc: "Dust Zone 21/22 classified areas — explosive flour/grain dust atmosphere", icon: "🌾" },
     { title: "Paint Spray Booths", desc: "Automotive and industrial paint shops with solvent vapour hazard", icon: "🎨" },
-    { title: "Mining — DGMS Zones", desc: "Underground coal mines, firedamp zones — DGMS and CMRS certified applications", icon: "⛏️" }
+    { title: "Mining — DGMS Zones", desc: "Underground coal mines and firedamp zones — where DGMS-approved models are specified", icon: "⛏️" }
   ];
 
   const checklist = [
@@ -103,7 +103,7 @@ export default function LedHighBay() {
               ⚠
             </div>
             <p className={styles.warningText}>
-              <span>Certified for Hazardous Area Environments · </span>
+              <span>For Hazardous Area Environments · </span>
               Zone 1 & 2 (Flammable Gas/Vapor Protection) · Zone 21 & 22 (Combustible Dust Protection) · Ex d IIC T6 Gb compliant enclosure built for rigorous industrial settings.
             </p>
           </div>
@@ -125,7 +125,7 @@ export default function LedHighBay() {
               <div className={styles.heroMeta}>
                 <div className={styles.metaItem}>
                   <span className={styles.metaVal}>Zone 1 / 21</span>
-                  <span className={styles.metaLabel}>Class Certified</span>
+                  <span className={styles.metaLabel}>Zone Rating</span>
                 </div>
                 <div className={styles.metaItem}>
                   <span className={styles.metaVal}>IP66</span>
@@ -133,7 +133,7 @@ export default function LedHighBay() {
                 </div>
                 <div className={styles.metaItem}>
                   <span className={styles.metaVal}>Ex d IIC T6</span>
-                  <span className={styles.metaLabel}>ATEX / IECEx</span>
+                  <span className={styles.metaLabel}>Ex Protection</span>
                 </div>
                 <div className={styles.metaItem}>
                   <span className={styles.metaVal}>COB LED</span>

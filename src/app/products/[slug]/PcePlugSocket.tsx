@@ -16,7 +16,7 @@ export default function PcePlugSocketPage() {
     { name: "Housing", val: "Reinforced thermoplastic (PA66)", highlight: true },
     { name: "Operating Temp.", val: "-25°C to +40°C", highlight: false },
     { name: "Colour Coding", val: "IEC 60309 compliant (blue/red/yellow/black)", highlight: false },
-    { name: "Interlocked Version", val: "Available (MAINS before switching)", highlight: false },
+    { name: "Interlocked Version", val: "Available on request", highlight: false },
     { name: "Certifications", val: "CE, VDE, ÖVE, SABS", highlight: false },
   ];
 
@@ -28,7 +28,7 @@ export default function PcePlugSocketPage() {
     },
     {
       title: "IP44 to IP67 Rating",
-      desc: "Wide range of protection classes — from splash-proof industrial plugs to fully submersible underwater connectors.",
+      desc: "Wide range of protection classes — from splash-proof IP44 plugs for covered areas to sealed, dust-tight IP67 connectors for outdoor and wash-down use.",
       icon: "💧",
     },
     {
@@ -43,7 +43,7 @@ export default function PcePlugSocketPage() {
     },
     {
       title: "Interlocked Versions",
-      desc: "Interlock switch models prevent live insertion and withdrawal — mandatory in many safety-regulated environments.",
+      desc: "Available on request: interlocked sockets with a built-in switch that prevents live insertion and withdrawal.",
       icon: "🔒",
     },
     {
@@ -81,11 +81,11 @@ export default function PcePlugSocketPage() {
               <div className={styles.heroContent}>
                 <span className={styles.heroBadge}>PCE Connectors</span>
                 <h1 className={styles.heroTitle}>
-                  Industrial Plugs & <br />
-                  <span className={styles.orangeText}>Connectors</span>
+                  PCE Industrial <br />
+                  <span className={styles.orangeText}>Plugs &amp; Couplers</span>
                 </h1>
                 <p className={styles.heroDesc}>
-                  Austrian-engineered PCE industrial connectors — CEE plugs, sockets, couplers, and distribution boxes for construction sites, factories, and marine environments. Authorised distributor.
+                  Austrian-made PCE IEC 60309 (CEE) industrial plugs, couplers and sockets — 16A to 125A, blue 230V and red 415V — for construction sites, factories and outdoor equipment. Interlocked sockets available on request. Authorised distributor.
                 </p>
 
                 <div className={styles.metaGrid}>
@@ -98,7 +98,7 @@ export default function PcePlugSocketPage() {
                     <span className={styles.metaLabel}>Current Range</span>
                   </div>
                   <div className={styles.metaItem}>
-                    <span className={styles.metaVal}>MULTIPLE</span>
+                    <span className={styles.metaVal}>PCE</span>
                     <span className={styles.metaLabel}>Brand</span>
                   </div>
                   <div className={styles.metaItem}>
@@ -121,7 +121,7 @@ export default function PcePlugSocketPage() {
                 <div className={styles.heroImageWrapper}>
                   <Image
                     src="/figma_assets_pce_plug_socket/custom_hero_image.jpg"
-                    alt="Industrial Plugs & Connectors"
+                    alt="PCE blue 230V 32A IEC 60309 industrial plug and coupler"
                     fill
                     sizes="(max-width: 1024px) 100vw, 570px"
                     className={styles.heroImage}

@@ -51,19 +51,14 @@ export default function SmallControlStationPage() {
     {
       iconFallback: "✅",
       title: "Fully Wired & Tested",
-      desc: "Each unit is internally wired with labelled circuits, terminal blocks, and tested before dispatch — visible in our factory photos with colour-coded conductors and properly dressed cable runs.",
+      desc: "Supplied fully wired with labelled circuits, terminal blocks and colour-coded, neatly dressed conductors — ready to mount and connect on site.",
     },
   ];
 
   const gallery = [
     {
-      img: "/figma_assets_132/19e9d8e719af1fa9421c135779b56745f03218a1.png",
-      title: "Studio Reference",
-      desc: "Compact dual-compartment box with MCB row and two IEC 60309 sockets."
-    },
-    {
       img: "/figma_assets_132/d8e14bb6044b430850ab18806463e6824c027539.png",
-      title: "Factory Build",
+      title: "Assembled Unit",
       desc: "Same configuration shown assembled and ready for dispatch."
     },
     {
@@ -83,13 +78,13 @@ export default function SmallControlStationPage() {
           <div className={styles.container}>
             <div className={styles.heroGrid}>
               <div className={styles.heroContent}>
-                <div className={styles.heroBadge}>Customizable Control Station</div>
+                <div className={styles.heroBadge}>MCB + Industrial Sockets</div>
                 <h1 className={styles.heroTitle}>
-                  Small Control Station <br />
-                  <span className={styles.orangeText}>Box — Customizable</span>
+                  Industrial Socket <br />
+                  <span className={styles.orangeText}>Distribution Box</span>
                 </h1>
                 <p className={styles.heroDesc}>
-                  Compact, IP65 / IK09-rated control station boxes in polycarbonate or thermoplastic, built to your exact requirement — protection devices, industrial sockets, metering, and wiring configured around your single-line diagram. Available with transparent or opaque doors.
+                  Compact IP65 / IK09-rated socket distribution boxes combining MCB / RCCB protection with IEC 60309 industrial sockets — blue 230V and red 415V 3-phase. Factory-wired in polycarbonate enclosures and built to your requirement, with transparent or opaque doors.
                 </p>
 
                 <div className={styles.metaGrid}>
@@ -125,7 +120,7 @@ export default function SmallControlStationPage() {
                 <div className={styles.heroImageWrapper}>
                   <Image
                     src="/figma_assets_132/d8e14bb6044b430850ab18806463e6824c027539.png"
-                    alt="Control Station Box"
+                    alt="Industrial socket distribution box with MCBs, two blue 230V and one red 415V IEC 60309 sockets"
                     fill
                     className={styles.heroImage} style={{ viewTransitionName: 'product-image-small-control-station' }}
                     priority
@@ -149,7 +144,7 @@ export default function SmallControlStationPage() {
             <div className={styles.highlightStrip}>
               <strong>Fully Customizable:</strong>
               <p>
-                Internal layout, number of MCBs/RCCBs, industrial socket count and current rating, busbar configuration, and door type (transparent or opaque) are all configured to your project's single-line diagram. Share your requirement and we'll quote the exact build.
+                Number of MCBs/RCCBs, industrial socket count, voltage and current rating, and door type (transparent or opaque) are all configured to your load list. Share your requirement and we&apos;ll quote the exact build.
               </p>
             </div>
 
@@ -194,7 +189,7 @@ export default function SmallControlStationPage() {
                    <div className={styles.galleryImageWrapper}>
                       <Image
                         src={g.img}
-                        alt={g.title}
+                        alt={`Industrial socket distribution box — ${g.title}`}
                         fill
                         className={styles.heroImage} style={{ viewTransitionName: 'product-image-small-control-station' }}
                       />

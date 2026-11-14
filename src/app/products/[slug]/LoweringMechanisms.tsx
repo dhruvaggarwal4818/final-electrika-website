@@ -59,8 +59,8 @@ export default function LoweringMechanismsPage() {
               <div className={styles.heroContent}>
                 <span className={styles.heroBadge}>Lowering Mast System</span>
                 <h1 className={styles.heroTitle}>
-                  High Mast with <br />
-                  <span className={styles.orangeText}>Motorised Lowering System</span>
+                  High Mast Lowering <br />
+                  <span className={styles.orangeText}>Mechanism — Motorised Winch</span>
                 </h1>
                 <p className={styles.heroDesc}>
                   Complete high mast lighting system fitted with a motorised winch and lowering mechanism. The luminaire carriage travels down to ground level on demand, allowing maintenance teams to service, clean, or replace fixtures safely without climbing or aerial work platforms.
